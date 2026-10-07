@@ -1618,22 +1618,29 @@ function renderDiarySection(filterDate = null) {
     listContainer.innerHTML = diaryHtml;
 }
 
-
-
-// 備份相關
+// 📦 完整備份（同時包含日記與單字庫）
 function exportWordsJSON() {
-    const data = localStorage.getItem('myDiaries') || '[]';
-    const blob = new Blob([data], { type: 'application/json' });
+    // 收集所有需要備份的資料
+    const backupData = {
+        version: "1.0",
+        exportDate: new Date().toISOString(),
+        myDiaries: JSON.parse(localStorage.getItem('myDiaries') || '[]'),
+        myWords: JSON.parse(localStorage.getItem('myWords') || '[]')
+    };
+
+    const dataStr = JSON.stringify(backupData, null, 2);
+    const blob = new Blob([dataStr], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `myDiaries_backup_${new Date().toISOString().slice(0, 10)}.json`;
+    a.download = `english_app_full_backup_${new Date().toISOString().slice(0, 10)}.json`;
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
 }
 
+// 📥 完整還原（同時讀取並寫回日記與單字庫）
 function importWordsJSON(event) {
     const file = event.target.files[0];
     if (!file) return;
@@ -1642,12 +1649,24 @@ function importWordsJSON(event) {
     reader.onload = function(e) {
         try {
             const parsed = JSON.parse(e.target.result);
-            if (Array.isArray(parsed)) {
-                localStorage.setItem('myDiaries', JSON.stringify(parsed));
-                alert('資料匯入成功！');
-                renderDiarySection();
+            
+            // 支援新版的完整備份格式，也相容舊版的單一陣列格式
+            if (parsed && typeof parsed === 'object' && !Array.isArray(parsed)) {
+                if (parsed.myDiaries) {
+                    localStorage.setItem('myDiaries', JSON.stringify(parsed.myDiaries));
+                }
+                if (parsed.myWords) {
+                    localStorage.setItem('myWords', JSON.stringify(parsed.myWords));
+                }
+                alert('完整資料（日記與單字庫）匯入成功！');
+                location.reload();
+            } else if (Array.isArray(parsed)) {
+                // 相容舊版只有陣列的格式（預設塞回單字庫或日記，依你需求）
+                localStorage.setItem('myWords', JSON.stringify(parsed));
+                alert('單字庫資料匯入成功！');
+                location.reload();
             } else {
-                alert('檔案格式錯誤：內容並非正確的日記清單。');
+                alert('檔案格式錯誤：無法識別的備份內容。');
             }
         } catch (err) {
             alert('解析檔案失敗，請確認這是正確的 JSON 備份檔。');
@@ -1656,6 +1675,8 @@ function importWordsJSON(event) {
     };
     reader.readAsText(file);
 }
+
+
     </script>
 </body>
 </html>
