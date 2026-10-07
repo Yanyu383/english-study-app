@@ -1,0 +1,1661 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的無壓單字本與日記打卡</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: #f7f9fc;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 450px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 1.5rem;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 16px;
+        }
+        /* API 設定專用卡片樣式 */
+        .api-config-box {
+            background: #eef2f7;
+            border: 1px dashed #cbd5e1;
+            border-radius: 10px;
+            padding: 12px 16px;
+            margin-bottom: 16px;
+            font-size: 0.85rem;
+        }
+        .api-row {
+            display: flex;
+            gap: 8px;
+            margin-top: 6px;
+        }
+        .api-row input {
+            margin: 0;
+            flex: 1;
+        }
+        .api-save-btn {
+            background-color: #3b82f6;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+        .api-save-btn:hover {
+            background-color: #2563eb;
+        }
+        .api-status {
+            font-size: 0.75rem;
+            color: #059669;
+            margin-top: 4px;
+        }
+        /* 頂部切換分頁導覽列 */
+        .tab-nav {
+            display: flex;
+            background: #e2e8f0;
+            border-radius: 10px;
+            padding: 4px;
+            margin-bottom: 20px;
+            gap: 2px;
+            overflow-x: auto;
+        }
+        .tab-btn {
+            flex: 1;
+            background: transparent;
+            border: none;
+            padding: 8px 2px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: #64748b;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-align: center;
+            white-space: nowrap;
+        }
+        .tab-btn.active {
+            background: #ffffff;
+            color: #2c3e50;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        }
+        /* 頁面區塊切換 */
+        .page-section {
+            display: none;
+        }
+        .page-section.active {
+            display: block;
+        }
+        .card-box {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+            margin-bottom: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-family: inherit;
+            background-color: #fff;
+        }
+        button.primary-btn {
+            width: 100%;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 4px;
+        }
+        button.primary-btn:hover {
+            background-color: #2980b9;
+        }
+        button.gacha-start-btn {
+            width: 100%;
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 4px;
+            box-shadow: 0 4px 10px rgba(245, 158, 11, 0.3);
+        }
+        
+        /* 多重意義與例句群組樣式 */
+        .meaning-group {
+            background: #f8fafc;
+            border: 1px solid #cbd5e1;
+            border-radius: 10px;
+            padding: 12px;
+            margin-bottom: 14px;
+            position: relative;
+        }
+        .meaning-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+            font-size: 0.85rem;
+            color: #475569;
+            margin-bottom: 6px;
+        }
+        .remove-meaning-btn {
+            background: #fee2e2;
+            color: #dc2626;
+            border: none;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            cursor: pointer;
+        }
+        .remove-meaning-btn:hover { background: #fecaca; }
+        
+        .add-meaning-btn {
+            background: #f1f5f9;
+            color: #005804;
+            border: 1px dashed #94a3b8;
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            cursor: pointer;
+            margin-bottom: 14px;
+        }
+        .add-meaning-btn:hover { background: #e2e8f0; }
+
+        /* 單一意義底下的多例句容器 */
+        .sentence-pair-box {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 8px;
+            position: relative;
+        }
+        .sentence-pair-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.75rem;
+            color: #64748b;
+            margin-bottom: 4px;
+            font-weight: bold;
+        }
+        .remove-sentence-btn {
+            background: #fee2e2;
+            color: #dc2626;
+            border: none;
+            padding: 1px 6px;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            cursor: pointer;
+        }
+        .add-sentence-btn {
+            background: #f8fafc;
+            color: #2563eb;
+            border: 1px dashed #93c5fd;
+            width: 100%;
+            padding: 6px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 4px;
+            margin-bottom: 10px;
+        }
+        .add-sentence-btn:hover { background: #eff6ff; }
+
+        /* AI 檢查與反查造句按鈕群組樣式 */
+        .custom-action-row {
+            display: flex;
+            gap: 8px;
+            margin-top: 6px;
+            margin-bottom: 8px;
+        }
+        .custom-ai-btn {
+            flex: 1;
+            background-color: #f1f5f9;
+            color: #334155;
+            border: 1px solid #cbd5e1;
+            padding: 8px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .custom-ai-btn:hover {
+            background-color: #e2e8f0;
+            border-color: #94a3b8;
+        }
+
+        button.ai-btn {
+            width: 100%;
+            background-color: #10a37f;
+            color: white;
+            border: none;
+            padding: 8px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            cursor: pointer;
+            margin-bottom: 8px;
+        }
+        button.ai-btn:hover {
+            background-color: #0e8c6d;
+        }
+
+        .ai-feedback-box, .ai-options-box {
+            border-radius: 8px;
+            padding: 8px;
+            margin-bottom: 8px;
+            font-size: 0.8rem;
+            display: none;
+        }
+        .ai-feedback-box {
+            background: #f4ecf7;
+            border: 1px solid #d7bde2;
+            color: #4a235a;
+        }
+        .ai-options-box {
+            background: #f1f8f5;
+            border: 1px solid #d1e7dd;
+        }
+        .ai-option-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 6px;
+            font-size: 0.8rem;
+            background: white;
+            padding: 6px;
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+        }
+        .ai-option-item input {
+            width: auto;
+            margin-right: 6px;
+            margin-top: 2px;
+        }
+        
+        /* 詞性底色標籤樣式 (Badge) */
+        .pos-badge {
+            display: inline-block;
+            background-color: #e0f2fe;
+            color: #0369a1;
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            margin-left: 6px;
+            vertical-align: middle;
+        }
+
+        /* 日期夾設計樣式 */
+        .date-folder {
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            margin-bottom: 12px;
+            background: #fff;
+            overflow: hidden;
+        }
+        .date-header {
+            background-color: #f1f5f9;
+            padding: 10px 14px;
+            font-weight: bold;
+            color: #334155;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.95rem;
+            user-select: none;
+        }
+        .date-header:hover {
+            background-color: #e2e8f0;
+        }
+        .date-content {
+            padding: 0 14px;
+            display: none;
+        }
+        .word-item {
+            padding: 12px 0;
+            border-bottom: 1px solid #f1f5f9;
+            font-size: 0.9rem;
+        }
+        .word-item:last-child {
+            border-bottom: none;
+        }
+        .word-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .word-info {
+            flex-grow: 1;
+            padding-right: 10px;
+            cursor: pointer;
+        }
+        .action-btns {
+            display: flex;
+            gap: 6px;
+            flex-shrink: 0;
+        }
+        .edit-btn, .delete-btn {
+            color: white;
+            border: none;
+            padding: 6px 10px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            cursor: pointer;
+        }
+        .edit-btn { background-color: #f39c12; }
+        .delete-btn { background-color: #e74c3c; }
+        
+        .sentence-dropdown {
+            display: none;
+            margin-top: 8px;
+            padding: 10px 12px;
+            border-top: 1px dashed #e2e8f0;
+            background-color: #fafafa;
+            border-radius: 6px;
+        }
+        .sentence-text { color: #444; font-style: italic; margin-top: 2px; }
+        .sentence-zh { color: #666; font-size: 0.85rem; margin-top: 1px; margin-bottom: 6px; }
+        .toggle-hint { font-size: 0.75rem; color: #3498db; margin-top: 4px; }
+        
+        .edit-container {
+            background: #fffdf5;
+            border: 1px solid #fce881;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 8px;
+            display: none;
+        }
+        .sub-btn, .cancel-btn {
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            margin-right: 6px;
+            margin-top: 8px;
+        }
+        .sub-btn { background-color: #27ae60; }
+        .cancel-btn { background-color: #95a5a6; }
+
+        /* 抽卡機樣式 */
+        .gacha-game-box { text-align: center; }
+        .progress-indicator { font-size: 0.85rem; font-weight: bold; color: #d97706; margin-bottom: 12px; }
+        .card-stage {
+            background: linear-gradient(145deg, #ffffff, #fffbeb);
+            border: 2px solid #fde68a;
+            border-radius: 16px;
+            padding: 24px 20px;
+            min-height: 220px;
+            box-shadow: 0 6px 20px rgba(245, 158, 11, 0.12);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            position: relative;
+            margin-bottom: 16px;
+        }
+        .card-word-title { font-size: 1.6rem; font-weight: bold; color: #b45309; margin-bottom: 6px; }
+        .card-preview-sentence {
+            font-size: 0.95rem;
+            color: #4b5563;
+            font-style: italic;
+            background: #fef3c7;
+            padding: 10px 14px;
+            border-radius: 8px;
+            display: inline-block;
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: 6px;
+        }
+        .card-flip-hint {
+            font-size: 0.75rem;
+            color: #92400e;
+            margin-top: 14px;
+            font-weight: bold;
+            background: #fff;
+            padding: 4px 10px;
+            border-radius: 20px;
+            border: 1px solid #fcd34d;
+            display: inline-block;
+        }
+        .card-detail-section { text-align: left; width: 100%; }
+        .detail-row { margin-bottom: 10px; font-size: 0.9rem; }
+        .detail-label { font-size: 0.75rem; font-weight: bold; color: #b45309; text-transform: uppercase; margin-bottom: 2px; }
+        
+        button.action-game-btn, button.flip-toggle-btn {
+            width: 100%;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button.flip-toggle-btn { background-color: #f59e0b; margin-bottom: 10px; }
+        button.action-game-btn { background-color: #3b82f6; }
+
+        /* 日記打卡牆樣式 */
+        .streak-card {
+            background: linear-gradient(135deg, #059669, #10b981);
+            color: white;
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+        .streak-number { font-size: 2rem; font-weight: bold; margin: 4px 0; }
+        .streak-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 6px;
+            margin-top: 12px;
+        }
+        .streak-cell {
+            aspect-ratio: 1;
+            background: rgba(255,255,255,0.2);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.1s, background 0.1s;
+            overflow: hidden;
+        }
+        .streak-cell:hover { transform: scale(1.1); }
+        .streak-cell.checked {
+            background: #ffffff;
+            color: #059669;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .streak-cell img { width: 100%; height: 100%; object-fit: cover; }
+        
+        .mood-selector {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 12px;
+            justify-content: center;
+        }
+        .mood-option {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid #e2e8f0;
+            background: #f8fafc;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            transition: all 0.2s;
+        }
+        .mood-option img { width: 80%; height: 80%; object-fit: contain; }
+        .mood-option.selected {
+            border-color: #059669;
+            background: #ecfdf5;
+            transform: scale(1.1);
+            box-shadow: 0 2px 6px rgba(5, 150, 105, 0.3);
+        }
+
+        .diary-item {
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 14px;
+            margin-bottom: 10px;
+        }
+        .diary-header-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 6px;
+        }
+        .diary-date { font-size: 0.75rem; color: #64748b; font-weight: bold; }
+        .diary-mood-icon { width: 24px; height: 24px; object-fit: contain; }
+        .diary-text { font-size: 0.9rem; color: #334155; white-space: pre-wrap; line-height: 1.5; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>單字記憶膠囊</h1>
+
+        <!-- API Key 設定區塊 -->
+        <div class="api-config-box">
+            <label style="font-weight: bold; color: #334155;">🔑 Gemini API Key 設定：</label>
+            <div class="api-row">
+                <input type="password" id="apiKeyInput" placeholder="請貼上您的 AIzaSy... 金鑰">
+                <button class="api-save-btn" onclick="saveApiKey()">儲存 Key</button>
+            </div>
+            <div id="apiStatusText" class="api-status"></div>
+        </div>
+
+        <!-- 頂部切換分頁導覽列 -->
+        <div class="tab-nav">
+            <button class="tab-btn active" id="tabAddBtn" onclick="switchTab('add')">📝 新增</button>
+            <button class="tab-btn" id="tabListBtn" onclick="switchTab('list')">📚 單字庫</button>
+            <button class="tab-btn" id="tabGachaBtn" onclick="switchTab('gacha')">✨ 抽卡機</button>
+            <button class="tab-btn" id="tabDiaryBtn" onclick="switchTab('diary')">📖 日記打卡</button>
+        </div>
+
+        <!-- 1. 新增單字頁面 -->
+        <div id="addPage" class="page-section active">
+            <div class="card-box">
+                <h3>新增單字</h3>
+                <label>英文單字：</label>
+                <input type="text" id="wordInput" placeholder="例如: make">
+
+                <label>整張單字卡的備註 / 補充說明 (選填，例如文法、過去式)：</label>
+                <input type="text" id="wordNoteInput" placeholder="例如: 是 wear 的過去分詞...">
+                
+                <div id="meaningsContainer"></div>
+
+                <button class="add-meaning-btn" onclick="addMeaningField('meaningsContainer', 'new')">＋ 新增這個單字的另一個意思</button>
+
+                <button class="primary-btn" onclick="saveWord()">存入單字庫並記錄時間</button>
+            </div>
+        </div>
+
+        <!-- 2. 單字庫頁面 -->
+        <div id="listPage" class="page-section">
+            <div class="card-box">
+                <h3>我背過的單字</h3>
+                <div id="wordListDisplay"></div>
+            </div>
+        </div>
+
+        <!-- 3. 單字抽卡機頁面 -->
+        <div id="gachaPage" class="page-section">
+            <div class="card-box">
+                <h3>✨ 逐張卡牌複習</h3>
+                <div id="gachaArea">
+                    <div id="gachaSetupView">
+                        <p style="font-size: 0.85rem; color: #64748b; margin-top: 4px;">選擇你想複習的日期，系統將隨機抽取最多 5 個單字進行單張卡牌特訓！</p>
+                        
+                        <label style="margin-top: 12px; display: block; font-weight: bold; font-size: 0.9rem; color: #334155;">選擇挑戰日期：</label>
+                        <select id="gachaDateSelect">
+                            <option value="">載入中...</option>
+                        </select>
+
+                        <button class="gacha-start-btn" onclick="startGachaSession()">🎲 開始抽卡特訓！</button>
+                    </div>
+
+                    <div id="gachaPlayView" style="display: none;">
+                        <div class="gacha-game-box">
+                            <div class="progress-indicator" id="gachaProgressText">第 1 題 / 共 5 題</div>
+                            
+                            <div class="card-stage" id="cardStage" onclick="toggleCardFlip()">
+                                <div id="cardContent"></div>
+                            </div>
+
+                            <button class="flip-toggle-btn" id="flipActionBtn" onclick="toggleCardFlip()">🔄 點擊卡片翻面看答案</button>
+                            <button class="action-game-btn" id="nextCardBtn" onclick="nextGachaCard()" style="display: none;">下一題 ➔</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. 日記打卡頁面 -->
+        <div id="diaryPage" class="page-section">
+            <div class="streak-card">
+                <div style="font-size: 0.85rem; opacity: 0.9;">🔥 連續打卡紀錄</div>
+                <div class="streak-number" id="streakCount">0 天</div>
+                <div style="font-size: 0.75rem; opacity: 0.8;">最近 14 天打卡牆（點擊格子可看當天日記）</div>
+                <div class="streak-grid" id="streakGrid"></div>
+            </div>
+
+            <div class="card-box">
+                <h3>📖 今日雙語日記打卡</h3>
+                <label style="display: block; margin-bottom: 4px;">選擇今日心情：</label>
+                <div class="mood-selector">
+                    <div class="mood-option" onclick="selectMood(1)" id="moodBtn1"><img src="1.png" alt="心情1"></div>
+                    <div class="mood-option" onclick="selectMood(2)" id="moodBtn2"><img src="2.png" alt="心情2"></div>
+                    <div class="mood-option" onclick="selectMood(3)" id="moodBtn3"><img src="3.png" alt="心情3"></div>
+                    <div class="mood-option" onclick="selectMood(4)" id="moodBtn4"><img src="4.png" alt="心情4"></div>
+                    <div class="mood-option" onclick="selectMood(5)" id="moodBtn5"><img src="5.png" alt="心情5"></div>
+                </div>
+
+                <label>寫下今天的心情或中英文混雜隨筆：</label>
+                <textarea id="diaryInput" rows="4" placeholder="例如: 今天看到了 wonderful 的風景，感覺 motivation 提升了很多！"></textarea>
+                <!-- 新增：AI 潤飾按鈕與預覽區 -->
+                <div style="margin: 8px 0; display: flex; gap: 8px;">
+                <button type="button" class="primary-btn" style="background: #0f766e;" onclick="aiPolishDiary()">🤖 AI 英文潤飾</button>
+            </div>
+
+                <!-- 顯示 AI 建議的英文版與修改建議 -->
+            <div id="aiPreviewBox" style="display: none; background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 8px; padding: 12px; margin-bottom: 12px; text-align: left;">
+            <div style="font-size: 0.85rem; font-weight: bold; color: #166534; margin-bottom: 4px;">✨ AI 英文潤飾建議：</div>
+            <div id="aiResultText" style="font-size: 0.95rem; color: #14532d; font-style: italic; margin-bottom: 8px;"></div>
+            <div style="font-size: 0.75rem; color: #15803d;" id="aiTipText"></div>
+            </div>
+                <button class="primary-btn" onclick="saveDiary()">✨ 提交今日打卡日記</button>
+            </div>
+            
+            <div class="card-box">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                    <h3 style="margin: 0;" id="diaryWallTitle">📜 歷史日記牆（全部）</h3>
+                    <button id="resetDiaryFilterBtn" style="display: none; background: #e2e8f0; border: none; padding: 4px 8px; border-radius: 4px; font-size: 0.75rem; cursor: pointer;" onclick="resetDiaryFilter()">顯示全部</button>
+                </div>
+                <div id="diaryListDisplay"></div>
+            </div>
+        </div>
+    </div>
+<!-- 把這段貼在這裡 -->
+    <div style="margin-top: 15px; display: flex; gap: 10px; justify-content: center;">
+        <button onclick="exportWordsJSON()" style="background: #0f766e; color: white; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-size: 0.9rem;">📥 匯出資料備份</button>
+        <button onclick="document.getElementById('importFile').click()" style="background: #b45309; color: white; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-size: 0.9rem;">📤 匯入備份檔案</button>
+        <input type="file" id="importFile" style="display: none;" accept=".json" onchange="importWordsJSON(event)">
+    </div>
+</div>
+
+    <script>
+        window.onload = function() {
+            loadApiKeyToInput();
+            displayWords();
+            initGachaDateDropdown();
+            renderDiarySection();
+            addMeaningField('meaningsContainer', 'new');
+        };
+
+        function getApiKey() {
+            return localStorage.getItem('user_gemini_api_key') || "";
+        }
+
+        function saveApiKey() {
+            const inputVal = document.getElementById('apiKeyInput').value.trim();
+            const statusText = document.getElementById('apiStatusText');
+            if (!inputVal) { alert('請先輸入 API Key！'); return; }
+            localStorage.setItem('user_gemini_api_key', inputVal);
+            statusText.innerText = '✅ API Key 已成功儲存！';
+            setTimeout(() => { statusText.innerText = ''; }, 3000);
+        }
+
+        function loadApiKeyToInput() {
+            const savedKey = getApiKey();
+            if (savedKey) {
+                document.getElementById('apiKeyInput').value = savedKey;
+                document.getElementById('apiStatusText').innerText = '✓ 已載入儲存的 API Key';
+            }
+        }
+
+        function switchTab(tabName) {
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('.page-section').forEach(page => page.classList.remove('active'));
+
+            if (tabName === 'add') {
+                document.getElementById('tabAddBtn').classList.add('active');
+                document.getElementById('addPage').classList.add('active');
+            } else if (tabName === 'list') {
+                document.getElementById('tabListBtn').classList.add('active');
+                document.getElementById('listPage').classList.add('active');
+                displayWords();
+            } else if (tabName === 'gacha') {
+                document.getElementById('tabGachaBtn').classList.add('active');
+                document.getElementById('gachaPage').classList.add('active');
+                initGachaDateDropdown();
+            } else if (tabName === 'diary') {
+                document.getElementById('tabDiaryBtn').classList.add('active');
+                document.getElementById('diaryPage').classList.add('active');
+                renderDiarySection();
+            }
+        }
+
+        function cleanAIResponse(text) {
+            if (!text) return '';
+            return text.replace(/#{1,6}\s?/g, '').replace(/(\*\*|__|\*|_)/g, '').replace(/`{1,3}.*?`{1,3}/g, '').replace(/^\s*[-+*]\s+/gm, '• ').replace(/\$\$/g, '').replace(/\$/g, '');
+        }
+
+        let globalCounter = 0;
+        let sentenceCounter = 0;
+
+        function addMeaningField(containerId, prefix, data = null) {
+            globalCounter++;
+            const container = document.getElementById(containerId);
+            const div = document.createElement('div');
+            div.className = 'meaning-group';
+            div.id = `group-${prefix}-${globalCounter}`;
+            
+            const conceptVal = data ? (data.concept || '') : '';
+            const posVal = data ? (data.pos || 'n.') : 'n.';
+
+            div.innerHTML = `
+                <div class="meaning-header">
+                    <span>含意 / 義項</span>
+                    <button class="remove-meaning-btn" type="button" onclick="document.getElementById('group-${prefix}-${globalCounter}').remove()">刪除此意義</button>
+                </div>
+
+                <label style="font-size:0.8rem; font-weight:bold;">詞性 / 屬性分類：</label>
+                <select id="pos-${prefix}-${globalCounter}">
+                    <option value="n." ${posVal === 'n.' ? 'selected' : ''}>n. (名詞)</option>
+                    <option value="v." ${posVal === 'v.' ? 'selected' : ''}>v. (動詞)</option>
+                    <option value="adj." ${posVal === 'adj.' ? 'selected' : ''}>adj. (形容詞)</option>
+                    <option value="adv." ${posVal === 'adv.' ? 'selected' : ''}>adv. (副詞)</option>
+                    <option value="phr." ${posVal === 'phr.' ? 'selected' : ''}>phr. (片語)</option>
+                    <option value="習慣用語" ${posVal === '習慣用語' ? 'selected' : ''}>💬 習慣用語</option>
+                    <option value="慣用語法" ${posVal === '慣用語法' ? 'selected' : ''}>📖 慣用語法</option>
+                    <option value="other" ${posVal === 'other' ? 'selected' : ''}>其他 / 綜合</option>
+                </select>
+
+                <label style="font-size:0.8rem; font-weight:bold;">核心意象 / 簡短中文意思：</label>
+                <input type="text" id="concept-${prefix}-${globalCounter}" value="${conceptVal}" placeholder="例如: 製造、使成為...">
+
+                <label style="font-size:0.8rem; font-weight:bold; margin-bottom: 4px; display: block;">自創例句列表：</label>
+                <div id="sentencesListContainer-${prefix}-${globalCounter}"></div>
+                <button class="add-sentence-btn" type="button" onclick="addSentenceField('sentencesListContainer-${prefix}-${globalCounter}', '${prefix}-${globalCounter}')">＋ 新增另一個自創例句</button>
+
+                <div class="custom-action-row">
+                    <button class="custom-ai-btn" type="button" onclick="checkMySentence('${prefix}-${globalCounter}')">🔍 AI 檢查英文</button>
+                    <button class="custom-ai-btn" type="button" onclick="generateFromChinese('${prefix}-${globalCounter}')">💡 中文反查造句</button>
+                </div>
+
+                <div id="aiFeedbackBox-${prefix}-${globalCounter}" class="ai-feedback-box"></div>
+                <button class="ai-btn" type="button" onclick="askAI('${prefix}-${globalCounter}')">✨ 請 Gemini AI 產出此意義的範例</button>
+
+                <div id="aiOptionsContainer-${prefix}-${globalCounter}" class="ai-options-box">
+                    <p style="margin: 0 0 6px 0; font-weight: bold; font-size: 0.8rem; color: #155724;">請勾選你想保留的 AI 例句：</p>
+                    <div id="aiOptionsList-${prefix}-${globalCounter}"></div>
+                </div>
+            `;
+            container.appendChild(div);
+
+            const sentContainerId = `sentencesListContainer-${prefix}-${globalCounter}`;
+            if (data && data.sentences && data.sentences.length > 0) {
+                data.sentences.forEach(s => {
+                    const parts = s.split('|');
+                    addSentenceField(sentContainerId, `${prefix}-${globalCounter}`, parts[0]?.trim() || '', parts[1]?.trim() || '');
+                });
+            } else {
+                addSentenceField(sentContainerId, `${prefix}-${globalCounter}`);
+            }
+        }
+
+        function addSentenceField(containerId, groupUid, en = '', zh = '') {
+            sentenceCounter++;
+            const container = document.getElementById(containerId);
+            const box = document.createElement('div');
+            box.className = 'sentence-pair-box';
+            box.id = `sent-box-${sentenceCounter}`;
+
+            box.innerHTML = `
+                <div class="sentence-pair-header">
+                    <span>例句格子</span>
+                    <button class="remove-sentence-btn" type="button" onclick="document.getElementById('sent-box-${sentenceCounter}').remove()">刪除此例句</button>
+                </div>
+                <input type="text" class="s-en-input-${groupUid}" value="${en}" placeholder="英文句子 (例如: I made a cake.)" style="margin-bottom:6px; font-size: 0.85rem;">
+                <input type="text" class="s-zh-input-${groupUid}" value="${zh}" placeholder="中文翻譯 (例如: 我做了一個蛋糕。)" style="margin-bottom:2px; font-size: 0.85rem;">
+            `;
+            container.appendChild(box);
+        }
+
+        async function checkMySentence(uid) {
+            const apiKey = getApiKey();
+            if (!apiKey) { alert('請先設定 API Key！'); return; }
+            const word = document.getElementById('wordInput')?.value.trim() || document.getElementById('editWordInput')?.value.trim();
+            const feedbackBox = document.getElementById(`aiFeedbackBox-${uid}`);
+
+            const enInputs = document.querySelectorAll(`.s-en-input-${uid}`);
+            const zhInputs = document.querySelectorAll(`.s-zh-input-${uid}`);
+            let en = enInputs[0]?.value.trim() || '';
+            let zh = zhInputs[0]?.value.trim() || '';
+
+            if (!word || !en) { alert('請填寫英文單字與第一個自創例句！'); return; }
+            feedbackBox.style.display = 'block';
+            feedbackBox.innerHTML = '🔍 批改中...';
+
+            try {
+                const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent?key=${apiKey}`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ contents: [{ parts: [{ text: `請檢查以下英文句子是否正確道地，單字: "${word}"，句子: "${en}"，中文: "${zh}"` }] }] })
+                });
+                const data = await res.json();
+                feedbackBox.innerHTML = cleanAIResponse(data.candidates[0].content.parts[0].text).replace(/\n/g, '<br>');
+            } catch (err) {
+                feedbackBox.innerHTML = '❌ 錯誤: ' + err.message;
+            }
+        }
+
+        async function generateFromChinese(uid) {
+            const apiKey = getApiKey();
+            if (!apiKey) { alert('請先設定 API Key！'); return; }
+            const word = document.getElementById('wordInput')?.value.trim() || document.getElementById('editWordInput')?.value.trim();
+            const feedbackBox = document.getElementById(`aiFeedbackBox-${uid}`);
+
+            const zhInputs = document.querySelectorAll(`.s-zh-input-${uid}`);
+            const enInputs = document.querySelectorAll(`.s-en-input-${uid}`);
+            let zh = zhInputs[0]?.value.trim() || '';
+
+            if (!word || !zh) { alert('請在第一個例句的中文字段填寫您想表達的中文意境！'); return; }
+            feedbackBox.style.display = 'block';
+            feedbackBox.innerHTML = '💡 造句中...';
+
+            try {
+                const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent?key=${apiKey}`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ contents: [{ parts: [{ text: `使用 "${word}" 表達中文：「${zh}」，請提供最道地英文造句與解析。` }] }] })
+                });
+                const data = await res.json();
+                const raw = data.candidates[0].content.parts[0].text;
+                const match = raw.match(/"([^"]+)"/);
+                if (match && enInputs[0]) enInputs[0].value = match[1].trim();
+                feedbackBox.innerHTML = cleanAIResponse(raw).replace(/\n/g, '<br>');
+            } catch (err) {
+                feedbackBox.innerHTML = '❌ 錯誤: ' + err.message;
+            }
+        }
+
+        async function askAI(uid) {
+            const apiKey = getApiKey();
+            if (!apiKey) { alert('請先設定 API Key！'); return; }
+            const word = document.getElementById('wordInput')?.value.trim() || document.getElementById('editWordInput')?.value.trim();
+            const concept = document.getElementById(`concept-${uid}`).value.trim();
+            const container = document.getElementById(`aiOptionsContainer-${uid}`);
+            const listDiv = document.getElementById(`aiOptionsList-${uid}`);
+
+            if (!word) { alert('請輸入單字！'); return; }
+            container.style.display = 'block';
+            listDiv.innerHTML = 'AI 生成中...';
+
+            let promptText = `請根據單字 "${word}" 提供 3 句實用英文例句與繁中翻譯，格式：「英文 | 中文」每行一句。`;
+            if (concept) {
+                promptText = `請針對單字 "${word}" 的特定含意「${concept}」，提供 3 句實用英文例句與繁中翻譯，格式：「英文 | 中文」每行一句。`;
+            }
+
+            try {
+                const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent?key=${apiKey}`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ contents: [{ parts: [{ text: promptText }] }] })
+                });
+                const data = await res.json();
+                const lines = data.candidates[0].content.parts[0].text.split('\n');
+                let html = '';
+                lines.forEach(l => {
+                    if (l.includes('|')) {
+                        const parts = l.split('|');
+                        const en = cleanAIResponse(parts[0].replace(/^\d+[\.\)]\s*/, '').trim());
+                        const zh = cleanAIResponse(parts[1] ? parts[1].trim() : '');
+                        if (en) {
+                            html += `<label class="ai-option-item"><input type="checkbox" value="${en} | ${zh}" checked><div><div class="sentence-text">${en}</div><div class="sentence-zh">${zh}</div></div></label>`;
+                        }
+                    }
+                });
+                listDiv.innerHTML = html || '無法解析例句';
+            } catch (err) {
+                listDiv.innerHTML = '❌ 錯誤: ' + err.message;
+            }
+        }
+
+        function saveWord() {
+            const word = document.getElementById('wordInput').value.trim();
+            const wordNote = document.getElementById('wordNoteInput').value.trim();
+            if (!word) { alert('請輸入英文單字！'); return; }
+
+            let meaningGroups = document.querySelectorAll('#meaningsContainer .meaning-group');
+            let meaningsData = [];
+
+            meaningGroups.forEach(group => {
+                const uid = group.id.replace('group-', '');
+                const pos = document.getElementById(`pos-${uid}`).value;
+                const concept = document.getElementById(`concept-${uid}`).value.trim();
+                
+                let sentences = [];
+                const enInputs = group.querySelectorAll(`.s-en-input-${uid}`);
+                const zhInputs = group.querySelectorAll(`.s-zh-input-${uid}`);
+                
+                enInputs.forEach((enInput, idx) => {
+                    const enVal = enInput.value.trim();
+                    const zhVal = zhInputs[idx]?.value.trim() || '';
+                    if (enVal) {
+                        sentences.push(`${enVal} | ${zhVal}`);
+                    }
+                });
+                
+                const aiCheckboxes = document.querySelectorAll(`#aiOptionsList-${uid} input[type="checkbox"]:checked`);
+                aiCheckboxes.forEach(cb => sentences.push(cb.value));
+
+                if (concept || sentences.length > 0) {
+                    meaningsData.push({ pos, concept, sentences });
+                }
+            });
+
+            if (meaningsData.length === 0) {
+                alert('請至少填寫一個意思與核心意象！');
+                return;
+            }
+
+            const now = new Date();
+            const currentDate = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+
+            let wordsList = JSON.parse(localStorage.getItem('myWords')) || [];
+            wordsList.push({ word, wordNote, meanings: meaningsData, date: currentDate });
+            localStorage.setItem('myWords', JSON.stringify(wordsList));
+
+            document.getElementById('wordInput').value = '';
+            document.getElementById('wordNoteInput').value = '';
+            document.getElementById('meaningsContainer').innerHTML = '';
+            addMeaningField('meaningsContainer', 'new');
+
+            displayWords();
+            initGachaDateDropdown();
+            switchTab('list');
+        }
+
+        function deleteWord(index) {
+            if (confirm('確定要刪除嗎？')) {
+                let wordsList = JSON.parse(localStorage.getItem('myWords')) || [];
+                wordsList.splice(index, 1);
+                localStorage.setItem('myWords', JSON.stringify(wordsList));
+                displayWords();
+                initGachaDateDropdown();
+            }
+        }
+
+        function toggleDropdown(index) {
+            const dropdown = document.getElementById(`dropdown-${index}`);
+            if (dropdown) dropdown.style.display = (dropdown.style.display === 'block') ? 'none' : 'block';
+        }
+
+        function toggleDateFolder(dateStr) {
+            const content = document.getElementById(`folder-content-${dateStr}`);
+            if (content) content.style.display = (content.style.display === 'block') ? 'none' : 'block';
+        }
+
+        // 啟動單字修改模式
+        function openEditWord(index) {
+            const mainContent = document.getElementById(`main-content-${index}`);
+            const editContainer = document.getElementById(`edit-container-${index}`);
+            
+            if (editContainer.style.display === 'block') {
+                editContainer.style.display = 'none';
+                mainContent.style.display = 'block';
+                return;
+            }
+
+            let wordsList = JSON.parse(localStorage.getItem('myWords')) || [];
+            let item = wordsList[index];
+
+            if (!item.meanings && item.concept) {
+                item.meanings = [{ pos: item.pos || 'n.', concept: item.concept, sentences: item.sentences || [] }];
+                item.wordNote = item.note || '';
+            }
+
+            mainContent.style.display = 'none';
+            editContainer.style.display = 'block';
+
+            const editMeaningsContainer = document.getElementById(`editMeaningsContainer-${index}`);
+            editMeaningsContainer.innerHTML = '';
+
+            document.getElementById(`editWordInput-${index}`).value = item.word;
+            document.getElementById(`editWordNoteInput-${index}`).value = item.wordNote || '';
+
+            if (item.meanings && item.meanings.length > 0) {
+                item.meanings.forEach(m => {
+                    addMeaningField(`editMeaningsContainer-${index}`, `edit-${index}`, m);
+                });
+            } else {
+                addMeaningField(`editMeaningsContainer-${index}`, `edit-${index}`);
+            }
+        }
+
+        function cancelEditWord(index) {
+            document.getElementById(`main-content-${index}`).style.display = 'block';
+            document.getElementById(`edit-container-${index}`).style.display = 'none';
+        }
+
+        function updateWord(index) {
+            const newWord = document.getElementById(`editWordInput-${index}`).value.trim();
+            const newWordNote = document.getElementById(`editWordNoteInput-${index}`).value.trim();
+            if (!newWord) { alert('英文單字不能為空！'); return; }
+
+            let meaningGroups = document.querySelectorAll(`#editMeaningsContainer-${index} .meaning-group`);
+            let meaningsData = [];
+
+            meaningGroups.forEach(group => {
+                const uid = group.id.replace('group-', '');
+                const pos = document.getElementById(`pos-${uid}`).value;
+                const concept = document.getElementById(`concept-${uid}`).value.trim();
+                
+                let sentences = [];
+                const enInputs = group.querySelectorAll(`.s-en-input-${uid}`);
+                const zhInputs = group.querySelectorAll(`.s-zh-input-${uid}`);
+                
+                enInputs.forEach((enInput, idx) => {
+                    const enVal = enInput.value.trim();
+                    const zhVal = zhInputs[idx]?.value.trim() || '';
+                    if (enVal) {
+                        sentences.push(`${enVal} | ${zhVal}`);
+                    }
+                });
+
+                const aiCheckboxes = document.querySelectorAll(`#aiOptionsList-${uid} input[type="checkbox"]:checked`);
+                aiCheckboxes.forEach(cb => sentences.push(cb.value));
+
+                if (concept || sentences.length > 0) {
+                    meaningsData.push({ pos, concept, sentences });
+                }
+            });
+
+            if (meaningsData.length === 0) {
+                alert('請至少保留一個意思與核心意象！');
+                return;
+            }
+
+            let wordsList = JSON.parse(localStorage.getItem('myWords')) || [];
+            wordsList[index].word = newWord;
+            wordsList[index].wordNote = newWordNote;
+            wordsList[index].meanings = meaningsData;
+            localStorage.setItem('myWords', JSON.stringify(wordsList));
+
+            displayWords();
+            initGachaDateDropdown();
+            alert('✅ 修改成功！');
+        }
+
+        function initGachaDateDropdown() {
+            const selectEl = document.getElementById('gachaDateSelect');
+            if (!selectEl) return;
+            let wordsList = JSON.parse(localStorage.getItem('myWords')) || [];
+
+            if (wordsList.length === 0) {
+                selectEl.innerHTML = '<option value="">尚無單字資料</option>';
+                return;
+            }
+
+            let dateCounts = {};
+            wordsList.forEach(item => {
+                let d = item.date || '未知日期';
+                dateCounts[d] = (dateCounts[d] || 0) + 1;
+            });
+
+            let html = '';
+            Object.keys(dateCounts).sort().reverse().forEach(d => {
+                html += `<option value="${d}">📅 ${d} （${dateCounts[d]} 個單字）</option>`;
+            });
+            selectEl.innerHTML = html;
+        }
+
+        let currentGachaCards = [];
+        let currentGachaIndex = 0;
+        let isCardFlipped = false;
+
+        function startGachaSession() {
+            const selectEl = document.getElementById('gachaDateSelect');
+            const targetDate = selectEl ? selectEl.value : '';
+            if (!targetDate) { alert('請選擇日期！'); return; }
+
+            let wordsList = JSON.parse(localStorage.getItem('myWords')) || [];
+            let filtered = wordsList.filter(item => (item.date || '未知日期') === targetDate);
+
+            if (filtered.length === 0) { alert('此日期無單字！'); return; }
+
+            currentGachaCards = [...filtered].sort(() => 0.5 - Math.random()).slice(0, 5);
+            currentGachaIndex = 0;
+            isCardFlipped = false;
+
+            document.getElementById('gachaSetupView').style.display = 'none';
+            document.getElementById('gachaPlayView').style.display = 'block';
+            
+            const oldBtn = document.getElementById('gachaReturnSetupBtn');
+            if (oldBtn) oldBtn.remove();
+
+            renderCurrentGachaCard();
+        }
+        function renderCurrentGachaCard() {
+            isCardFlipped = false;
+            const cardData = currentGachaCards[currentGachaIndex];
+            document.getElementById('gachaProgressText').innerText = `第 ${currentGachaIndex + 1} 題 / 共 ${currentGachaCards.length} 題`;
+            document.getElementById('flipActionBtn').style.display = 'block';
+            document.getElementById('nextCardBtn').style.display = 'none';
+
+            // 收集該單字所有意思底下的所有例句
+            let allSentences = [];
+            if (cardData.meanings && cardData.meanings.length > 0) {
+                cardData.meanings.forEach(m => {
+                    if (m.sentences && m.sentences.length > 0) {
+                        m.sentences.forEach(s => {
+                            const parts = s.split('|');
+                            const en = parts[0]?.trim();
+                            if (en) allSentences.push(en);
+                        });
+                    }
+                });
+            }
+
+            let sentenceEn = '無例句';
+            if (allSentences.length > 0) {
+                // 從所有意思的例句中隨機抽出一句
+                const randomIndex = Math.floor(Math.random() * allSentences.length);
+                sentenceEn = allSentences[randomIndex];
+            } else if (cardData.meanings && cardData.meanings.length > 0) {
+                // 如果完全沒有例句，則退回顯示第一個意思的核心意象
+                let firstMeaning = cardData.meanings[0];
+                sentenceEn = `[${firstMeaning.pos || 'n.'}] ${firstMeaning.concept || ''}`;
+            }
+
+            let sentenceHtml = `
+                <div style="background: #fef3c7; border: 1px solid #fde68a; border-radius: 8px; padding: 12px; margin-bottom: 12px; text-align: left;">
+                    <div style="font-size: 0.95rem; color: #92400e; font-style: italic;">"${sentenceEn}"</div>
+                </div>
+            `;
+
+            let wordNoteHtml = cardData.wordNote ? `<div style="font-size: 0.85rem; color: #64748b; margin-bottom: 12px; text-align: left;">📝 備註：${cardData.wordNote}</div>` : '';
+
+            document.getElementById('cardContent').innerHTML = `
+                <div class="card-word-title" style="font-size: 1.5rem; font-weight: bold; color: #b45309; margin-bottom: 8px;">${cardData.word}</div>
+                ${sentenceHtml}
+                ${wordNoteHtml}
+                <div class="card-flip-hint" style="font-size: 0.8rem; color: #0f766e; margin-top: 8px;">👆 點擊卡片翻面看完整所有意思與例句</div>
+            `;
+        }
+
+        function toggleCardFlip() {
+            if (isCardFlipped) return;
+            const cardData = currentGachaCards[currentGachaIndex];
+            
+            let wordNoteHtml = cardData.wordNote ? `<div style="font-size: 0.85rem; color: #64748b; margin-bottom: 8px;">📝 備註：${cardData.wordNote}</div>` : '';
+            let meaningsHtml = '';
+            if (cardData.meanings && cardData.meanings.length > 0) {
+                cardData.meanings.forEach((m, mIdx) => {
+                    let sentencesHtml = '';
+                    if (m.sentences && m.sentences.length > 0) {
+                        m.sentences.forEach(s => {
+                            const parts = s.split('|');
+                            sentencesHtml += `<div style="margin-bottom: 4px;"><div class="sentence-text" style="color: #b45309; font-size:0.85rem;">"${parts[0]?.trim() || ''}"</div><div class="sentence-zh" style="color: #4b5563; font-size:0.8rem;">${parts[1]?.trim() || ''}</div></div>`;
+                        });
+                    } else {
+                        sentencesHtml = '<div style="font-size:0.8rem; color:#888;">無例句</div>';
+                    }
+
+                    meaningsHtml += `
+                        <div style="background: #fff; padding: 8px; border-radius: 6px; border: 1px solid #fef3c7; margin-bottom: 6px;">
+                            <div style="font-size: 0.8rem; font-weight: bold; color: #2563eb; margin-bottom: 2px;">${m.concept || '未填寫核心意象'} <span class="pos-badge">${m.pos || 'n.'}</span></div>
+                            ${sentencesHtml}
+                        </div>
+                    `;
+                });
+            }
+
+            document.getElementById('cardContent').innerHTML = `
+                <div class="card-detail-section" style="max-height: 250px; overflow-y: auto;">
+                    <div class="detail-row" style="margin-bottom:6px;">
+                        <div class="detail-label">英文單字</div>
+                        <div style="font-size: 1.2rem; font-weight: bold; color: #b45309;">${cardData.word}</div>
+                    </div>
+                    ${wordNoteHtml}
+                    <div class="detail-label" style="font-size: 0.85rem; font-weight: bold; margin-bottom: 4px;">多重意義與例句對照</div>
+                    ${meaningsHtml}
+                </div>
+            `;
+
+            document.getElementById('flipActionBtn').style.display = 'none';
+            document.getElementById('nextCardBtn').style.display = 'block';
+            isCardFlipped = true;
+        }
+
+        function nextGachaCard() {
+            currentGachaIndex++;
+            if (currentGachaIndex < currentGachaCards.length) {
+                renderCurrentGachaCard();
+            } else {
+                document.getElementById('gachaProgressText').innerText = '🎉 恭喜完成本輪特訓！';
+                document.getElementById('cardContent').innerHTML = `
+                    <div style="padding: 20px 0;">
+                        <div style="font-size: 2rem; margin-bottom: 8px;">🏆</div>
+                        <div style="font-size: 1.1rem; font-weight: bold; color: #b45309; margin-bottom: 6px;">已複習完所有抽出的單字！</div>
+                    </div>
+                `;
+                document.getElementById('flipActionBtn').style.display = 'none';
+                document.getElementById('nextCardBtn').style.display = 'none';
+
+                if (!document.getElementById('gachaReturnSetupBtn')) {
+                    const btn = document.createElement('button');
+                    btn.id = 'gachaReturnSetupBtn';
+                    btn.className = 'gacha-start-btn';
+                    btn.innerText = '🔄 挑選其他日期重新抽卡';
+                    btn.style.marginTop = '12px';
+                    btn.onclick = resetGachaToSetup;
+                    document.querySelector('.gacha-game-box').appendChild(btn);
+                }
+            }
+        }
+        function resetGachaToSetup() {
+            document.getElementById('gachaPlayView').style.display = 'none';
+            document.getElementById('gachaSetupView').style.display = 'block';
+            if (typeof initGachaDateDropdown === 'function') {
+                initGachaDateDropdown();
+            }
+        }
+
+       function displayWords() {
+    const container = document.getElementById('wordListDisplay');
+    if (!container) return;
+    let wordsList = JSON.parse(localStorage.getItem('myWords')) || [];
+
+    if (wordsList.length === 0) {
+        container.innerHTML = '<p style="color: #999; font-size: 0.9rem;">目前還沒有新增任何單字喔！</p>';
+        return;
+    }
+
+    wordsList = wordsList.map(item => {
+        if (!item.meanings && item.concept) {
+            return {
+                word: item.word,
+                wordNote: item.note || '',
+                date: item.date,
+                meanings: [{ pos: item.pos || 'n.', concept: item.concept, sentences: item.sentences || [] }]
+            };
+        }
+        return item;
+    });
+
+    let grouped = {};
+    wordsList.forEach((item, index) => {
+        let d = item.date || '未知日期';
+        if (!grouped[d]) grouped[d] = [];
+        grouped[d].push({ item, index });
+    });
+
+    let html = '';
+    Object.keys(grouped).sort().reverse().forEach(dateStr => {
+        let entries = grouped[dateStr];
+        let itemsHtml = '';
+        
+        for (let i = entries.length - 1; i >= 0; i--) {
+            let { item, index } = entries[i];
+            
+            let allMeaningsHtml = '';
+            if (item.meanings && item.meanings.length > 0) {
+                item.meanings.forEach((m, mIdx) => {
+                    let sentencesHtml = '';
+                    if (m.sentences && m.sentences.length > 0) {
+                        m.sentences.forEach(s => {
+                            let parts = s.split('|');
+                            let en = parts[0]?.trim() || '';
+                            let zh = parts[1]?.trim() || '';
+                            sentencesHtml += `<div style="margin-bottom: 6px;"><div class="sentence-text" style="color: #334155;">"${en}"</div><div class="sentence-zh" style="color: #64748b; font-size: 0.85rem;">${zh}</div></div>`;
+                        });
+                    } else {
+                        sentencesHtml = '<div style="color: #888; font-size: 0.8rem;">無儲存例句</div>';
+                    }
+
+                    // 調整：詞性放前面、簡化提示文字為「例句 ▾」、加上微型背景框包覆每個意思
+                    allMeaningsHtml += `
+                        <div style="margin-top: 6px; padding: 8px 10px; background: #f8fafc; border-radius: 6px; border: 1px solid #f1f5f9;">
+                            <div style="font-size: 0.95rem; font-weight: 600; color: #0f766e; cursor: pointer; display: flex; justify-content: space-between; align-items: center;" onclick="toggleMeaningSentence(${index}, ${mIdx})">
+                                <div style="display: flex; align-items: center; gap: 6px;">
+                                    <span class="pos-badge" style="font-size: 0.75rem; padding: 1px 6px; background: #e2e8f0; border-radius: 4px; color: #334155; font-weight: normal;">${m.pos || 'n.'}</span>
+                                    <span>${m.concept || '無核心意象'}</span>
+                                </div>
+                                <span style="font-size: 0.75rem; color: #64748b; font-weight: normal;">例句 ▾</span>
+                            </div>
+                            <div id="meaning-sentences-${index}-${mIdx}" style="display: none; margin-top: 6px; padding-top: 6px; border-top: 1px dashed #e2e8f0;">
+                                ${sentencesHtml}
+                            </div>
+                        </div>
+                    `;
+                });
+            }
+
+            let wordNoteDisplayHtml = item.wordNote ? `<div style="font-size: 0.85rem; color: #64748b; margin-top: 4px; margin-bottom: 4px;">📝 備註：${item.wordNote}</div>` : '';
+
+            // 調整：賦予單字卡獨立的白底、圓角、陰影與卡片感
+            itemsHtml += `
+                <div class="word-item" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 14px 16px; margin-bottom: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.02);">
+                    <div id="main-content-${index}">
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                            <div style="flex: 1; padding-right: 10px;">
+                                <strong style="font-size: 1.25rem; color: #1e293b; letter-spacing: 0.3px; display: block; margin-bottom: 2px;">${item.word}</strong>
+                                ${wordNoteDisplayHtml}
+                            </div>
+                            <div style="display: flex; gap: 6px; flex-shrink: 0;">
+                                <button class="edit-btn" onclick="openEditWord(${index})">修改</button>
+                                <button class="delete-btn" onclick="deleteWord(${index})">刪除</button>
+                            </div>
+                        </div>
+                        <div style="margin-top: 6px;">
+                            ${allMeaningsHtml}
+                        </div>
+                    </div>
+
+                    <!-- 編輯表單容器 -->
+                    <div id="edit-container-${index}" class="edit-container" style="display:none; margin-top: 10px; padding-top: 10px; border-top: 1px solid #cbd5e1;">
+                        <strong>修改單字</strong>
+                        <label style="font-size:0.8rem; font-weight:bold; margin-top:6px; display:block;">英文單字：</label>
+                        <input type="text" id="editWordInput-${index}" value="${item.word}">
+
+                        <label style="font-size:0.8rem; font-weight:bold; display:block;">整張單字卡的備註 / 補充說明：</label>
+                        <input type="text" id="editWordNoteInput-${index}" value="${item.wordNote || ''}">
+                        
+                        <div id="editMeaningsContainer-${index}"></div>
+                        <button class="add-meaning-btn" type="button" onclick="addMeaningField('editMeaningsContainer-${index}', 'edit-${index}')">＋ 新增這個單字的另一個意思</button>
+
+                        <div style="margin-top: 8px;">
+                            <button class="sub-btn" onclick="updateWord(${index})">儲存修改</button>
+                            <button class="cancel-btn" onclick="cancelEditWord(${index})">取消</button>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        html += `
+            <div class="date-folder">
+                <div class="date-header" onclick="toggleDateFolder('${dateStr}')">
+                    <span>📅 ${dateStr} （${entries.length} 個單字）</span>
+                    <span style="font-size: 0.80rem; color: #64748b;">展開 ▾</span>
+                </div>
+                <div id="folder-content-${dateStr}" class="date-content" style="padding: 12px 12px 4px 12px;">${itemsHtml}</div>
+            </div>
+        `;
+    });
+
+    container.innerHTML = html;
+}
+        function toggleMeaningSentence(wordIndex, meaningIndex) {
+    const el = document.getElementById(`meaning-sentences-${wordIndex}-${meaningIndex}`);
+    if (el) {
+        if (el.style.display === 'none') {
+            el.style.display = 'block';
+        } else {
+            el.style.display = 'none';
+        }
+    }
+}
+
+/* 日記打卡相關函式 */
+let selectedMoodNumber = 1;
+let currentAiEnglishVersion = ""; // 暫存 AI 產生的英文版
+
+function selectMood(moodNum) {
+    selectedMoodNumber = moodNum;
+    for (let i = 1; i <= 5; i++) {
+        const btn = document.getElementById(`moodBtn${i}`);
+        if (btn) {
+            if (i === moodNum) {
+                btn.classList.add('selected');
+                btn.style.border = '2px solid #0f766e';
+            } else {
+                btn.classList.remove('selected');
+                btn.style.border = 'none';
+            }
+        }
+    }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    selectMood(1);
+});
+
+// 呼叫 AI 英文潤飾
+// 呼叫 AI 英文潤飾與解析
+async function aiPolishDiary() {
+    const apiKey = getApiKey();
+    if (!apiKey) { alert('請先設定 API Key！'); return; }
+
+    const text = document.getElementById('diaryInput').value.trim();
+    const previewBox = document.getElementById('aiPreviewBox');
+    const resultDiv = document.getElementById('aiResultText');
+    const tipDiv = document.getElementById('aiTipText');
+
+    if (!text) { alert('請先寫下今天的心情隨筆！'); return; }
+
+    previewBox.style.display = 'block';
+    resultDiv.innerText = 'AI 正在分析與潤飾中...';
+    tipDiv.innerText = '';
+
+    // 修改 Prompt，要求 AI 同時給予英文翻譯與學習解析
+    const promptText = `你是一位專業的英文寫作教練。使用者寫了一段中英混雜的日記。請幫我完成兩件事：
+1. 將這段日記改寫為自然、道地的英文版。
+2. 用繁體中文提供學習解析，點出哪些單字或句型可以這樣改寫的原因，以及更道地的建議。
+
+請依照以下格式回傳：
+【英文版】
+(這裡放改寫後的英文)
+
+【學習解析與建議】
+(這裡放繁體中文的文法與道地用法解析)
+
+日記內容：
+${text}`;
+
+    try {
+        const res = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent?key=${apiKey}`;
+        const response = await fetch(res, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ contents: [{ parts: [{ text: promptText }] }] })
+        });
+        
+        const data = await response.json();
+        const fullAiText = data.candidates[0].content.parts[0].text.trim();
+        
+        // 解析 AI 回傳的結構，把英文跟解析拆開呈現
+        if (fullAiText.includes('【學習解析與建議】')) {
+            const parts = fullAiText.split('【學習解析與建議】');
+            const englishPart = parts[0].replace('【英文版】', '').trim();
+            const tipPart = parts[1].trim();
+            
+            resultDiv.innerText = englishPart;
+            tipDiv.innerText = '💡 ' + tipPart;
+            currentAiEnglishVersion = englishPart; // 儲存時只存英文版
+        } else {
+            resultDiv.innerText = fullAiText;
+            tipDiv.innerText = '';
+            currentAiEnglishVersion = fullAiText;
+        }
+        
+    } catch (err) {
+        resultDiv.innerText = '❌ 錯誤: ' + err.message;
+        tipDiv.innerText = '';
+    }
+}
+
+// 儲存日記（整合雙語與心情）
+function saveDiary() {
+    const originalText = document.getElementById('diaryInput').value.trim();
+    
+    if (!originalText) {
+        alert('請輸入日記內容！');
+        return;
+    }
+
+    const now = new Date();
+    const currentDate = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+
+    let diaries = JSON.parse(localStorage.getItem('myDiaries')) || [];
+    
+    const newEntry = {
+        date: currentDate,
+        mood: selectedMoodNumber,
+        originalText: originalText,
+        englishText: currentAiEnglishVersion || '',
+        timestamp: now.getTime()
+    };
+
+    diaries.unshift(newEntry);
+    localStorage.setItem('myDiaries', JSON.stringify(diaries));
+    
+    alert('🎉 今日打卡成功！');
+    
+    // 清空輸入與預覽
+    document.getElementById('diaryInput').value = '';
+    const previewBox = document.getElementById('aiPreviewBox');
+    if (previewBox) previewBox.style.display = 'none';
+    currentAiEnglishVersion = '';
+    
+    renderDiarySection();
+}
+
+let selectedFilterDate = null; 
+
+function filterDiaryByDate(dateStr) {
+    selectedFilterDate = dateStr;
+    renderDiarySection(dateStr);
+}
+
+let resetDiaryFilter = function() {
+    selectedFilterDate = null;
+    renderDiarySection();
+};
+
+function renderDiarySection(filterDate = null) {
+    let diaries = JSON.parse(localStorage.getItem('myDiaries')) || [];
+    
+    let diaryMap = {};
+    diaries.forEach(d => {
+        if (!diaryMap[d.date]) {
+            diaryMap[d.date] = d;
+        }
+    });
+
+    let today = new Date();
+    let gridHtml = '';
+
+    for (let i = 13; i >= 0; i--) {
+        let d = new Date(today);
+        d.setDate(today.getDate() - i);
+        let dateStr = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+        let shortDay = `${d.getDate()}`;
+        
+        let diaryData = diaryMap[dateStr];
+        if (diaryData) {
+            let moodImg = `${diaryData.mood || 1}.png`;
+            gridHtml += `<div class="streak-cell checked" onclick="filterDiaryByDate('${dateStr}')" title="點擊查看 ${dateStr} 的日記"><img src="${moodImg}" alt="心情"></div>`;
+        } else {
+            gridHtml += `<div class="streak-cell" onclick="filterDiaryByDate('${dateStr}')" title="點擊查看 ${dateStr} 的日記">${shortDay}</div>`;
+        }
+    }
+
+    let currentCheckDate = new Date();
+    let streakDays = 0;
+    while (true) {
+        let dateStr = `${currentCheckDate.getFullYear()}-${String(currentCheckDate.getMonth() + 1).padStart(2, '0')}-${String(currentCheckDate.getDate()).padStart(2, '0')}`;
+        if (diaryMap[dateStr]) {
+            streakDays++;
+            currentCheckDate.setDate(currentCheckDate.getDate() - 1);
+        } else {
+            if (streakDays === 0 && dateStr === `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`) {
+                currentCheckDate.setDate(currentCheckDate.getDate() - 1);
+                continue;
+            }
+            break;
+        }
+    }
+
+    document.getElementById('streakCount').innerText = `${streakDays} 天`;
+    document.getElementById('streakGrid').innerHTML = gridHtml;
+
+    const listContainer = document.getElementById('diaryListDisplay');
+    const titleEl = document.getElementById('diaryWallTitle');
+    const resetBtn = document.getElementById('resetDiaryFilterBtn');
+
+    let targetDiaries = diaries;
+    if (filterDate) {
+        targetDiaries = diaries.filter(item => item.date === filterDate);
+        titleEl.innerText = `📜 ${filterDate} 的日記`;
+        resetBtn.style.display = 'block';
+    } else {
+        titleEl.innerText = `📜 歷史日記牆（全部）`;
+        resetBtn.style.display = 'none';
+    }
+
+    if (targetDiaries.length === 0) {
+        listContainer.innerHTML = `<p style="color: #999; font-size: 0.9rem; text-align: center; padding: 10px 0;">${filterDate ? `📅 ${filterDate} 這天沒有寫日記喔！` : '目前還沒有寫過日記，趕快來打卡記錄吧！'}</p>`;
+        return;
+    }
+
+    let diaryHtml = '';
+    targetDiaries.forEach(item => {
+        let moodImgSrc = `${item.mood || 1}.png`;
+        // 相容舊資料或新資料的文字顯示
+        let displayText = item.originalText || item.content || '';
+        
+        diaryHtml += `
+            <div class="diary-item" style="border-bottom: 1px solid #e2e8f0; padding: 12px 0; margin-bottom: 8px;">
+                <div class="diary-header-row" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                    <div class="diary-date">📅 ${item.date}</div>
+                    <img src="${moodImgSrc}" class="diary-mood-icon" alt="心情圖示" style="width: 24px; height: 24px;">
+                </div>
+                <div class="diary-text" style="font-weight: 500; color: #1e293b; margin-bottom: 4px;">📌 原文：${displayText}</div>
+                ${item.englishText ? `<div style="color: #0f766e; font-style: italic;">✨ AI 英文：${item.englishText}</div>` : ''}
+            </div>
+        `;
+    });
+    listContainer.innerHTML = diaryHtml;
+}
+
+
+
+// 備份相關
+function exportWordsJSON() {
+    const data = localStorage.getItem('myDiaries') || '[]';
+    const blob = new Blob([data], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `myDiaries_backup_${new Date().toISOString().slice(0, 10)}.json`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+}
+
+function importWordsJSON(event) {
+    const file = event.target.files[0];
+    if (!file) return;
+    
+    const reader = new FileReader();
+    reader.onload = function(e) {
+        try {
+            const parsed = JSON.parse(e.target.result);
+            if (Array.isArray(parsed)) {
+                localStorage.setItem('myDiaries', JSON.stringify(parsed));
+                alert('資料匯入成功！');
+                renderDiarySection();
+            } else {
+                alert('檔案格式錯誤：內容並非正確的日記清單。');
+            }
+        } catch (err) {
+            alert('解析檔案失敗，請確認這是正確的 JSON 備份檔。');
+        }
+        event.target.value = '';
+    };
+    reader.readAsText(file);
+}
+    </script>
+</body>
+</html>
