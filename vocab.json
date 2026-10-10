@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exportDate": "2026-10-10T15:03:19.355Z",
+  "exportDate": "2026-10-10T15:38:59.809Z",
   "myDiaries": [
     {
       "date": "2026-10-07",
@@ -632,6 +632,23 @@
             "Who took the lead in sales last month? | 誰在上個月的銷售業績中取得了領先？",
             "The runner accelerated in the final lap and managed to take the lead. | 這名跑者在最後一圈加速，成功取得了領先。",
             "Our company took the lead in the smart home market by releasing innovative products. | 我們公司透過推出創新產品，在智慧家居市場中取得領先地位。"
+          ]
+        }
+      ],
+      "date": "2026-10-10"
+    },
+    {
+      "word": "division",
+      "wordNote": "divide(分開)+-sion(名詞型)=分割",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "部門、分部",
+          "sentences": [
+            "She's the new head of the East Asia division | 他是東亞分部的新負責人",
+            "She was recently promoted to head of the marketing division. | 她最近被升為行銷部門的主管。",
+            "The company decided to open a new division in Asia to handle local sales. | 這間公司決定在亞洲成立一個新分部來負責當地的銷售業務。",
+            "Our research and development division works closely with the production team. | 我們的研發部門與生產團隊緊密合作。"
           ]
         }
       ],
