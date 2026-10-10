@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exportDate": "2026-10-10T15:00:52.411Z",
+  "exportDate": "2026-10-10T15:03:19.355Z",
   "myDiaries": [
     {
       "date": "2026-10-07",
@@ -598,21 +598,21 @@
       "wordNote": "代表三個、少數幾個",
       "meanings": [
         {
-          "pos": "慣用語法",
+          "pos": "phr.",
           "concept": "a couple of hours 表達「幾天/幾個小時」",
           "sentences": [
             "I just need a couple of hours to double-check the figures. I’ll send it to you before 5 PM. | 我只需要幾個小時來複查數字，下午五點前會寄給你。"
           ]
         },
         {
-          "pos": "慣用語法",
+          "pos": "phr.",
           "concept": "a couple of bucks 表達「幾塊錢/幾張紙鈔」",
           "sentences": [
             "A: Oh no, my total is $12, but I only have a ten-dollar bill./B: Don't worry! I have a couple of bucks in my pocket. Here you go. | （糟糕，總共 12 塊，但我只有一張十元鈔票。）別擔心！我口袋裡有幾塊錢（零錢），拿去吧。"
           ]
         },
         {
-          "pos": "慣用語法",
+          "pos": "phr.",
           "concept": "a couple of key points 表達「幾個重點/幾句對話」",
           "sentences": [
             "Before we start, I’d like to share a couple of key points with you. | 在我們開始前，我想先跟你分享幾個核心重點。"
