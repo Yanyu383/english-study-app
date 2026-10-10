@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exportDate": "2026-10-10T16:52:54.432Z",
+  "exportDate": "2026-10-10T17:04:24.177Z",
   "myDiaries": [
     {
       "date": "2026-10-07",
@@ -700,6 +700,23 @@
           "sentences": [
             "Please don't attempt to cut your own hair ever again | 請不要再嘗試自己剪頭髮了",
             "The corporation is relentless in its attempts to acquire a monopoly of the tourist industry in this area | 該企業努力不懈在它的企圖上去取得該地區的壟斷觀光"
+          ]
+        }
+      ],
+      "date": "2026-10-11"
+    },
+    {
+      "word": "bailout",
+      "wordNote": "原指飛行員用降落傘緊急逃生，government bailout 常與政府綁在一起",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "經濟上的緊急救助",
+          "sentences": [
+            "Three years of huge losses forced the bank to seek a government bailout. | 長達三年的巨額虧損迫使銀行向政府尋求援助",
+            "The government provided a multi-billion dollar bailout to prevent the major bank from collapsing. | 政府提供了數十億美元的經濟救助，以防止這家大型銀行倒閉。",
+            "Many taxpayers opposed the government bailout of large corporations during the financial crisis. | 在金融危機期間，許多納稅人反對政府對大型企業進行經濟救助。",
+            "Without an emergency financial bailout, the struggling airline would have gone bankrupt. | 若沒有緊急的經濟救助，這家陷入困境的航空公司原本會面臨破產。"
           ]
         }
       ],
