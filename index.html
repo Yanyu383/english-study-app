@@ -678,7 +678,6 @@
         <button onclick="document.getElementById('importFile').click()" style="background: #b45309; color: white; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-size: 0.9rem;">📤 匯入備份檔案</button>
         <input type="file" id="importFile" style="display: none;" accept=".json" onchange="importWordsJSON(event)">
     </div>
-</div>
 <!-- GitHub 雲端同步設定區 -->
 <div class="bg-white p-4 rounded-xl shadow-sm mb-6 border border-slate-200" x-data="{ isGithubConfigOpen: false }">
     <div @click="isGithubConfigOpen = !isGithubConfigOpen" class="flex justify-between items-center cursor-pointer select-none">
