@@ -679,22 +679,34 @@
         <input type="file" id="importFile" style="display: none;" accept=".json" onchange="importWordsJSON(event)">
     </div>
 </div>
-    <!-- GitHub 雲端同步設定區 -->
+<!-- GitHub 雲端同步設定區 -->
 <div class="bg-white p-4 rounded-xl shadow-sm mb-6 border border-slate-200" x-data="{ openGithubConfig: false }">
-    <div @click="openGithubConfig = !openGithubConfig" class="flex justify-between items-center cursor-pointer">
+    <div @click="openGithubConfig = !openGithubConfig" class="flex justify-between items-center cursor-pointer select-none">
         <label class="block text-sm font-medium text-slate-600 cursor-pointer">☁️ GitHub 雲端同步設定 (免匯出)</label>
         <span class="text-xs text-blue-600 font-medium" x-text="openGithubConfig ? '收合 ▲' : '展開 ▼'"></span>
     </div>
     
-    <div class="mt-3 space-y-2.5" x-show="openGithubConfig">
-        <input type="text" x-model="gh.owner" placeholder="GitHub 使用者名稱 (Owner)" class="w-full px-3 py-1.5 border rounded-lg text-xs focus:outline-none focus:ring-2 focus:ring-blue-500">
-        <input type="text" x-model="gh.repo" placeholder="Repository 名稱 (例如: my-project)" class="w-full px-3 py-1.5 border rounded-lg text-xs focus:outline-none focus:ring-2 focus:ring-blue-500">
-        <input type="text" x-model="gh.path" placeholder="檔案路徑 (例如: data.json)" class="w-full px-3 py-1.5 border rounded-lg text-xs focus:outline-none focus:ring-2 focus:ring-blue-500">
-        <input type="password" x-model="gh.token" placeholder="GitHub Personal Access Token (PAT)" class="w-full px-3 py-1.5 border rounded-lg text-xs focus:outline-none focus:ring-2 focus:ring-blue-500">
+    <div class="mt-3 space-y-3 pt-3 border-t border-slate-100" x-show="openGithubConfig">
+        <div>
+            <label class="block text-xs font-medium text-slate-500 mb-1">GitHub 使用者名稱 (Owner)：</label>
+            <input type="text" x-model="gh.owner" placeholder="例如: Yanyu383" class="w-full px-3 py-2 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-purple-500">
+        </div>
+        <div>
+            <label class="block text-xs font-medium text-slate-500 mb-1">Repository 名稱 (Repo)：</label>
+            <input type="text" x-model="gh.repo" placeholder="例如: toeic-vocab" class="w-full px-3 py-2 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-purple-500">
+        </div>
+        <div>
+            <label class="block text-xs font-medium text-slate-500 mb-1">檔案路徑 (Path)：</label>
+            <input type="text" x-model="gh.path" placeholder="例如: vocab.json" class="w-full px-3 py-2 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-purple-500">
+        </div>
+        <div>
+            <label class="block text-xs font-medium text-slate-500 mb-1">GitHub Personal Access Token (PAT)：</label>
+            <input type="password" x-model="gh.token" placeholder="請貼上 Token 金鑰..." class="w-full px-3 py-2 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-purple-500">
+        </div>
         
         <div class="flex gap-2 pt-1">
-            <button @click="syncToGithub" class="flex-1 bg-purple-600 hover:bg-purple-700 text-white py-1.5 rounded text-xs font-medium transition">☁️ 推送至 GitHub</button>
-            <button @click="syncFromGithub" class="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white py-1.5 rounded text-xs font-medium transition">☁️ 從 GitHub 載入</button>
+            <button @click="syncToGithub" class="flex-1 bg-purple-600 hover:bg-purple-700 text-white py-2 rounded-lg text-xs font-medium transition shadow-sm cursor-pointer">☁️ 推送至 GitHub</button>
+            <button @click="syncFromGithub" class="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white py-2 rounded-lg text-xs font-medium transition shadow-sm cursor-pointer">☁️ 從 GitHub 載入</button>
         </div>
     </div>
 </div>
