@@ -1,0 +1,641 @@
+{
+  "version": "1.0",
+  "exportDate": "2026-10-10T15:00:52.411Z",
+  "myDiaries": [
+    {
+      "date": "2026-10-07",
+      "mood": 1,
+      "originalText": "你好今天是面試完的第一天，昨天面試因為準備的有些倉促",
+      "englishText": "",
+      "timestamp": 1791379188200
+    },
+    {
+      "date": "2026-10-07",
+      "mood": 1,
+      "originalText": "你好呀",
+      "englishText": "Hi there!"
+    },
+    {
+      "date": "2026-10-05",
+      "mood": 1,
+      "originalText": "你好這是測試",
+      "englishText": "Hello, this is a test."
+    },
+    {
+      "date": "2026-09-20",
+      "content": "測試2",
+      "mood": 1,
+      "timestamp": 1789860258143
+    },
+    {
+      "date": "2026-09-20",
+      "content": "你好",
+      "timestamp": 1789858922962
+    },
+    {
+      "date": "2026-09-20",
+      "content": "測試",
+      "timestamp": 1789858477011
+    }
+  ],
+  "myWords": [
+    {
+      "word": "test",
+      "concept": "測試",
+      "date": "2026-09-19"
+    },
+    {
+      "word": "test2",
+      "concept": "測試2",
+      "date": "2026-09-19"
+    },
+    {
+      "word": "apple",
+      "concept": "",
+      "sentence": "",
+      "date": "2026-09-19"
+    },
+    {
+      "word": "pen",
+      "concept": "",
+      "sentence": "Could I borrow your pen for a moment?",
+      "date": "2026-09-19"
+    },
+    {
+      "word": "pinapple",
+      "concept": "鳳梨",
+      "sentences": [
+        "Make sure the pineapple smells sweet at the bottom before you buy it. | 在購買鳳梨之前，請確保它的底部聞起來香甜。",
+        "The local farm offers guided tours showing visitors how pineapples are grown and harvested. | 這間當地農場提供導覽服務，向遊客展示鳳梨是如何種植與採收的。"
+      ],
+      "date": "2026-09-19"
+    },
+    {
+      "word": "tea",
+      "concept": "茶",
+      "sentences": [
+        "We decided to discuss the new project details over afternoon tea. | 我們決定在下午茶時間討論新專案的細節。"
+      ],
+      "date": "2026-09-19"
+    },
+    {
+      "word": "you",
+      "concept": "你",
+      "sentences": [
+        "Are you coming to the party tonight? | 你今晚會來參加派對嗎？"
+      ],
+      "date": "2026-09-19"
+    },
+    {
+      "word": "make",
+      "concept": "動手做",
+      "sentences": [
+        "I make it by myself | 這個是我自己做的",
+        "My grandmother taught me how to make fresh pasta from scratch. | 我祖母教我如何從零開始手做新鮮義大利麵。",
+        "He spent the whole weekend making a wooden bookshelf for his bedroom. | 他花了整個週末親手為他的臥室做了一個木製書架。",
+        "He spent the whole weekend making a wooden bookshelf for his bedroom. | 他花了整個週末親手為他的臥室做了一個木製書架。"
+      ],
+      "date": "2026-09-19"
+    },
+    {
+      "word": "are",
+      "concept": "",
+      "sentences": [
+        "How are you? | "
+      ],
+      "date": "2026-09-19"
+    },
+    {
+      "word": "mother",
+      "concept": "",
+      "sentences": [
+        "My mother is the gentlest person. | 我的媽媽是最溫柔的人"
+      ],
+      "date": "2026-09-19"
+    },
+    {
+      "word": "teacher",
+      "concept": "",
+      "sentences": [
+        "Excuse me, Mr./Ms. [老師姓氏], I won't be able to make it to class tomorrow. | 老師我明天想請假"
+      ],
+      "date": "2026-09-20"
+    },
+    {
+      "word": "Angel",
+      "concept": "",
+      "sentences": [
+        "He's the closest thing to an angel I've ever met. | 他是我見過最像天使的人了"
+      ],
+      "date": "2026-09-20"
+    },
+    {
+      "word": "hello",
+      "concept": "",
+      "sentences": [
+        "Hello, it's so good to see you again! | 你好，很高興能夠再次見到你",
+        "hello....."
+      ],
+      "date": "2026-09-20"
+    },
+    {
+      "word": "please",
+      "concept": "",
+      "sentences": [
+        "Mom, please! I really want to go to the dance. | 拜託媽媽，我是真的想去那個舞會"
+      ],
+      "date": "2026-09-20"
+    },
+    {
+      "word": "run",
+      "concept": "",
+      "sentences": [
+        "Just keep running—I’ll handle the rest | 你只需要向前跑，我會幫你善後",
+        "She had to run to catch the last bus. | 她必須用跑的才能趕上最後一班公車。",
+        "The air conditioner has been running all day. | 冷氣已經開了一整天。"
+      ],
+      "date": "2026-09-20"
+    },
+    {
+      "word": "we",
+      "concept": "",
+      "sentences": [
+        "Mom, can we go play over there? | 媽媽我們可以去那邊玩嗎"
+      ],
+      "date": "2026-09-20"
+    },
+    {
+      "word": "splendid",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "極佳的",
+          "sentences": [
+            "There's a splendid view from the top of the mountain | 山頂俯瞰，美景盡收眼底",
+            "We had a splendid time at the beach yesterday. | 我們昨天在海邊度過了極佳",
+            "Yes, let's go for a walk! What a splendid idea. | 好呀！我們去散步吧！真是個好主意"
+          ]
+        }
+      ],
+      "date": "2026-10-04",
+      "wordNote": ""
+    },
+    {
+      "word": "worn",
+      "meanings": [
+        {
+          "pos": "adj.",
+          "concept": "用到舊、磨損了",
+          "sentences": [
+            "Her bag looked old and worn | 她的包包看起來又破又舊"
+          ]
+        }
+      ],
+      "date": "2026-10-04",
+      "wordNote": "是wear的過去式"
+    },
+    {
+      "word": "concrete",
+      "wordNote": "con-一起、共同；-crete 拉丁文代表生長，所以就是一起凝固的意思，且代表名詞「水泥」,就像水泥凝固後變成堅實的混泥土一樣",
+      "meanings": [
+        {
+          "pos": "adj.",
+          "concept": "具體、確實的",
+          "sentences": [
+            "We can't charge him without some concrete evidence. | 我們沒有確鑿的證據，我們不能起訴他"
+          ]
+        }
+      ],
+      "date": "2026-10-04"
+    },
+    {
+      "word": "activate",
+      "wordNote": "使...行動起來",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "啟動、啟用",
+          "sentences": [
+            "Please enter your four digit code to activate your card. | 請輸入四位數字密碼以啟用您的卡片"
+          ]
+        }
+      ],
+      "date": "2026-10-05"
+    },
+    {
+      "word": "assist",
+      "wordNote": "ad(朝向)+sist(站立)=站到旁邊，引申為「幫助」、「協助」",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "幫助、協助",
+          "sentences": [
+            "This is Emily. She assists us with day-to-day errands and tasks. | 這是Emily，他協助我們處理日常事務和工作",
+            "I work in sales, but I also sometimes assist our company's marketing team. | 我從事行銷工作，但我也有時協助公司的行銷團隊"
+          ]
+        }
+      ],
+      "date": "2026-10-05"
+    },
+    {
+      "word": "fair",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "adj.",
+          "concept": "公平、公正",
+          "sentences": [
+            "If you pay for dinner, I'll buy the tickets. Does that seem fair? | 如果你付飯錢，我就來買票，你覺得這樣公平嗎？"
+          ]
+        },
+        {
+          "pos": "n.",
+          "concept": "博覽會",
+          "sentences": [
+            "There's a career fair tomorrow. I strongly urge all of you to attend. | 明天有一個職業博覽會，我強烈督促大家都去參加"
+          ]
+        }
+      ],
+      "date": "2026-10-05"
+    },
+    {
+      "word": "imiate",
+      "wordNote": "相似詞:copy",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "模仿、效仿",
+          "sentences": [
+            "Children imitate their parents, so be careful what you say and do. | 孩子會模仿他們的父母，所以要小心你的言行",
+            "Children often imitate the behavior of the adults around them. | 孩子們經常模仿身邊成年人的行為。",
+            "She tried to imitate her mentor's professional demeanor during the presentation. | 她在簡報過程中試圖效仿導師的專業風範。",
+            "The comedian can imitate the voices of famous politicians perfectly. | 這位喜劇演員能完美地模仿著名政治人物的聲音。"
+          ]
+        }
+      ],
+      "date": "2026-10-05"
+    },
+    {
+      "word": "initiated",
+      "wordNote": "in-「進入」、it-「走去」、ate-「動詞結尾」=「走進去開始」，introduce(介紹，帶進去)，exit(出口，走出去)",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "啟動、發起、開始(針對主動發起和創立)",
+          "sentences": [
+            "The school initiated a new after-school volunteer program. | 學校開始了一項新的課後志願活動",
+            "The company initiated a new sustainability program to reduce its environmental impact. | 這間公司主動發起了一項新的永續計畫，以減少對環境的影響。",
+            "The government initiated a series of economic reforms to boost local businesses. | 政府主動啟動了一連串的經濟改革，以振興在地企業。"
+          ]
+        }
+      ],
+      "date": "2026-10-05"
+    },
+    {
+      "word": "must have",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "慣用語法",
+          "concept": "表達對於過去發生的事情合理推斷",
+          "sentences": [
+            "The homework must have been too hard for him. | 作業對他來說肯定太難了",
+            "He must have forgotten to bring his text book. | 他肯定忘了帶課本"
+          ]
+        }
+      ],
+      "date": "2026-10-05"
+    },
+    {
+      "word": "consult",
+      "wordNote": "con-眾人、solt-解決=向外求助(諮詢、查閱)",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "查閱、查詢、參考",
+          "sentences": [
+            "Please consult our website for more details. | 詳情請查閱我們的網站",
+            "If you are not sure how to assemble the furniture, please consult the manual. | 如果你不確定如何組裝這套家具，請參考說明書。",
+            "She had to consult the map several times to find the correct path. | 她必須多次查閱地圖才能找到正確的路。"
+          ]
+        },
+        {
+          "pos": "v.",
+          "concept": "諮詢、協商",
+          "sentences": [
+            "You should consult a lawyer before signing any legal contract. | 在簽署任何法律合約之前，你應該先諮詢律師。",
+            "I need to consult with my team before making a final decision on this project. | 在對這個專案做出最終決定之前，我需要先與我的團隊進行協商。",
+            "If your symptoms persist, you should consult a doctor as soon as possible. | 如果你的症狀持續存在，應該儘快諮詢醫生。"
+          ]
+        }
+      ],
+      "date": "2026-10-06"
+    },
+    {
+      "word": "concept",
+      "wordNote": "con-一起、-cept把東西抓住，ac(向)cept=accept接受",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "概念",
+          "sentences": [
+            "Death is a difficult concept for kids to understand. | 對孩子來說，死亡是個難以理解的概念",
+            "It is difficult for young children to understand the concept of time. | 年幼的孩子很難理解時間的概念。",
+            "The team spent months developing the concept for the new project. | 團隊花了數個月的時間來開發這個新專案的概念。"
+          ]
+        }
+      ],
+      "date": "2026-10-06"
+    },
+    {
+      "word": "convert",
+      "wordNote": "con-一起，-vert 轉動、轉變/revert=恢復",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "轉換、轉變",
+          "sentences": [
+            "They converted the farmhouse into a small church | 他們把農舍改建成一座小教堂",
+            "Let's convert this room into an office | 我們把這個房間轉換成辦公室吧",
+            "Solar panels convert sunlight into electricity to power the house. | 太陽能板將陽光轉換成電能來為房屋提供電力。",
+            "I need to convert this PDF file into a Word document so I can edit it. | 我需要將這個 PDF 檔案轉換成 Word 文件，這樣我才能進行編輯。"
+          ]
+        }
+      ],
+      "date": "2026-10-07"
+    },
+    {
+      "word": "accelerate",
+      "wordNote": "針對某種進度去做加速、或變快",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "加速、加快（及物動詞）",
+          "sentences": [
+            "Heavy smoking can accelerate the aging process | 過度吸菸會加速衰老",
+            "The company decided to accelerate its project to meet the deadline | 公司決定加速計畫以趕上截止日期",
+            "The company decided to accelerate the development of its new product. | 這間公司決定加快新產品的開發進度。",
+            "The driver pressed the gas pedal to accelerate the car. | 司機踩下油門以加快車速。",
+            "The government implemented new policies to accelerate economic growth. | 政府實施了新政策以加速經濟成長。"
+          ]
+        }
+      ],
+      "date": "2026-10-07"
+    },
+    {
+      "word": "stagnate",
+      "wordNote": "（不及物動詞）人為開頭的句子不能用",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "停滯、不景氣",
+          "sentences": [
+            "Economic growth may stagnate if consumers stop spending | 如果消費者停止消費，經濟成長可能停滯不前",
+            "Wages in this country have stagnated | 這個國家的薪資停滯不前",
+            "The local economy began to stagnate after the main factory closed down. | 在主要工廠關閉後，當地的經濟開始陷入停滯。",
+            "Sales figures have stagnated over the past two quarters due to weak market demand. | 由於市場需求疲軟，銷售額在過去兩個季度一直處於停滯狀態。"
+          ]
+        }
+      ],
+      "date": "2026-10-07"
+    },
+    {
+      "word": "halt",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "使中斷、使停滯",
+          "sentences": [
+            "We've had to halt all work until this permit problem is resolved | 我們不得不停止所有工作，直到這個許可證問題解決為止",
+            "The unexpected strike forced the company to halt production at the main factory. | 突如其來的罷工迫使該公司中斷總廠的生產。",
+            "A lack of funding effectively halted the research project before it could begin. | 資金短缺使得該研究計畫在開始前就陷入中斷。"
+          ]
+        },
+        {
+          "pos": "n.",
+          "concept": "停止、中斷",
+          "sentences": [
+            "The whole town has come to a halt because of the snowstorm | 因為暴風雪，整個小鎮陷入了停頓"
+          ]
+        }
+      ],
+      "date": "2026-10-07"
+    },
+    {
+      "word": "expedite",
+      "wordNote": "縮短流程的加速，使流程更快",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "加速 + pes(腳)幫忙解開腳鐐好做事",
+          "sentences": [
+            "We can expedite your visa application for an additional fee | 我們可以幫你加急處理for你支付的額外費用",
+            "Is there anyway to expedite the process? | 有任何辦法可以加速流程嗎？",
+            "We need to expedite the review process so the project can move forward without delays. | 我們需要加速審查流程，好讓專案順利推進而不致延誤。",
+            "The company agreed to expedite the shipment to make up for the previous delay. | 公司同意加速貨物的運送，以彌補之前的延誤。",
+            "Providing all required documents in advance will help expedite your visa application. | 提前提供所有所需文件將有助於加速您的簽證申請。"
+          ]
+        }
+      ],
+      "date": "2026-10-07"
+    },
+    {
+      "word": "Incentive",
+      "wordNote": "In-內在 ，cent-歌頌（accent ），ive 名詞或形容詞的結尾",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "獎勵、激勵",
+          "sentences": [
+            "The government offers incentives to encourage people to have children | 政府提出獎勵政策來鼓勵人們生育",
+            "The company offers a cash incentive to employees who exceed their sales targets. | 公司提供現金獎勵給超越銷售目標的員工。",
+            "A bonus extra day off was given as an incentive for completing the project early. | 提前完成專案獲得了一天額外假期作為獎勵。"
+          ]
+        }
+      ],
+      "date": "2026-10-08"
+    },
+    {
+      "word": "Latest",
+      "wordNote": "通常前面會加the ,the latest 最高級",
+      "meanings": [
+        {
+          "pos": "adj.",
+          "concept": "最新的、最近的",
+          "sentences": [
+            "The latest design features a beautiful flower patten | 最新的設計採用美麗的花朵為特色",
+            "She always has the latest phone | 他總是擁有最新款的手機",
+            "Have you heard the latest news about the project? | 你聽說關於這個計畫的最新消息了嗎？",
+            "You can download the latest version of the app for free. | 你可以免費下載這款應用程式的最新版本。",
+            "The latest report shows a significant increase in sales this month. | 最新報告顯示本月的銷售額有大幅度的增加。"
+          ]
+        }
+      ],
+      "date": "2026-10-08"
+    },
+    {
+      "word": "As if",
+      "wordNote": "As =[如同、像…一樣］if =[如果/假設]，等於as though=[雖然、假設]",
+      "meanings": [
+        {
+          "pos": "慣用語法",
+          "concept": "好像",
+          "sentences": [
+            "He talks as if he knows everything about the project. | 他說話的樣子好像他知道這個專案的一切。",
+            "It looks as if it's going to rain soon. | 天氣看起來好像快要下雨了。",
+            "She treated me as if I were a complete stranger. | 她對待我的方式好像我是個陌生人一樣。"
+          ]
+        }
+      ],
+      "date": "2026-10-08"
+    },
+    {
+      "word": "Provided",
+      "wordNote": "It is provided that...（被提供了……作為條件）",
+      "meanings": [
+        {
+          "pos": "慣用語法",
+          "concept": "只要",
+          "sentences": [
+            "You can borrow my car provided you return it before midnight. | 只要你在午夜前歸還，你就可以借我的車。",
+            "We will go on a picnic tomorrow, provided the weather stays nice. | 只要天氣保持晴朗，我們明天就去野餐。",
+            "He agreed to lead the project, provided he gets the necessary budget. | 只要能獲得必要的預算，他就同意領導這個專案。"
+          ]
+        }
+      ],
+      "date": "2026-10-08"
+    },
+    {
+      "word": "exposure",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "亮相、被報導、曝光",
+          "sentences": [
+            "Another interview? We need the exposure to promote your book ! | 又要採訪? 我需要曝光來宣傳你的書"
+          ]
+        }
+      ],
+      "date": "2026-10-08"
+    },
+    {
+      "word": "influence",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "影響",
+          "sentences": [
+            "She's researching the internet's influence on social relations. | 他正在研究網路對社會關係的影響",
+            "My boss has a great influence on the school board. | 我老闆對學校董事會有很大的影響力",
+            "Parents have a profound influence on their children's character. | 父母對孩子的性格有著深遠的影響。"
+          ]
+        },
+        {
+          "pos": "v.",
+          "concept": "影響",
+          "sentences": [
+            "Social media can greatly influence people's purchasing decisions | 社群媒體能極大地影響人們的購買決定",
+            "A good teacher can influence a student's entire life. | 一位好老師能影響學生的一生"
+          ]
+        }
+      ],
+      "date": "2026-10-09"
+    },
+    {
+      "word": "remainder",
+      "wordNote": "re-在後面+main(停留)+der(做的東西)=剩下的部分",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "剩下的部分",
+          "sentences": [
+            "He spent the remainder of the war in a POW camp | 他在戰俘營裡度過了戰爭剩下的時間"
+          ]
+        }
+      ],
+      "date": "2026-10-09"
+    },
+    {
+      "word": "condition",
+      "wordNote": "con-「一起」+dit-「說」+tion「名詞結尾」=一起說好的事情",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "條件、約定",
+          "sentences": [
+            "If you offer more flexible payment conditions, we will agree to place an order next week. | 如果你們可以提供更有彈性的付款條件，我們就會同意下週就下訂單",
+            "OK, you can use it, but under one condition | 好，你可以用，但有個條件",
+            "They agreed to sign the contract under one condition. | 他們同意簽署合約，但有一個條件。",
+            "You must strictly follow all the terms and conditions of this agreement. | 你必須嚴格遵守本協議的所有條款與約定。",
+            "She accepted the job offer on condition that she could work remotely. | 她接受了這份工作邀請，條件是她可以遠端辦公。"
+          ]
+        }
+      ],
+      "date": "2026-10-09"
+    },
+    {
+      "word": "entertainment",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "娛樂表演",
+          "sentences": [
+            "There's not much in the way of entertainment in this town - just the cinema and a couple of pubs. | 這個城鎮沒多少娛樂活動——也就只有這家影院和幾家酒館。",
+            "It looks like we're going to have some pre-dinner entertainment. | 看來我們要進行餐前餘興節目了",
+            "The hotel provides live entertainment, including music and magic shows, for its guests every weekend. | 這間飯店每週末都會為住客提供包含音樂與魔術秀的現場娛樂表演。",
+            "We hired a local jazz band to provide the entertainment for the party. | 我們聘請了一支在地爵士樂團來為派對提供娛樂表演。"
+          ]
+        }
+      ],
+      "date": "2026-10-10"
+    },
+    {
+      "word": "a couple of",
+      "wordNote": "代表三個、少數幾個",
+      "meanings": [
+        {
+          "pos": "慣用語法",
+          "concept": "a couple of hours 表達「幾天/幾個小時」",
+          "sentences": [
+            "I just need a couple of hours to double-check the figures. I’ll send it to you before 5 PM. | 我只需要幾個小時來複查數字，下午五點前會寄給你。"
+          ]
+        },
+        {
+          "pos": "慣用語法",
+          "concept": "a couple of bucks 表達「幾塊錢/幾張紙鈔」",
+          "sentences": [
+            "A: Oh no, my total is $12, but I only have a ten-dollar bill./B: Don't worry! I have a couple of bucks in my pocket. Here you go. | （糟糕，總共 12 塊，但我只有一張十元鈔票。）別擔心！我口袋裡有幾塊錢（零錢），拿去吧。"
+          ]
+        },
+        {
+          "pos": "慣用語法",
+          "concept": "a couple of key points 表達「幾個重點/幾句對話」",
+          "sentences": [
+            "Before we start, I’d like to share a couple of key points with you. | 在我們開始前，我想先跟你分享幾個核心重點。"
+          ]
+        }
+      ],
+      "date": "2026-10-10"
+    },
+    {
+      "word": "take the lead",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "習慣用語",
+          "concept": "取得領先",
+          "sentences": [
+            "Who took the lead in sales last month? | 誰在上個月的銷售業績中取得了領先？",
+            "The runner accelerated in the final lap and managed to take the lead. | 這名跑者在最後一圈加速，成功取得了領先。",
+            "Our company took the lead in the smart home market by releasing innovative products. | 我們公司透過推出創新產品，在智慧家居市場中取得領先地位。"
+          ]
+        }
+      ],
+      "date": "2026-10-10"
+    }
+  ]
+}
