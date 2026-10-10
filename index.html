@@ -679,37 +679,37 @@
         <input type="file" id="importFile" style="display: none;" accept=".json" onchange="importWordsJSON(event)">
     </div>
 <!-- GitHub 雲端同步設定區 -->
-<div class="bg-white p-4 rounded-xl shadow-sm mb-6 border border-slate-200" x-data="{ isGithubConfigOpen: false }">
-    <div @click="isGithubConfigOpen = !isGithubConfigOpen" class="flex justify-between items-center cursor-pointer select-none">
-        <label class="block text-sm font-medium text-slate-600 cursor-pointer">☁️ GitHub 雲端同步設定 (免匯出)</label>
-        <span class="text-xs text-blue-600 font-medium" x-text="isGithubConfigOpen ? '收合 ▲' : '展開 ▼'"></span>
+<div style="margin-top: 15px; background: white; padding: 15px; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border: 1px solid #e2e8f0;">
+    <div onclick="toggleGithubBox()" style="display: flex; justify-content: space-between; align-items: center; cursor: pointer; user-select: none;">
+        <label style="font-size: 0.9rem; font-weight: bold; color: #475569; cursor: pointer;">☁️ GitHub 雲端同步設定 (免匯出)</label>
+        <span id="githubToggleText" style="font-size: 0.8rem; color: #2563eb; font-weight: bold;">展開 ▼</span>
     </div>
     
-    <div class="mt-3 space-y-3 pt-3 border-t border-slate-100" x-show="isGithubConfigOpen">
+    <div id="githubConfigContent" style="margin-top: 10px; display: none; flex-direction: column; gap: 8px;">
         <div>
-            <label class="block text-xs font-medium text-slate-500 mb-1">GitHub 使用者名稱 (Owner)：</label>
-            <input type="text" x-model="githubSync.owner" placeholder="例如: Yanyu383" class="w-full px-3 py-2 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-purple-500">
+            <label style="font-size: 0.75rem; color: #64748b; display: block; margin-bottom: 2px;">GitHub 使用者名稱 (Owner)：</label>
+            <input type="text" id="ghOwner" placeholder="例如: Yanyu383" style="width: 100%; padding: 8px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 0.85rem; box-sizing: border-box;">
         </div>
         <div>
-            <label class="block text-xs font-medium text-slate-500 mb-1">Repository 名稱 (Repo)：</label>
-            <input type="text" x-model="githubSync.repo" placeholder="例如: english-study-app" class="w-full px-3 py-2 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-purple-500">
+            <label style="font-size: 0.75rem; color: #64748b; display: block; margin-bottom: 2px;">Repository 名稱 (Repo)：</label>
+            <input type="text" id="ghRepo" placeholder="例如: english-study-app" style="width: 100%; padding: 8px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 0.85rem; box-sizing: border-box;">
         </div>
         <div>
-            <label class="block text-xs font-medium text-slate-500 mb-1">檔案路徑 (Path)：</label>
-            <input type="text" x-model="githubSync.path" placeholder="例如: vocab.json" class="w-full px-3 py-2 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-purple-500">
+            <label style="font-size: 0.75rem; color: #64748b; display: block; margin-bottom: 2px;">檔案路徑 (Path)：</label>
+            <input type="text" id="ghPath" value="vocab.json" style="width: 100%; padding: 8px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 0.85rem; box-sizing: border-box;">
         </div>
         <div>
-            <label class="block text-xs font-medium text-slate-500 mb-1">GitHub Personal Access Token (PAT)：</label>
-            <input type="password" x-model="githubSync.token" placeholder="請貼上 Token 金鑰..." class="w-full px-3 py-2 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-purple-500">
+            <label style="font-size: 0.75rem; color: #64748b; display: block; margin-bottom: 2px;">GitHub Personal Access Token (PAT)：</label>
+            <input type="password" id="ghToken" placeholder="請貼上 Token 金鑰..." style="width: 100%; padding: 8px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 0.85rem; box-sizing: border-box;">
         </div>
         
-        <div class="flex gap-2 pt-1">
-            <button @click="pushToGithubCloud" class="flex-1 bg-purple-600 hover:bg-purple-700 text-white py-2 rounded-lg text-xs font-medium transition shadow-sm cursor-pointer">☁️ 推送至 GitHub</button>
-            <button @click="pullFromGithubCloud" class="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white py-2 rounded-lg text-xs font-medium transition shadow-sm cursor-pointer">☁️ 從 GitHub 載入</button>
+        <div style="display: flex; gap: 8px; margin-top: 4px;">
+            <button onclick="pushToGithub()" style="flex: 1; background: #7c3aed; color: white; border: none; padding: 8px; border-radius: 6px; font-size: 0.8rem; font-weight: bold; cursor: pointer;">☁️ 推送至 GitHub</button>
+            <button onclick="pullFromGithub()" style="flex: 1; background: #4f46e5; color: white; border: none; padding: 8px; border-radius: 6px; font-size: 0.8rem; font-weight: bold; cursor: pointer;">☁️ 從 GitHub 載入</button>
         </div>
     </div>
 </div>
-
+    
 
     <script>
         window.onload = function() {
@@ -1706,7 +1706,135 @@ function importWordsJSON(event) {
     };
     reader.readAsText(file);
 }
+        
+// 展開/收合 GitHub 設定面板
+function toggleGithubBox() {
+    const content = document.getElementById('githubConfigContent');
+    const toggleText = document.getElementById('githubToggleText');
+    if (content.style.display === 'none') {
+        content.style.display = 'flex';
+        toggleText.innerText = '收合 ▲';
+        loadGithubConfigToInputs();
+    } else {
+        content.style.display = 'none';
+        toggleText.innerText = '展開 ▼';
+    }
+}
 
+function saveGithubConfigInputs() {
+    const config = {
+        owner: document.getElementById('ghOwner').value.trim(),
+        repo: document.getElementById('ghRepo').value.trim(),
+        path: document.getElementById('ghPath').value.trim(),
+        token: document.getElementById('ghToken').value.trim()
+    };
+    localStorage.setItem('my_github_sync_config', JSON.stringify(config));
+    return config;
+}
+
+function loadGithubConfigToInputs() {
+    const saved = localStorage.getItem('my_github_sync_config');
+    if (saved) {
+        const config = JSON.parse(saved);
+        if (document.getElementById('ghOwner')) document.getElementById('ghOwner').value = config.owner || '';
+        if (document.getElementById('ghRepo')) document.getElementById('ghRepo').value = config.repo || '';
+        if (document.getElementById('ghPath')) document.getElementById('ghPath').value = config.path || 'vocab.json';
+        if (document.getElementById('ghToken')) document.getElementById('ghToken').value = config.token || '';
+    }
+}
+
+// 推送到 GitHub 雲端
+async function pushToGithub() {
+    const config = saveGithubConfigInputs();
+    if (!config.owner || !config.repo || !config.token) {
+        alert('請完整填寫 GitHub 帳號、Repo 名稱與 Token！');
+        return;
+    }
+
+    // 收集你原本的完整備份資料結構
+    const backupData = {
+        version: "1.0",
+        exportDate: new Date().toISOString(),
+        myDiaries: JSON.parse(localStorage.getItem('myDiaries') || '[]'),
+        myWords: JSON.parse(localStorage.getItem('myWords') || '[]')
+    };
+
+    const apiUrl = `https://api.github.com/repos/${config.owner}/${config.repo}/contents/${config.path}`;
+    const contentBase64 = btoa(unescape(encodeURIComponent(JSON.stringify(backupData, null, 2))));
+
+    try {
+        let sha = '';
+        const getRes = await fetch(apiUrl, {
+            headers: { 'Authorization': `Bearer ${config.token}` }
+        });
+        if (getRes.ok) {
+            const fileData = await getRes.json();
+            sha = fileData.sha;
+        }
+
+        const putRes = await fetch(apiUrl, {
+            method: 'PUT',
+            headers: {
+                'Authorization': `Bearer ${config.token}`,
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                message: 'Sync full study data via web app',
+                content: contentBase64,
+                sha: sha ? sha : undefined
+            })
+        });
+
+        if (putRes.ok) {
+            alert('🎉 成功同步至 GitHub 雲端！');
+        } else {
+            const errJson = await putRes.json();
+            alert('同步失敗：' + (errJson.message || '未知錯誤'));
+        }
+    } catch (error) {
+        console.error(error);
+        alert('連線 GitHub API 發生錯誤。');
+    }
+}
+
+// 從 GitHub 雲端載入
+async function pullFromGithub() {
+    const config = saveGithubConfigInputs();
+    if (!config.owner || !config.repo || !config.token) {
+        alert('請完整填寫 GitHub 帳號、Repo 名稱與 Token！');
+        return;
+    }
+
+    const apiUrl = `https://api.github.com/repos/${config.owner}/${config.repo}/contents/${config.path}`;
+
+    try {
+        const res = await fetch(apiUrl, {
+            headers: { 'Authorization': `Bearer ${config.token}` }
+        });
+
+        if (res.ok) {
+            const fileData = await res.json();
+            const decodedContent = decodeURIComponent(escape(atob(fileData.content)));
+            const parsed = JSON.parse(decodedContent);
+
+            if (confirm('確定要從 GitHub 載入並覆蓋本地目前的資料嗎？')) {
+                if (parsed && typeof parsed === 'object') {
+                    if (parsed.myDiaries) localStorage.setItem('myDiaries', JSON.stringify(parsed.myDiaries));
+                    if (parsed.myWords) localStorage.setItem('myWords', JSON.stringify(parsed.myWords));
+                } else if (Array.isArray(parsed)) {
+                    localStorage.setItem('myWords', JSON.stringify(parsed));
+                }
+                alert('✅ 已成功從 GitHub 載入最新資料！頁面即將重新整理。');
+                location.reload();
+            }
+        } else {
+            alert('找不到遠端檔案或授權失敗，請確認路徑與 Token 是否正確。');
+        }
+    } catch (error) {
+        console.error(error);
+        alert('從 GitHub 載入資料發生錯誤。');
+    }
+}
 
     </script>
 </body>
