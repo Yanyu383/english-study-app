@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exportDate": "2026-10-10T15:38:59.809Z",
+  "exportDate": "2026-10-10T16:52:54.432Z",
   "myDiaries": [
     {
       "date": "2026-10-07",
@@ -653,6 +653,57 @@
         }
       ],
       "date": "2026-10-10"
+    },
+    {
+      "word": "solely",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "adv.",
+          "concept": "唯一、單獨的、僅僅只是",
+          "sentences": [
+            "I bought it solely for that purpose. | 我僅僅是爲那個目的才買的",
+            "It seems he's not solely to blame for the accident. | 發生這起事故似乎不能只責怪他",
+            "The product's success cannot be attributable solely to the ads. | 該産品的成功不能只歸因於廣告宣傳",
+            "She is solely responsible for the success of this project. | 她要獨自為這個專案的成功負全責。",
+            "This facility is used solely for medical research. | 這間設施僅供醫療研究使用。",
+            "You shouldn't make a decision based solely on emotion. | 你不應該僅憑情緒就做出決定。"
+          ]
+        }
+      ],
+      "date": "2026-10-11"
+    },
+    {
+      "word": "anonymously",
+      "wordNote": "anonymous",
+      "meanings": [
+        {
+          "pos": "adv.",
+          "concept": "匿名的",
+          "sentences": [
+            "The donation was made anonymously. | 捐贈是匿名進行的",
+            "The information was posted anonymously online. | 該信息以匿名方式發布在網上",
+            "He donated a large sum of money to the charity anonymously. | 他匿名向該慈善機構捐贈了一大筆錢。",
+            "Employees can submit their feedback anonymously through an online survey. | 員工可以透過線上問卷匿名提交他們的意見。"
+          ]
+        }
+      ],
+      "date": "2026-10-11"
+    },
+    {
+      "word": "attempt",
+      "wordNote": "at-朝向，tempt嘗試=朝...嘗試",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "努力、嘗試",
+          "sentences": [
+            "Please don't attempt to cut your own hair ever again | 請不要再嘗試自己剪頭髮了",
+            "The corporation is relentless in its attempts to acquire a monopoly of the tourist industry in this area | 該企業努力不懈在它的企圖上去取得該地區的壟斷觀光"
+          ]
+        }
+      ],
+      "date": "2026-10-11"
     }
   ]
 }
