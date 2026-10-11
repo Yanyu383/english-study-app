@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exportDate": "2026-10-10T17:04:24.177Z",
+  "exportDate": "2026-10-11T22:06:28.391Z",
   "myDiaries": [
     {
       "date": "2026-10-07",
@@ -721,6 +721,62 @@
         }
       ],
       "date": "2026-10-11"
+    },
+    {
+      "word": "manage",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "可以辦到",
+          "sentences": [
+            "Even with a tight budget, we managed to host a wonderful party. | 即使預算有限，我們還是辦到了舉辦一場美好的派對。",
+            "I don't know how he manages to stay so positive under so much pressure. | 我不知道他怎麼辦到在這麼大的壓力下還能保持如此積極。",
+            "Despite the terrible traffic, she managed to arrive at the airport on time. | 儘管交通狀況很糟糕，她還是辦到了準時趕到機場。"
+          ]
+        },
+        {
+          "pos": "v.",
+          "concept": "經營、管理",
+          "sentences": [
+            "It's not easy to manage an entire department. | 管理整個部門並不容易"
+          ]
+        }
+      ],
+      "date": "2026-10-12"
+    },
+    {
+      "word": "resignation",
+      "wordNote": "re-相反，sign做標記，ation名詞型式=辭職",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "辭職",
+          "sentences": [
+            "You should think twice before tendering your letter of resignation | 在遞交辭職信之前，你應該三思而後行",
+            "After months of consideration, she finally handed in her letter of resignation yesterday. | 經過幾個月的考慮，她終於在昨天遞交了辭職信。",
+            "The CEO announced his sudden resignation during the emergency board meeting. | 執行長在緊急董事會會議上宣布了他突然辭職的消息。",
+            "The manager accepted his resignation and wished him the best in his future career. | 經理接受了他的辭職，並祝福他未來的事業順利。"
+          ]
+        }
+      ],
+      "date": "2026-10-12"
+    },
+    {
+      "word": "promote",
+      "wordNote": "pro-向前，-mote移動=促進",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "促銷、宣傳",
+          "sentences": [
+            "The company launched a social media campaign to promote its new product line. | 這間公司發起了社群媒體活動來宣傳其新產品線。",
+            "They hired a famous influencer to promote their brand on Instagram. | 他們聘請了一位知名網紅在 Instagram 上宣傳他們的品牌。",
+            "We are offering special discounts this weekend to promote our new store opening. | 我們本週末提供特別優惠，以促銷新店開幕。"
+          ]
+        }
+      ],
+      "date": "2026-10-12"
     }
   ]
 }
