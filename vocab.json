@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exportDate": "2026-10-11T22:06:28.391Z",
+  "exportDate": "2026-10-12T19:10:36.690Z",
   "myDiaries": [
     {
       "date": "2026-10-07",
@@ -777,6 +777,102 @@
         }
       ],
       "date": "2026-10-12"
+    },
+    {
+      "word": "expand",
+      "wordNote": "expand into + foreign market / overseas",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "擴大、進軍",
+          "sentences": [
+            "The tech company plans to expand into the European market next year. | 這家科技公司計劃明年進軍歐洲市場。",
+            "Our business needs to expand into new retail channels to boost sales. | 我們的業務需要進軍新的零售通路，以提升銷售額。",
+            "After achieving success domestically, the brand decided to expand overseas. | 在國內取得成功後，該品牌決定擴大規模進軍海外。"
+          ]
+        }
+      ],
+      "date": "2026-10-12"
+    },
+    {
+      "word": "derive",
+      "wordNote": "de-離開，riv-流動=引出、衍生出",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "產生、衍生",
+          "sentences": [
+            "The income is derived from her investments. | 這筆收入衍生自她的投資",
+            "She derives great satisfaction from her job. | 她從工作中獲得極大的滿足感",
+            "After Linda took an early retirement, she lived a life of luxury off the income derived from her investment. | 在琳達提早退休之後，她過著奢華的生活，靠著收入從她的投資中所獲得的"
+          ]
+        }
+      ],
+      "date": "2026-10-12"
+    },
+    {
+      "word": "accompany",
+      "wordNote": "ac-朝...方向+com-一起，及物動詞",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "陪伴、陪同",
+          "sentences": [
+            "Will you accompany me to the dance? | 你能陪我去跳舞嗎?",
+            "My best friend offered to accompany me to the job interview. | 我最好的朋友主動提議陪我去參加求職面試。",
+            "Children under twelve must be accompanied by an adult. | 十二歲以下的兒童必須由大人陪同。",
+            "I would be happy to accompany you to the doctor tomorrow. | 我明天很樂意陪你看醫生。"
+          ]
+        }
+      ],
+      "date": "2026-10-12"
+    },
+    {
+      "word": "faint",
+      "wordNote": "可以用來形容淡淡的",
+      "meanings": [
+        {
+          "pos": "adj.",
+          "concept": "微弱、淡淡的",
+          "sentences": [
+            "a faint sound | 微弱的聲音",
+            "a faint glow | 微弱的光",
+            "She gave me a faint smile of recognition. | 她認出了我，向我淡淡一笑",
+            "There's not the faintest hope of ever finding him. | 沒有絲毫找到他的希望"
+          ]
+        }
+      ],
+      "date": "2026-10-13"
+    },
+    {
+      "word": "be faced with challenge",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "慣用語法",
+          "concept": "面臨 / 遭遇挑戰",
+          "sentences": [
+            "When people are faced with challenges, some people thrive while others can't handle the pressure. | 當人們被面臨 / 遭遇挑戰時，有些人能蓬勃發展，有些人則無法承受壓力",
+            "Faced with challenges, some people thrive while others can't handle the pressure. | "
+          ]
+        }
+      ],
+      "date": "2026-10-13"
+    },
+    {
+      "word": "oversee",
+      "wordNote": "over在上面往下看+see看=監督",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "監督",
+          "sentences": [
+            "As the project manager, she will oversee the daily operations of the team. | 作為專案經理，她將監督團隊的日常運作。",
+            "The senior engineer was hired to oversee the construction of the new bridge. | 這位資深工程師被聘來監督新橋樑的施工。"
+          ]
+        }
+      ],
+      "date": "2026-10-13"
     }
   ]
 }
