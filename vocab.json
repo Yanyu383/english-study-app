@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exportDate": "2026-10-12T21:49:45.168Z",
+  "exportDate": "2026-10-14T20:26:16.558Z",
   "myDiaries": [
     {
       "date": "2026-10-07",
@@ -873,6 +873,140 @@
         }
       ],
       "date": "2026-10-13"
+    },
+    {
+      "word": "addictive",
+      "wordNote": "I'm addicted to XXX.",
+      "meanings": [
+        {
+          "pos": "adj.",
+          "concept": "使人上癮的",
+          "sentences": [
+            "Tobacco is highly addictive | 煙草極易使人上癮",
+            "The problem with video games is that they're addictive. | 電子遊戲的問題在於它們會使人上癮",
+            "These nuts are addictive - I can't stop eating them. | 這些堅果讓人上癮，我一吃就停不了口"
+          ]
+        }
+      ],
+      "date": "2026-10-15"
+    },
+    {
+      "word": "review",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "審查;仔細審核",
+          "sentences": [
+            "He reviewed his options before making a final decision. | 他在最後作出決定之前，對各種選擇進行了斟酌權衡"
+          ]
+        },
+        {
+          "pos": "v.",
+          "concept": "評論",
+          "sentences": [
+            "I only go to see films that are reviewed favourably. | 我只去看那些獲得好評的電影。"
+          ]
+        }
+      ],
+      "date": "2026-10-15"
+    },
+    {
+      "word": "beyond our control",
+      "wordNote": "beyond：超出……的範圍、our control：我們的控制",
+      "meanings": [
+        {
+          "pos": "慣用語法",
+          "concept": "超過我們的控制",
+          "sentences": [
+            "Due to circumstances beyond our control, your package delivery may be delayed. | 由於不可抗力因素（非我們所能控制的狀況），您的包裹配送可能會有所延誤。",
+            "The flight cancellation was caused by severe weather conditions beyond our control. | 班機取消是因為我們無法控制的惡劣天氣狀況所致"
+          ]
+        }
+      ],
+      "date": "2026-10-15"
+    },
+    {
+      "word": "severe",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "adj.",
+          "concept": "非常嚴重的",
+          "sentences": [
+            "a severe chest infection/leg injury/toothache | 十分嚴重的胸腔感染／腿傷／牙痛",
+            "This is a school for children with severe learning difficulties. | 這是一所爲有嚴重學習障礙的孩子設立的學校",
+            "Severe cutbacks in public spending have been announced. | 已經宣佈對公共支出進行大幅度縮減",
+            "The flight was delayed due to severe weather conditions. | 航班因為惡劣的天氣狀況而延誤",
+            "The storm caused severe damage to the factory roof. | 暴風雨對工廠屋頂造成了嚴重的損害",
+            "Employees who violate safety rules will face severe penalties. | 違反安全規定的員工將面臨嚴厲的處分"
+          ]
+        }
+      ],
+      "date": "2026-10-15"
+    },
+    {
+      "word": "turn up",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "出現、到場＝ arrive / appear",
+          "sentences": [
+            "More than 100 people turned up for the product launch. | 超過 100 人出席了這場產品發表會"
+          ]
+        },
+        {
+          "pos": "v.",
+          "concept": "遺失的東西被找到、重新出現（＝ be found）",
+          "sentences": [
+            "Don't worry, your missing luggage will probably turn up soon. | 別擔心，你遺失的行李大概很快就會找到了"
+          ]
+        },
+        {
+          "pos": "v.",
+          "concept": "調大（音量、熱量、音響等）",
+          "sentences": [
+            "Could you please turn up the air conditioning? It's a bit warm in here. | 可以請你把冷氣調大/調強一點嗎？這裡有點熱"
+          ]
+        }
+      ],
+      "date": "2026-10-15"
+    },
+    {
+      "word": "firm",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "公司、事務所",
+          "sentences": [
+            "She works for a prestigious law firm in downtown New York. | 她在紐約市中心一家聲譽卓著的律師事務所工作",
+            "The accounting firm plans to hire twenty new auditors next month. | 這家會計師事務所計劃下個月聘僱二十名新審計員",
+            "Our firm has recently signed a strategic partnership with a European tech company. | 我們的公司最近與一家歐洲科技公司簽署了戰略合作夥伴關係"
+          ]
+        }
+      ],
+      "date": "2026-10-15"
+    },
+    {
+      "word": "circumstance",
+      "wordNote": "circum-：環繞、-stance：站立合起來就是 「在你周圍站立/圍繞著你的事物」=周遭的情況、環境",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "情況；情形，形勢",
+          "sentences": [
+            "I think she coped very well under the circumstances. | 我覺得在那種情況下她處理得很不錯",
+            "Under no circumstances should you (= you should not) approach the man. | 你無論如何都不應該聯絡那個男人",
+            "We were obliged to go by force of circumstance. | 形勢所逼，我們不得不走",
+            "Under no circumstances should employees share their passwords. | 在任何情況下，員工絕不可以分享他們的密碼",
+            "Due to unforeseen circumstances, today's seminar has been postponed. | 由於不可預估的突發狀況，今天的研討會已延期舉行",
+            "Under the present circumstances, expanding into new markets is too risky. | 在目前的情況下，拓展新市場風險太高"
+          ]
+        }
+      ],
+      "date": "2026-10-15"
     }
   ]
 }
