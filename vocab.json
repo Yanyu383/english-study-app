@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exportDate": "2026-10-14T20:26:16.558Z",
+  "exportDate": "2026-10-14T21:41:08.482Z",
   "myDiaries": [
     {
       "date": "2026-10-07",
@@ -1003,6 +1003,23 @@
             "Under no circumstances should employees share their passwords. | 在任何情況下，員工絕不可以分享他們的密碼",
             "Due to unforeseen circumstances, today's seminar has been postponed. | 由於不可預估的突發狀況，今天的研討會已延期舉行",
             "Under the present circumstances, expanding into new markets is too risky. | 在目前的情況下，拓展新市場風險太高"
+          ]
+        }
+      ],
+      "date": "2026-10-15"
+    },
+    {
+      "word": "wireless",
+      "wordNote": "wire-電線、less沒有=無線的",
+      "meanings": [
+        {
+          "pos": "adj.",
+          "concept": "無線的",
+          "sentences": [
+            "a wireless connection | 無線連接",
+            "The company provided all remote employees with a wireless mouse and keyboard. | 公司為所有遠距工作的員工提供了無線滑鼠與鍵盤",
+            "Guests can connect to the hotel’s wireless network free of charge. | 房客可以免費連線至飯店的無線網路",
+            "The new model supports wireless charging, allowing users to charge their phones quickly. | 這款新機型支援無線充電，讓使用者能快速為手機充電"
           ]
         }
       ],
