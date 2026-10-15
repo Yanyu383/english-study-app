@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exportDate": "2026-10-14T21:58:17.446Z",
+  "exportDate": "2026-10-15T18:13:00.615Z",
   "myDiaries": [
     {
       "date": "2026-10-07",
@@ -1024,6 +1024,257 @@
         }
       ],
       "date": "2026-10-15"
+    },
+    {
+      "word": "excel in+ 「領域 / 學科 / 環境」",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "擅長",
+          "sentences": [
+            "She excels in mathematics and always gets the highest scores in her class. | 她非常擅長數學，而且總是得到班上的最高分。",
+            "As a project manager, he excels in communication and problem-solving. | 作為一名專案經理，他非常擅長溝通與解決問題。",
+            "Our company excels in providing customized software solutions for small businesses. | 我們公司擅長為小型企業提供客製化的軟體解決方案。"
+          ]
+        },
+        {
+          "pos": "v.",
+          "concept": "=excel at+ 「具體技能 / 動作 (V-ing)」",
+          "sentences": [
+            "He excels at negotiating complex business deals. | 他非常擅長談判複雜的商業合約",
+            "As a category sales partner, she excels at analyzing market trends. | 作為品類銷售夥伴，她非常精通於分析市場趨勢"
+          ]
+        }
+      ],
+      "date": "2026-10-15"
+    },
+    {
+      "word": "advance",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "提前支付",
+          "sentences": [
+            "Could you advance me £500 until Tuesday? | 週二之前可以預付給我500英鎊嗎？",
+            "The company agreed to advance her a month's salary to help with her moving expenses. | 公司同意提前支付她一個月的薪資，以協助她負擔搬家費用。",
+            "Can you advance me 500 from my next paycheck to cover an emergency? | 你能從我下一次的薪水裡提前支付 500 美水給我以應對緊急狀況嗎？",
+            "We will advance half of the payment as soon as the contract is signed. | 一旦簽署合約，我們就會提前支付一半的款項。"
+          ]
+        },
+        {
+          "pos": "v.",
+          "concept": "使進步，使進展；使發展",
+          "sentences": [
+            "He's just trying to advance (= improve) his own career. | 他只是在努力發展自己的事業",
+            "The fire advanced steadily through the forest. | 大火在森林中不斷蔓延",
+            "The troops advanced on the city (= approached it, ready to attack). | 軍隊向該城推進",
+            "Her study has considerably advanced (= helped) the cause of equal rights. | 她的研究極大地促進了權利平等運動的事業"
+          ]
+        }
+      ],
+      "date": "2026-10-15"
+    },
+    {
+      "word": "registration",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "登記",
+          "sentences": [
+            "The registration deadline for the marketing seminar is next Friday. | 行銷研討會的報名截止日期是下週五",
+            "Please pick up your name tag at the registration desk upon arrival. | 抵達時請至報到處領取您的名牌",
+            "To complete your enrollment, please fill out the online registration form. | 若要完成報名，請填寫線上註冊表格",
+            "Please present your ID at the front desk to complete the registration. | 請在前台出示您的身分證件以完成登記。",
+            "The deadline for online registration is midnight tonight, so please submit your form as soon as possible. | 線上登記的截止時間是今天午夜，因此請儘速遞交您的表單。",
+            "Early registration is strongly recommended since the workshop has a limited number of seats. | 由於工作坊名額有限，強烈建議您提早登記。"
+          ]
+        }
+      ],
+      "date": "2026-10-15"
+    },
+    {
+      "word": "unlisted",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "adj.",
+          "concept": "未登錄在公共電話簿 / 未公開的",
+          "sentences": [
+            "an unlisted phone number | 保密/不公開的電話號碼",
+            "For privacy reasons, she requested an unlisted phone number from the telecommunications company. | 出於隱私考量，她向電信公司申請了未登錄在電話簿上的號碼。",
+            "You won't find his contact information in the directory because his phone number is unlisted. | 你無法在公共通訊錄中找到他的聯絡資訊，因為他的電話號碼未公開登錄。",
+            "Please call my mobile phone directly, as my home line is unlisted to avoid unwanted sales calls. | 請直接撥打我的手機，因為我的家用電話未登錄在電話簿上，以避免接到推銷電話。"
+          ]
+        }
+      ],
+      "date": "2026-10-16"
+    },
+    {
+      "word": "attach",
+      "wordNote": "at-向，tach-固定=附上、附上",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "附上；固定；連接",
+          "sentences": [
+            "Attached to this email, you will find... | 隨信附上……",
+            "I attached a photo to my application form. | 我在我的申請表上貼了一張相片",
+            "Use this cable to attach the printer to the computer. | 用這條數據線連接列印機和電腦",
+            "Please attach the updated report to your email before sending it. | 請在傳送電子郵件前附上更新後的報告。",
+            "Make sure to attach the safety belt securely before operating the machine. | 操作機器前，請務必將安全帶固定好。",
+            "You need to attach the printer to your computer using a USB cable. | 你需要使用 USB 線將印表機連接到電腦。"
+          ]
+        }
+      ],
+      "date": "2026-10-16"
+    },
+    {
+      "word": "serve",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "提供",
+          "sentences": [
+            "Breakfast is served in the restaurant between 7.00 and 11.00. | 餐廳早上七點到十一點供應早餐"
+          ]
+        },
+        {
+          "pos": "v.",
+          "concept": "served in（爲…）工作",
+          "sentences": [
+            "He served in the army for 22 years. | 他服了22年兵役",
+            "He served under Ronald Reagan as Secretary of State. | 他在隆納‧雷根手下擔任國務卿"
+          ]
+        },
+        {
+          "pos": "v.",
+          "concept": "serve as（作為/ 充當）",
+          "sentences": [
+            "serve as proof | 作為證明",
+            "The judge said that the fine would serve as a warning to other drivers. | 法官說此次罰款對其他司機會是一種警告",
+            "This sofa can serve as a guest bed when needed. | 需要時，這張沙發可以充當客房床鋪。",
+            "She served as the head of the research team for three years. | 她擔任了三年的研究團隊負責人。",
+            "The old building served as a temporary hospital during the war. | 這棟老舊建築在戰爭期間充當了臨時醫院。"
+          ]
+        }
+      ],
+      "date": "2026-10-16"
+    },
+    {
+      "word": "repayment",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "償還;還款",
+          "sentences": [
+            "You can choose a flexible repayment plan that fits your monthly budget. | 你可以選擇適合你每月預算的彈性還款計劃。",
+            "The bank requires a monthly repayment of five hundred dollars for the mortgage. | 銀行要求這筆房屋貸款每月需還款五百美元。",
+            "He worked overtime to ensure the full repayment of his debt before the deadline. | 他加班工作以確保能在截止日期前全額償還債務。"
+          ]
+        }
+      ],
+      "date": "2026-10-16"
+    },
+    {
+      "word": "certain",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "adj.",
+          "concept": "（沒有指明或描述的）某，某個，某些",
+          "sentences": [
+            "Do you think war is justifiable in certain circumstances? | 你是否認為在某些情況下戰爭是正當的？",
+            "We have certain reasons for our decision, which have to remain confidential. | 我們作出這樣的決定是有一定原因的，這些原因仍需保密。",
+            "For certain reasons, I cannot reveal the details of the project yet. | 由於某些原因，我目前還不能透露這個專案的細節。",
+            "Certain members of the team were not happy with the decision. | 團隊中的某些成員對這個決定感到不滿。",
+            "I heard that a certain colleague is planning to resign next month. | 我聽說某位同事打算下個月辭職。"
+          ]
+        },
+        {
+          "pos": "adj.",
+          "concept": "肯定的，無疑的",
+          "sentences": [
+            "Are you absolutely certain (that) you gave them the right number? | 你敢肯定你給他們的號碼沒錯嗎？",
+            "I feel certain (that) you're doing the right thing. | 我確信你做得對",
+            "You should make certain (that) everyone understands the instructions. | 你應該確保大家都能聽懂指令"
+          ]
+        }
+      ],
+      "date": "2026-10-16"
+    },
+    {
+      "word": "mandatory",
+      "wordNote": "mandate-命令，-ory關於=mandatory強制",
+      "meanings": [
+        {
+          "pos": "adj.",
+          "concept": "強制的、必須履行的、法定的",
+          "sentences": [
+            "School uniforms are mandatory for all students. | 所有學生必須穿制服",
+            "It is mandatory for all new employees to attend the safety orientation. | 所有新進員工都必須參加安全講習。",
+            "Wearing a seatbelt is mandatory for all passengers in the car. | 車內所有乘客都必須依規定繫上安全帶。",
+            "The government has made retirement savings mandatory for all workers. | 政府已規定所有勞工都必須依法提撥退休儲蓄金。"
+          ]
+        }
+      ],
+      "date": "2026-10-16"
+    },
+    {
+      "word": "mandate",
+      "wordNote": "man-手，date-給予、交付=親手交給→授權、命令、強制要求",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "命令、要求",
+          "sentences": [
+            "The law mandates that all drivers have car insurance. | 法規規定，所有駕駛都必須購買汽車保險",
+            "The new law mandates that all employees wear safety gear on the construction site. | 新法律要求所有員工在施工現場必須佩戴安全裝備。",
+            "The government mandates that international travelers present a valid passport upon entry. | 政府要求國際旅客入境時須出示有效護照。",
+            "Company policy mandates that staff attend the annual cybersecurity training. | 公司政策要求員工必須參加年度網路安全培訓。"
+          ]
+        }
+      ],
+      "date": "2026-10-16"
+    },
+    {
+      "word": "correspondence",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "往來信件、書信",
+          "sentences": [
+            "As a writer,I welcome any correspondence from my readers. | 作為一名作家，我很樂意收到讀者們的來信",
+            "I have archived all the business correspondence between our company and the client. | 我已經將我們公司與客戶之間的所有業務往來信件歸檔。",
+            "Please keep this correspondence confidential, as it contains sensitive business details. | 請對這些往來信件嚴格保密，因為其中包含敏感的商業細節。",
+            "After years of correspondence, the two scholars finally met at an international conference. | 在經過多年的信件往來後，這兩位學者終於在一場國際會議上見面了。"
+          ]
+        }
+      ],
+      "date": "2026-10-16"
+    },
+    {
+      "word": "appreciate",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "感謝、理解",
+          "sentences": [
+            "We really appreciate all the help you gave us last weekend. | 上週末得到你們的大力幫助，我們非常感謝",
+            "We appreciate the need for immediate action. | 我們充分意識到了馬上採取行動的必要性",
+            "I appreciate that it's a difficult decision for you to make. | 我體會到，你作出這樣的決定有多難",
+            "you will appreciate... | 相信您也能體諒 / 理解",
+            "I fully appreciate how difficult this decision must be for you. | 我完全理解這個決定對你來說有多麼艱難。"
+          ]
+        }
+      ],
+      "date": "2026-10-16"
     }
   ]
 }
