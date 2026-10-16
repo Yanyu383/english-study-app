@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exportDate": "2026-10-16T21:27:44.669Z",
+  "exportDate": "2026-10-16T22:32:24.598Z",
   "myDiaries": [
     {
       "date": "2026-10-07",
@@ -1275,6 +1275,92 @@
         }
       ],
       "date": "2026-10-16"
+    },
+    {
+      "word": "edge",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "邊，邊緣",
+          "sentences": [
+            "He put pink icing around the edge of the cake. | 他用粉色的糖霜沿蛋糕邊擠花",
+            "They built the church on the edge of the village. | 他們把教堂建在村莊邊緣"
+          ]
+        },
+        {
+          "pos": "n.",
+          "concept": "刀口;刃;鋒利的邊緣",
+          "sentences": [
+            "Careful with that open can - it's got a very sharp edge. | 小心那罐打開的罐頭——開口的地方很鋒利",
+            "Be careful when handling this knife because its edge is extremely sharp. | 拿這把刀時要小心，因為它的刀口非常鋒利。",
+            "Never test the edge of a blade with your thumb to see if it is sharp. | 絕不要用拇指去測試刀刃是否鋒利。"
+          ]
+        },
+        {
+          "pos": "n.",
+          "concept": "cutting-edge=最先進的",
+          "sentences": [
+            "cutting-edge equipment | 最先進的設備",
+            "The company is known for developing cutting-edge technology in renewable energy. | 這間公司以開發再生能源領域的最先進技術而聞名。",
+            "This hospital provides cutting-edge medical treatment for rare diseases. | 這家醫院為罕見疾病提供最先進的醫療服務。",
+            "Their latest smartphone features cutting-edge design and impressive performance. | 他們最新的智慧型手機具備最先進的設計與令人驚豔的效能。"
+          ]
+        }
+      ],
+      "date": "2026-10-17"
+    },
+    {
+      "word": "rush",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "（使）趕緊;（使）倉促行事;",
+          "sentences": [
+            "I've been rushing (about/around) all day trying to get everything done. | 我忙了整整一天，想把所有的事情都做完",
+            "We shouldn't rush to blame them. | 我們不應該不問青紅皂白就責備他們",
+            "You can't rush a job like this. | 你不應該這樣草草趕工"
+          ]
+        },
+        {
+          "pos": "adj.",
+          "concept": "緊急的",
+          "sentences": [
+            "rush order | 急單",
+            "This is a rush order, so we need to process it right away. | 這是個緊急訂單，所以我們需要馬上處理。",
+            "The team had to work overtime to complete the rush project. | 團隊必須加班才能完成這個緊急專案。",
+            "We just received a rush request from our top client. | 我們剛收到重要客戶發來的緊急請求。"
+          ]
+        }
+      ],
+      "date": "2026-10-17"
+    },
+    {
+      "word": "fulfill",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "達到；履行",
+          "sentences": [
+            "A school fails if it does not fulfill the needs/requirements of its pupils. | 學校如果不能滿足學生的需求／要求，那它就是失敗的。",
+            "He has failed to fulfill his duties as a father. | 他沒有盡到做父親的責任",
+            "The contractor promised to fulfill the terms of the agreement on time. | 承包商承諾會按時履行合約條款。",
+            "You need to fulfill your duties as a team leader before taking on new tasks. | 在承接新任務之前，你需要先履行作為團隊領導者的職責。"
+          ]
+        },
+        {
+          "pos": "v.",
+          "concept": "實現；執行",
+          "sentences": [
+            "At the age of 45, she finally fulfilled her ambition to run a marathon. | 45歲時，她終於實現了跑馬拉松的夙願。",
+            "She worked hard for years to fulfill her dream of starting her own business. | 她努力工作多年，終於實現了自己創業的夢想。",
+            "He always fulfills his promises, so you can trust him completely. | 他總是實現自己的諾言，所以你可以完全信任他。"
+          ]
+        }
+      ],
+      "date": "2026-10-17"
     }
   ]
 }
