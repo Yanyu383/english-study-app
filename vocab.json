@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exportDate": "2026-10-19T00:03:36.281Z",
+  "exportDate": "2026-10-19T22:22:07.674Z",
   "myDiaries": [
     {
       "date": "2026-10-07",
@@ -1567,6 +1567,72 @@
         }
       ],
       "date": "2026-10-19"
+    },
+    {
+      "word": "make of",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "看待、理解、覺得",
+          "sentences": [
+            "What do you make of the new manager's proposal? | 你怎麼看待新經理的提案？",
+            "I honestly don't know what to make of his strange behavior lately. | 我實在不知道該如何理解他最近的異常行為。",
+            "What did you make of the movie's confusing ending? | 你覺得這部電影令人困惑的結局怎麼樣？"
+          ]
+        }
+      ],
+      "date": "2026-10-20"
+    },
+    {
+      "word": "access to",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "對...有權利",
+          "sentences": [
+            "Every citizen should have equal access to quality healthcare. | 每位公民都應該享有獲得優質醫療服務的平等權利。",
+            "According to the law, all citizens have access to public records. | 根據法律，所有公民都有權調閱公共紀錄。"
+          ]
+        }
+      ],
+      "date": "2026-10-20"
+    },
+    {
+      "word": "forward",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "轉寄（信件或電子郵件）",
+          "sentences": [
+            "Will you forward that e-mail to me when you have a second? | 你有空的時候，可以把那封電子郵件轉寄給我嗎？",
+            "Could you please forward this email to the sales team? | 可以請你把這封電子郵件轉寄給銷售團隊嗎？",
+            "I forwarded the client's feedback to you earlier this morning. | 我今天早上已經把客戶的意見回饋轉寄給你了。",
+            "Please forward any relevant documents to my new email address. | 請將任何相關文件轉寄到我的新電子郵件地址。"
+          ]
+        }
+      ],
+      "date": "2026-10-20"
+    },
+    {
+      "word": "place",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "身分、立場、資格",
+          "sentences": [
+            "It's not your place to tell me how to do my job. | 你沒資個對我的工作比手畫腳",
+            "Would you have done the same thing in my place? | 如果你處於我的立場（換作是你），你當時也會做一樣的事嗎？",
+            "It is not my place to tell you how to manage your team. | 我沒有立場告訴你該如何管理你的團隊。",
+            "She felt it was not her place to give advice on their marriage. | 她覺得自己沒有資格對他們的婚姻提出建議。",
+            "You need to know your place and stop interfering in decisions that aren't yours to make. | 你需要清楚自己的身分，不要再干涉不屬於你的決定。"
+          ]
+        }
+      ],
+      "date": "2026-10-20"
     }
   ]
 }
