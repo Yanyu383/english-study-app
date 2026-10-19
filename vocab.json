@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exportDate": "2026-10-17T00:29:44.204Z",
+  "exportDate": "2026-10-19T00:03:36.281Z",
   "myDiaries": [
     {
       "date": "2026-10-07",
@@ -1361,6 +1361,212 @@
         }
       ],
       "date": "2026-10-17"
+    },
+    {
+      "word": "appliance",
+      "wordNote": "apply-應用，-ance名詞形式=器具、電器",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "電器、家用電器、家電",
+          "sentences": [
+            "electric/domestic/household appliances | 電器／家用電器／家電",
+            "We decided to buy energy-efficient appliances to save on our monthly electricity bills. | 我們決定購買節能家電，以節省每月的電費。",
+            "Modern kitchens are equipped with various appliances, such as refrigerators and microwaves. | 現代廚房配備了各種家電，例如冰箱和微波爐。",
+            "Please make sure to unplug all major household appliances before going on a long trip. | 出遠門前，請務必拔掉所有主要家用電器的插頭。"
+          ]
+        }
+      ],
+      "date": "2026-10-18"
+    },
+    {
+      "word": "malfunction",
+      "wordNote": "mal-錯誤、壞的，function運作=故障",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "發生故障、運轉不正常",
+          "sentences": [
+            "The elevator malfunctioned and got stuck between the fifth and sixth floors. | 電梯發生故障，卡在五樓和六樓之間。",
+            "The air conditioner started to malfunction during the hottest week of the summer. | 冷氣機在夏天最熱的一週開始運轉不正常。",
+            "If the braking system malfunctions, the safety mechanism will activate automatically. | 如果煞車系統發生故障，安全機制會自動啟動。"
+          ]
+        }
+      ],
+      "date": "2026-10-18"
+    },
+    {
+      "word": "apply to",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "適用，有關",
+          "sentences": [
+            "That part of the form is for UK citizens - it doesn't apply to you. | 表格的那一項是給英國公民填的——和你無關",
+            "The new regulations apply to all employees starting next month. | 新規定自下個月起適用於所有員工。",
+            "Does this rule apply to international visitors as well? | 這項規定也適用於外籍旅客嗎？",
+            "The discount code only applies to selected items on the website. | 此折扣碼僅適用於網站上的特定商品。"
+          ]
+        }
+      ],
+      "date": "2026-10-18"
+    },
+    {
+      "word": "domestic",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "adj.",
+          "concept": "本國的、國內的",
+          "sentences": [
+            "domestic airlines/flights | 國內航空公司／航班",
+            "The company focuses mainly on the domestic market before expanding overseas. | 這間公司在向海外擴張之前，主要專注於國內市場。",
+            "Passengers flying on domestic flights should arrive at the airport one hour before departure. | 搭乘國內航班的旅客應在起飛前一小時抵達機場。",
+            "The government announced new policies to boost domestic tourism. | 政府宣布了新政策以刺激國內旅遊業。"
+          ]
+        },
+        {
+          "pos": "adj.",
+          "concept": "家庭的",
+          "sentences": [
+            "They share all the domestic chores equally, including cooking and cleaning. | 他們平等分擔所有的家庭雜務，包括做飯和打掃。",
+            "After years of busy traveling, she now enjoys a quiet domestic life. | 在多年忙碌的旅行之後，她現在很享受平靜的家庭生活。",
+            "Modern domestic appliances have made managing a household much easier. | 現代家用電器讓管理家庭事務變得輕鬆許多。"
+          ]
+        }
+      ],
+      "date": "2026-10-18"
+    },
+    {
+      "word": "appropriate",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "adj.",
+          "concept": "適當的，合適的",
+          "sentences": [
+            "Is this film appropriate for small children? | 這部電影適合幼童觀看嗎？",
+            "I didn't think his comments were very appropriate at the time. | 我覺得他在當時發表那些評論很不妥當",
+            "Please make sure to wear appropriate clothing for the job interview. | 請務必穿著適合工作面試的適當服裝。",
+            "His behavior was not appropriate for a formal occasion. | 他的行為在正式場合中並不合適。",
+            "The teacher took appropriate measures to solve the problem quickly. | 老師採取了適當的措施來快速解決問題。"
+          ]
+        }
+      ],
+      "date": "2026-10-18"
+    },
+    {
+      "word": "supervise",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "監督，管理",
+          "sentences": [
+            "The children play while two teachers supervise | 孩子們在兩位教師的監管下玩耍",
+            "...anyone with physical or mental capabilities, unless they are supervised while using. | ……除非他們在使用時有人在旁監督",
+            "She was hired to supervise the daily operations of the new branch. | 她被聘來監督新分行的日常營運。",
+            "A senior engineer will supervise the construction site to ensure safety standards are met. | 一位資深工程師將監督施工現場，以確保符合安全標準。",
+            "He supervises a team of ten software developers in the IT department. | 他在資訊部門管理一個由十位軟體開發人員組成的團隊。"
+          ]
+        }
+      ],
+      "date": "2026-10-18"
+    },
+    {
+      "word": "afterward",
+      "wordNote": "等於 after that",
+      "meanings": [
+        {
+          "pos": "adv.",
+          "concept": "過後，以後",
+          "sentences": [
+            "We had tea, and afterwards we sat in the garden for a while. | 我們喝了茶，後來在花園裡坐了一會兒",
+            "They separated, and soon afterwards Jane left the country. | 他們分手了，此後不久簡就離開了這個國家",
+            "We went to see a movie, and afterward we had dinner together. | 我們去看了一場電影，過後我們一起吃了晚餐。",
+            "She felt very nervous during the interview, but she felt relieved afterward. | 她在面試期間感到非常緊張，但過後覺得鬆了一口氣。",
+            "If you have any questions, you can ask them during the meeting or immediately afterward. | 如果你有任何問題，可以在會議期間或過後立即提出。"
+          ]
+        }
+      ],
+      "date": "2026-10-18"
+    },
+    {
+      "word": "tardiness",
+      "wordNote": "tardus-慢的、延遲，ness-名詞=遲到",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "遲到",
+          "sentences": [
+            "His frequent tardiness at work led to a formal warning from his boss. | 他在工作上頻繁的遲到導致他受到了老闆的正式警告。",
+            "Heavy traffic is no longer an acceptable excuse for your tardiness. | 交通堵塞不再是你遲到的合理藉口。",
+            "The company has a strict policy regarding employee tardiness. | 公司對於員工遲到的狀況有嚴格的規定。"
+          ]
+        }
+      ],
+      "date": "2026-10-19"
+    },
+    {
+      "word": "residence",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "住所;住房",
+          "sentences": [
+            "They share a residence. | 他們一起合租",
+            "She moved into her new residence last week and is still unpacking. | 她上週搬進了新住房，目前仍在整理行李。",
+            "The modern residence features three bedrooms, a large garden, and a garage. | 這棟現代化的住房擁有三間臥室、一個大花園和一個車庫。",
+            "Police officers conducted a search of the suspect's private residence. | 警官對嫌犯的私人住所進行了搜查。"
+          ]
+        }
+      ],
+      "date": "2026-10-19"
+    },
+    {
+      "word": "suggest",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "提議",
+          "sentences": [
+            "I suggested an Italian restaurant near the station for the party. | 我建議聚會去火車站附近的一家義大利餐館",
+            "I suggest (that) we wait a while before we make any firm decisions. | 我建議我們在作出任何明確而肯定的決定之前先考慮片刻"
+          ]
+        },
+        {
+          "pos": "v.",
+          "concept": "暗示；間接表明；意味著",
+          "sentences": [
+            "There's no absolute proof, but all the evidence suggests (that) he's guilty. | 雖然沒有確鑿的證據，但所有證據都表明他有罪",
+            "Are you suggesting (that) I look fat in these trousers? | 你言下之意是說我穿這條褲子顯得胖？",
+            "Are you suggesting that I am lying to you? | 你是在暗示我對你撒謊嗎？",
+            "Her tone of voice suggested that she was unhappy with the final decision. | 她的語氣暗示著她對最終的決定感到不滿。",
+            "The dark clouds on the horizon suggest that a heavy storm is coming. | 地平線上的烏雲意味著暴風雨即將來臨。"
+          ]
+        }
+      ],
+      "date": "2026-10-19"
+    },
+    {
+      "word": "comprehensive",
+      "wordNote": "com-全部，prehend-抓住，ive的=全面的",
+      "meanings": [
+        {
+          "pos": "adj.",
+          "concept": "全面的",
+          "sentences": [
+            "Is this list comprehensive or are there some names missing? | 這份名單是完整的還是遺漏了一些名字？",
+            "The company conducted a comprehensive review of its security policies to prevent future data breaches. | 公司對其安全政策進行了全面的審查，以防止未來發生資料外洩。",
+            "The university offers a comprehensive guide to help international students adapt to campus life. | 這所大學提供了一份全面的指南，以幫助國際學生適應校園生活。",
+            "The government has proposed a comprehensive plan to address the issue of climate change. | 政府提出了一項全面的計畫來解決氣候變遷問題。"
+          ]
+        }
+      ],
+      "date": "2026-10-19"
     }
   ]
 }
