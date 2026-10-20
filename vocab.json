@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exportDate": "2026-10-19T22:22:07.674Z",
+  "exportDate": "2026-10-20T17:02:27.785Z",
   "myDiaries": [
     {
       "date": "2026-10-07",
@@ -1633,6 +1633,45 @@
         }
       ],
       "date": "2026-10-20"
+    },
+    {
+      "word": "eligible",
+      "wordNote": "ex-向外，lig-挑選、選擇，-ible能夠=能夠被挑選出來的",
+      "meanings": [
+        {
+          "pos": "adj.",
+          "concept": "",
+          "sentences": [
+            "be eligible for a raise/a promotion/a discount | 有資格加薪/升遷/有折扣",
+            "be eligible to vote/receive the benefit | 有資格投票/領取津貼",
+            "Are you eligible for early retirement leave? | 你符合提前退休的條件嗎？",
+            "You might be eligible for a grant. | 你或許有資格得到獎學金",
+            "Only people over 18 are eligible to vote. | 只有18歲以上的人才有資格投票",
+            "Employees who have worked here for over a year are eligible for a performance bonus. | 在這裡工作滿一年的員工有資格獲得績效獎金。",
+            "Full-time students are eligible for a 20% discount on all museum tickets. | 全日制學生購買所有博物館門票皆可享有八折優惠。"
+          ]
+        }
+      ],
+      "date": "2026-10-21"
+    },
+    {
+      "word": "just",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "adv.",
+          "concept": "簡直、真的、超(用來強調喜愛的程度)",
+          "sentences": [
+            "Don't you just love Kylie Siren's latest track? | 你難道不覺得Kylie Siren的新歌『簡直超好聽』嗎？",
+            "Don't you just love rainy days? | 你不覺得下雨天簡直太棒了嗎？",
+            "I just love this song! | 我真的超喜歡這首歌",
+            "I just love your new haircut! | 我真的超喜歡你的新髮型！",
+            "This chocolate cake is just amazing. | 這款巧克力蛋糕簡直太美味了。",
+            "I just adore how peaceful this place is. | 我簡直超愛這個地方的寧靜感。"
+          ]
+        }
+      ],
+      "date": "2026-10-21"
     }
   ]
 }
