@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exportDate": "2026-10-20T17:02:27.785Z",
+  "exportDate": "2026-10-20T22:50:01.665Z",
   "myDiaries": [
     {
       "date": "2026-10-07",
@@ -1668,6 +1668,101 @@
             "I just love your new haircut! | 我真的超喜歡你的新髮型！",
             "This chocolate cake is just amazing. | 這款巧克力蛋糕簡直太美味了。",
             "I just adore how peaceful this place is. | 我簡直超愛這個地方的寧靜感。"
+          ]
+        }
+      ],
+      "date": "2026-10-21"
+    },
+    {
+      "word": "advance",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "（使）前進；使進步，使進展；使發展",
+          "sentences": [
+            "The fire advanced steadily through the forest. | 大火在森林中不斷蔓延",
+            "He's just trying to advance his own career. (= improve) | 他只是在努力發展自己的事業",
+            "This new software will significantly advance our research project. | 這款新軟體將顯著促進我們研究計畫的進展。",
+            "She took several professional courses to advance her career. | 她參加了幾門專業課程以促進自己的事業發展。"
+          ]
+        },
+        {
+          "pos": "v.",
+          "concept": "提前支付",
+          "sentences": [
+            "Could you advance me £500 until Tuesday? | 週二之前可以預付給我500英鎊嗎？",
+            "My employer agreed to advance me 500 to help with my moving expenses. | 我的雇主同意提前支付我 500 美元，以幫忙減輕我的搬家費用。",
+            "She asked her manager for an advance on her salary to pay for medical bills. | 她向經理請求提前支付薪水，以支付醫療費用。",
+            "The company will advance you the money needed for your business travel expenses. | 公司會提前支付你出差所需的費用。"
+          ]
+        },
+        {
+          "pos": "adj.",
+          "concept": "in advance=預先的，事先的",
+          "sentences": [
+            "There is no official rule about leave at this company, but it is implicit that you have to notify your manager in advance. | 這間公司關於請假沒有正式規定，但默許的規範是要事先通知你的經理",
+            "If you want to visit the popular museum, you need to book your tickets in advance. | 如果你想參觀這間熱門的博物館，你需要事先預訂門票。",
+            "Please let us know in advance if you are unable to attend the meeting. | 如果你無法出席會議，請預先告知我們。",
+            "You need to pay one month's rent in advance before moving in. | 在搬進去之前，你必須預先支付一個月的租金。",
+            "If you want to take time off, you need to notify your supervisor in advance. | 如果你想請假，你需要事先通知你的主管"
+          ]
+        }
+      ],
+      "date": "2026-10-21"
+    },
+    {
+      "word": "notify",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "（正式）通知，告知",
+          "sentences": [
+            "Has everyone been notified of the decision? | 這決定已經通知每一個人了嗎？",
+            "The school is required to notify parents if their children fail to come to school. | 如果孩子沒來上學，學校必須通知其家長",
+            "We will notify you of the interview results by email next week. | 我們將會在下週透過電子郵件通知您面試結果。",
+            "Please notify the manager immediately if you notice any safety hazards. | 如果您發現任何安全隱患，請立即通知經理。"
+          ]
+        }
+      ],
+      "date": "2026-10-21"
+    },
+    {
+      "word": "assert",
+      "wordNote": "as-向，sert連接=把東西拉到自己這邊=主張",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "主張;表現堅定",
+          "sentences": [
+            "She needs to learn to assert herself more in group discussions. | 她需要學會在小組討論中更加表現堅定、表達己見。",
+            "The director asserted that the new policy would benefit all employees. | 主管堅定主張這項新政策將會使所有員工受益。",
+            "You must assert your rights when facing unfair treatment in the workplace. | 在職場上遇到不公平對待時，你必須堅定主張自己的權利。"
+          ]
+        }
+      ],
+      "date": "2026-10-21"
+    },
+    {
+      "word": "possess",
+      "wordNote": "pos-有力量，sess做=佔據位置坐下(佔有)=擁有",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "擁有",
+          "sentences": [
+            "I don't possess a single DVD (= I don't have even one DVD). | 我一張DVD光碟都沒有"
+          ]
+        },
+        {
+          "pos": "v.",
+          "concept": "具有(某些特質)",
+          "sentences": [
+            "In the past the root of this plant was thought to possess magical powers. | 過去這種植物的根被認為具有神奇的力量",
+            "To be a successful teacher, one must possess patience and empathy. | 要成為一名成功的教師，必須具備耐心與同理心。",
+            "She possesses incredible resilience, which helped her overcome many obstacles. | 她擁有驚人的韌性，這協助她克服了許多障礙。",
+            "He possesses a rare talent for communicating complex ideas in a simple way. | 他具備將複雜想法以簡單方式溝通的罕見天賦。"
           ]
         }
       ],
