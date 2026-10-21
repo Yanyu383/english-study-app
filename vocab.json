@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exportDate": "2026-10-20T22:50:01.665Z",
+  "exportDate": "2026-10-21T23:20:26.130Z",
   "myDiaries": [
     {
       "date": "2026-10-07",
@@ -1767,6 +1767,112 @@
         }
       ],
       "date": "2026-10-21"
+    },
+    {
+      "word": "violent",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "adj.",
+          "concept": "使用暴力的;強暴的",
+          "sentences": [
+            "a violent crime | 暴力犯罪",
+            "commit a violent crime | 參與暴力犯罪",
+            "The police arrested the man for committing a violent crime in the subway. | 警方逮捕了那名在地鐵實施暴力犯罪的男子。",
+            "The peaceful protest turned violent after a group of people began throwing rocks. | 在一群人開始投擲石頭後，這場和平抗議演變成了暴力衝突。",
+            "Security guards quickly stepped in to restrain the violent passenger. | 安檢人員迅速介入，制服了那名使用暴力的乘客。"
+          ]
+        }
+      ],
+      "date": "2026-10-22"
+    },
+    {
+      "word": "postpone",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "延後，延緩，使延期",
+          "sentences": [
+            "We've had to postpone going to France because the children are ill. | 因為孩子們生病了，我們不得不延後去法國的行程",
+            "Sorry Julia, I'll have to postpone our lunch until next week. | 對不起，茱莉亞，我得把我們的午餐延後到下週了",
+            "We had to postpone the meeting until next Tuesday because the manager was sick. | 由於經理生病了，我們不得不將會議延期至下週二。",
+            "Due to the severe weather, the outdoor concert has been postponed. | 由於天氣惡劣，戶外音樂會已經延期舉行。",
+            "You shouldn't postpone making a decision when it comes to your health. | 當涉及你的健康時，你不應該延緩做出決定。"
+          ]
+        }
+      ],
+      "date": "2026-10-22"
+    },
+    {
+      "word": "conference",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "會議，大會；討論會",
+          "sentences": [
+            "Should I book the conference room for the meeting? | 我應該為會談預訂會議室嗎？",
+            "They frequently hold conferences at that hotel. | 他們常在那家飯店舉辦會議",
+            "The international medical conference will be held in Taipei next month. | 國際醫學大會將於下個月在台北舉行。",
+            "More than 300 experts attended the artificial intelligence conference last week. | 上週有超過三百位專家參加了這場人工智慧討論會。",
+            "She was invited to give a speech at an annual business conference. | 她受邀在一場年度商業會議上發表演講。"
+          ]
+        }
+      ],
+      "date": "2026-10-22"
+    },
+    {
+      "word": "enroll",
+      "wordNote": "en-（使……進入 / 放入）+roll（名冊 / 捲軸）=報名、註冊、入學",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "報名、註冊、入學",
+          "sentences": [
+            "enroll in a course / program | 報名課程/計畫",
+            "I enrolled for/in/on the modern art course. | 我註冊修讀現代藝術課程",
+            "You need to enroll in the course before the deadline next Friday. | 你需要在下週五截止日期前報名這門課程。",
+            "Hundreds of new students will enroll at the university this semester. | 本學期將有數百名新生在這所大學註冊入學。",
+            "She decided to enroll in an online coding workshop to improve her skills. | 她決定報名參加線上程式設計工作坊以提升自己的技能。"
+          ]
+        }
+      ],
+      "date": "2026-10-22"
+    },
+    {
+      "word": "diagnosis",
+      "wordNote": "dia-（穿過/透過）+ gnos（知道 / know）+ -is（名詞字尾）",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "診斷",
+          "sentences": [
+            "The doctor has made an initial diagnosis. | 醫生已經作出了初步診斷",
+            "Diagnosis of the disease is difficult in the early stages. | 這種病的早期診斷很難",
+            "The doctor confirmed the diagnosis after reviewing the blood test results. | 醫生在查看血液檢驗結果後確認了診斷。",
+            "She remained optimistic even after receiving a diagnosis of diabetes. | 即使在收到糖尿病的診斷結果後，她依然保持樂觀。"
+          ]
+        }
+      ],
+      "date": "2026-10-22"
+    },
+    {
+      "word": "accuracy",
+      "wordNote": "ac-（朝向）+ cure（關心/照顧/精細）+ -acy（名詞字尾）",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "精確度、正確性",
+          "sentences": [
+            "check for accuracy | 檢查精確度/正確性",
+            "We need to double-check the figures to ensure the accuracy of the report. | 我們需要再次核對數據，以確保報告的正確性。",
+            "The new system has significantly improved the accuracy of weather forecasts. | 新系統大幅提升了天氣預報的精確度。",
+            "Her job requires a high level of speed and accuracy. | 她的工作需要高度的速度與精確度。"
+          ]
+        }
+      ],
+      "date": "2026-10-22"
     }
   ]
 }
