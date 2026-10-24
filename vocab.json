@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exportDate": "2026-10-21T23:20:26.130Z",
+  "exportDate": "2026-10-24T00:21:53.610Z",
   "myDiaries": [
     {
       "date": "2026-10-07",
@@ -1873,6 +1873,168 @@
         }
       ],
       "date": "2026-10-22"
+    },
+    {
+      "word": "negotiation",
+      "wordNote": "本身在拉丁文時期就具有談判的意思了",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "談判",
+          "sentences": [
+            "a series of difficult negotiations. | 一系列艱難的談判",
+            "Negotiation for the pay increase is likely to take several weeks | 加薪談判可能要持續數周",
+            "After several months of negotiations, the dispute between the unions and management over pay is finally resolved. | 在經過幾個月的談判後，工會與管理層之間關於薪資的爭議總算獲得解決了",
+            "After months of tough negotiation, the two companies finally signed the contract. | 經過數個月艱難的談判後，這兩家公司終於簽署了合約。",
+            "Effective communication skills are essential for a successful negotiation. | 有效的溝通技巧對於成功的談判至關重要。",
+            "She entered the salary negotiation with confidence and secured a higher pay. | 她充滿自信地參與薪資談判，並成功爭取到更高的薪酬。"
+          ]
+        }
+      ],
+      "date": "2026-10-22"
+    },
+    {
+      "word": "dispute",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "爭執、糾紛",
+          "sentences": [
+            "a border dispute | 邊界爭端",
+            "a pay/legal/trade dispute | 工資／法律／貿易糾紛",
+            "The two neighbors managed to resolve their long-standing dispute over the property boundary. | 這兩位鄰居設法解決了他們長期以來關於土地界線的糾紛。",
+            "The pay dispute between the management and the union has finally been settled. | 管理層與工會之間的薪資爭執終於獲得了解決。",
+            "A minor misunderstanding led to a heated dispute between the two colleagues. | 一個小誤會導致這兩位同事之間爆發了一場激烈的爭執。"
+          ]
+        },
+        {
+          "pos": "v.",
+          "concept": "（對…）有異議、不贊同",
+          "sentences": [
+            "The circumstances of her death have been hotly disputed. | 她的死引起了激烈的爭論",
+            "Several members of the board disputed the accuracy of the financial report. | 董事會的幾位成員對財務報告的準確性提出了異議。",
+            "The customer disputed the extra charges on his credit card bill. | 顧客對信用卡帳單上的額外費用表示不贊同並提出異議。",
+            "They disputed the referee's decision and asked for a video replay. | 他們對裁判的判決表示異議，並要求進行影像重播。"
+          ]
+        }
+      ],
+      "date": "2026-10-22"
+    },
+    {
+      "word": "union",
+      "wordNote": "uni=一的字根，-on名詞型=合一、結合",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "工會",
+          "sentences": [
+            "Unions are made to protect employees' right. | 工會是為了保護員工的權力而創建的",
+            "The union is negotiating with management for higher wages and better working conditions. | 工會正與管理層談判，以爭取更高的薪資與更好的工作條件。",
+            "After weeks of failed negotiations, the union decided to go on strike. | 經過數週談判失敗後，工會決定發起罷工。",
+            "If you face unfair treatment at work, you should contact your union representative. | 如果你在工作中遭受不公平對待，應該聯繫你的工會代表。"
+          ]
+        }
+      ],
+      "date": "2026-10-22"
+    },
+    {
+      "word": "compromise",
+      "wordNote": "com-一起，promise承諾=一起承諾",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "妥協；折衷；讓步；和解",
+          "sentences": [
+            "That seems like a fair compromise. | 這似乎是個公平的折衷方案",
+            "In a compromise between management and unions, a four percent pay rise was agreed in return for an increase in productivity. | 資方與工會達成和解，同意以加薪4%來作為提高生產力的回報",
+            "The government has said that there will be no compromise with terrorists. | 政府聲稱不會對恐怖分子讓步",
+            "After hours of negotiation, both sides finally reached a compromise. | 經過數小時的談判，雙方最終達成了妥協。",
+            "In a healthy relationship, both partners need to learn how to compromise. | 在健康的感情關係中，雙方都需要學會如何讓步。",
+            "Finding a compromise between quality and cost is essential for the project's success. | 在品質與成本之間找到折衷方案，對專案的成功至關重要。"
+          ]
+        }
+      ],
+      "date": "2026-10-22"
+    },
+    {
+      "word": "abide",
+      "wordNote": "a-加強語氣→asleep（睡著的狀態），bide=停留），abide by=持續停留在某處→遵守",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "持續存在",
+          "sentences": [
+            "Even in the face of hardship, true love will abide. | 即使面對困難，真愛也會長存",
+            "The memory of that unforgettable summer will always abide in my heart. | 那個令人難忘的夏天的回憶將永遠持續存在於我的心中。",
+            "Even in the darkest times, hope continues to abide within us. | 即使在最黑暗的時刻，希望依然持續存在於我們心中。",
+            "True friendship will abide no matter how much time passes. | 無論時間流逝多久，真正的友誼都會持續存在。"
+          ]
+        },
+        {
+          "pos": "v.",
+          "concept": "abide by=遵守",
+          "sentences": [
+            "While you're in this country, you must abide by its laws. | 在這個國家的期間，你必須遵守其法律",
+            "All employees must abide by the company's safety regulations. | 所有員工都必須遵守公司的安全規定。",
+            "As a good citizen, you should always abide by the law. | 作為一個好公民，你應該始終遵守法律。",
+            "=comply with(com-完全，ply填滿=履行) | ",
+            "=conform to(con-一起，form塑造型態=塑造相同型態) | ",
+            "=obey(不用介係詞，拉丁文的側耳傾聽) | "
+          ]
+        }
+      ],
+      "date": "2026-10-23"
+    },
+    {
+      "word": "sensible",
+      "wordNote": "sense-常識，ble形容詞=明智的",
+      "meanings": [
+        {
+          "pos": "adj.",
+          "concept": "理智的;明智的",
+          "sentences": [
+            "It would be sensible to take an umbrella. | 帶把傘是明智的",
+            "I think the sensible thing to do is call and ask for directions. | 我覺得明智之舉是打個電話問好路",
+            "It is sensible to save some money every month for unexpected expenses. | 每個月存一些錢以備不時之需是明智的作法。",
+            "She made a sensible decision to take a break after working for ten hours straight. | 在連續工作十個小時後，她做出了一個理智的決定去休息一下。",
+            "Wearing a warm coat in this freezing weather is the only sensible thing to do. | 在這種寒冷的天氣裡穿上保暖的大衣是唯一明智的做法。"
+          ]
+        }
+      ],
+      "date": "2026-10-23"
+    },
+    {
+      "word": "cosmetic",
+      "wordNote": "=kosmos希臘文的裝扮和秩序",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "化妝品",
+          "sentences": [
+            "She spent a lot of money buying high-end cosmetic products at the department store. | 她在百貨公司花了許多錢購買高檔化妝品。",
+            "This brand is famous for using natural ingredients in all of its cosmetic products. | 這個品牌以在其所有化妝品中使用天然成分而聞名。",
+            "You should always thoroughly remove all cosmetic products before going to bed. | 你應該總是在睡前徹底卸除所有的化妝品。"
+          ]
+        }
+      ],
+      "date": "2026-10-24"
+    },
+    {
+      "word": "cross",
+      "wordNote": "當作動詞，across才是介係詞",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "橫跨、穿越",
+          "sentences": [
+            "It's not a good place to cross the road. | 這裡不適宜穿越馬路",
+            "Look both ways before you cross the road | 過馬路前先要左右看看",
+            "They crossed from Albania into Greece. | 他們穿越阿爾巴尼亞進入了希臘"
+          ]
+        }
+      ],
+      "date": "2026-10-24"
     }
   ]
 }
