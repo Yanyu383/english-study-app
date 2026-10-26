@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exportDate": "2026-10-24T00:21:53.610Z",
+  "exportDate": "2026-10-26T08:06:47.680Z",
   "myDiaries": [
     {
       "date": "2026-10-07",
@@ -366,7 +366,7 @@
     },
     {
       "word": "accelerate",
-      "wordNote": "針對某種進度去做加速、或變快",
+      "wordNote": "ac-朝向，celer-快的，-ate動詞形式=針對某種進度去做加速、或變快",
       "meanings": [
         {
           "pos": "v.",
@@ -2035,6 +2035,226 @@
         }
       ],
       "date": "2026-10-24"
+    },
+    {
+      "word": "breakdown",
+      "wordNote": "break（破裂、瓦解） + down（倒下）原本運作正常的機器或精神系統，因為承受不住壓力而「瓦解倒塌」",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "崩潰；故障",
+          "sentences": [
+            "nervous breakdown | 精神/體力崩潰",
+            "After months of non-stop working, she suffered a complete breakdown. | 經過幾個月不間斷的工作後，她徹底崩潰了",
+            "After working non-stop for months, she suffered a severe emotional breakdown. | 在連續工作數個月沒有休息後，她遭受了嚴重的情緒崩潰。",
+            "The unexpected breakdown of the factory machine delayed the production schedule. | 工廠機器突如其來的故障延誤了生產進度。",
+            "A major breakdown in the communication system caused widespread confusion among the team. | 通訊系統的嚴重故障導致了團隊內部廣泛的混亂。"
+          ]
+        }
+      ],
+      "date": "2026-10-26"
+    },
+    {
+      "word": "letdown",
+      "wordNote": "let（放開 / 鬆手） + down（往下沉）原本高高托住你的「期望」，突然有人把手鬆開（let you down），讓你的期待直接「重重掉下來」",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "失望；掃興的事",
+          "sentences": [
+            "The product launch was a big letdown after all the hype. | 在鋪天蓋地的宣傳之後，這場新品發表會令人大失所望"
+          ]
+        }
+      ],
+      "date": "2026-10-26"
+    },
+    {
+      "word": "comedown",
+      "wordNote": "come（來到 / 走） + down（底下）從高處（高地位、興奮的高峰）往低處走，代表「落魄、降級」或「興奮感退去後的空虛落差」",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "地位/境遇衰落；興高采烈後的沮喪",
+          "sentences": [
+            "Going from a corner office to a tiny cubicle was a real comedown for him. | 從高階主管獨立辦公室搬到狹小的隔間，對他來說真的是身價大不如前/降格",
+            "Returning to work on Monday after a wonderful vacation was a big comedown. | 在結束美好假期後於週一返回工作崗位，讓人感到非常沮喪與落寞。",
+            "Going from being a CEO to an entry-level employee was a bit of a comedown for him. | 從執行長降至初階員工，對他來說是境遇上的重大衰落。",
+            "Winning the award was thrilling, but going home to an empty apartment was quite a comedown. | 贏得大獎令人血脈賁張，但回到空無一人的公寓後頓時讓人感到無比落寞。"
+          ]
+        }
+      ],
+      "date": "2026-10-26"
+    },
+    {
+      "word": "surpass",
+      "wordNote": "sur-（在……之上 / 超過） + pass（通過 / 跨過）",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "超過；超越",
+          "sentences": [
+            "Our third-quarter sales figures have surpassed all expectations. | 我們第三季的銷售數字已經超過了所有的預期",
+            "Her outstanding performance this year surpassed all our expectations. | 她今年傑出的表現超越了我們所有的預期。",
+            "The company's annual revenue is expected to surpass 10 million dollars. | 該公司的年度營收預計將超過一千萬美元。",
+            "The new model's processing speed easily surpasses that of previous generations. | 新機型的處理速度輕易超越了前幾代產品。"
+          ]
+        }
+      ],
+      "date": "2026-10-26"
+    },
+    {
+      "word": "degrade",
+      "wordNote": "de-（向下 / 降低） + grade（階級 / 等級）",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "貶低；降級；（品質/環境）惡化",
+          "sentences": [
+            "You should never allow anyone to degrade you or make you feel worthless. | 你絕不應該允許任何人貶低你或讓你覺得自己毫無價值。",
+            "He was degraded to a lower position after failing to meet his performance targets. | 他因未達績效目標而被降級至較低的職位。",
+            "Industrial waste continues to degrade the environment and endanger local wildlife. | 工業廢棄物持續使環境惡化並危及當地的野生動物。"
+          ]
+        }
+      ],
+      "date": "2026-10-26"
+    },
+    {
+      "word": "reveal",
+      "wordNote": "re-（反向 / 撤銷） + veil（面紗 / 面罩）把蓋在事物上面的面紗（veil）掀開 →引申為「揭露、洩漏秘密」",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "揭露；顯示；洩漏",
+          "sentences": [
+            "reveal information / secrets / details / results | 揭露資訊 / 秘密 / 細節 / 結果",
+            "The investigation revealed that the company had been hiding its operational losses. | 調查揭露了該公司一直以來都在隱瞞營運虧損",
+            "The investigation revealed the truth behind the mysterious incident. | 調查揭露了這起神秘事件背後的真相。",
+            "The company plans to reveal its new smartphone at the upcoming conference. | 這間公司計劃在即將到來的發表會上展示新款智慧型手機。",
+            "She promised not to reveal any confidential details about the project. | 她承諾不會洩漏任何關於該專案的機密細節。"
+          ]
+        }
+      ],
+      "date": "2026-10-26"
+    },
+    {
+      "word": "revolt",
+      "wordNote": "re-（反向） + volt / volve（旋轉 / 轉動）=朝著反方向轉過去=抵抗權威、造反、反抗",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "反抗；造反",
+          "sentences": [
+            "The workers revolted against the harsh working conditions. | 工人起義反抗惡劣的工作條件",
+            "The citizens decided to revolt against the corrupt government. | 人民決定起義造反，反抗腐敗的政府。",
+            "The soldiers threatened to revolt if their demands were ignored. | 若訴求遭到忽視，士兵們威脅要發動造反。",
+            "The oppressed workers finally revolted against the company's unfair policies. | 被壓迫的工人們最終發起反抗，抵制公司的不合理政策。"
+          ]
+        }
+      ],
+      "date": "2026-10-26"
+    },
+    {
+      "word": "regain",
+      "wordNote": "re-（重新） + gain（獲得）",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "重新獲得；奪回；恢復",
+          "sentences": [
+            "The company managed to regain its market share after launching the new product. | 該公司在推出新產品後，成功重新奪回了市場佔有率",
+            "After a few days of rest, she managed to regain her strength. | 經過幾天的休息後，她成功恢復了體力。",
+            "The police are working hard to regain control of the situation. | 警方正在努力重新掌握局勢的控制權。",
+            "The team is determined to regain the championship title this year. | 該隊伍決心要在今年奪回冠軍頭銜。"
+          ]
+        }
+      ],
+      "date": "2026-10-26"
+    },
+    {
+      "word": "confidential",
+      "wordNote": "con-完全的，fide相信，-ent的，ial相關的，原本表示信賴確信的意思，後來表示說是祕密和機密的意思",
+      "meanings": [
+        {
+          "pos": "adj.",
+          "concept": "機密的；保密的",
+          "sentences": [
+            "confidential documents/report | 機密文件/報告",
+            "All customer data is strictly confidential and will not be shared with third parties. | 所有客戶資料皆嚴格保密，且不會與第三方分享。",
+            "Please mark this document as confidential before sending it out. | 在發送這份文件之前，請先將其標示為機密。",
+            "The doctor assured me that my medical records would remain confidential. | 醫生向我保證我的病歷資料會保持保密。"
+          ]
+        }
+      ],
+      "date": "2026-10-26"
+    },
+    {
+      "word": "ultimately",
+      "wordNote": "ultim-最遠的 / 最後的+ -ate（使成……）+ -ly（副詞字尾）",
+      "meanings": [
+        {
+          "pos": "adv.",
+          "concept": "最終；歸根結底",
+          "sentences": [
+            "Although the process took months, the campaign was ultimately successful. | 雖然這個過程耗費了數個月，但這場活動最終獲得了成功",
+            "The responsibility for safety is ultimately down to the manager. | 安全責任歸根結底是主管的責任",
+            "Although we faced many difficulties, the project was ultimately a great success. | 儘管我們面臨許多困難，這個專案最終獲得了巨大成功。",
+            "You can listen to others' advice, but ultimately, the decision is yours to make. | 你可以聽取別人的建議，但歸根結底，決定權還是在你自己手中。",
+            "Hard work and persistence will ultimately lead you to success. | 努力與堅持最終會帶領你走向成功。"
+          ]
+        }
+      ],
+      "date": "2026-10-26"
+    },
+    {
+      "word": "intrinsically",
+      "wordNote": "intrin-內部，sec-沿著=深藏在物品或事物最核心內部=本質上(描述某個工作本質上很有價值、某種投資天生帶有風險)",
+      "meanings": [
+        {
+          "pos": "adv.",
+          "concept": "本質上",
+          "sentences": [
+            "Providing good customer support is intrinsically valuable to any business. | 提供良好的客戶支援，從本質上對任何企業來說都是非常有價值的",
+            "There is nothing intrinsically wrong with making mistakes as long as you learn from them. | 只要你能從中學習，犯錯本質上並沒有什麼不對。",
+            "The two issues are intrinsically linked and must be addressed together. | 這兩個問題在本質上是緊密相連的，必須一起解決。",
+            "Children are intrinsically curious about the world around them. | 孩子們對周遭的世界本質上充滿了好奇心。"
+          ]
+        }
+      ],
+      "date": "2026-10-26"
+    },
+    {
+      "word": "reluctantly",
+      "wordNote": "re-（反向 / 抵抗） + luct-（掙扎 / 搏鬥，來自 luctari）=不情願地(員工不情願地接受加班、公司勉強同意降價)",
+      "meanings": [
+        {
+          "pos": "adv.",
+          "concept": "不情願地；勉強地",
+          "sentences": [
+            "The landlord reluctantly agreed to lower the monthly rent. | 房東勉強/不情願地同意降低每月租金",
+            "He reluctantly agreed to help his sister clean the room. | 他不情願地同意幫他妹妹清理房間。",
+            "She reluctantly signed the contract after hours of negotiation. | 經過數小時的談判後，她勉強簽下了合約。",
+            "The children reluctantly left the park when it started to rain. | 開始下雨時，孩子們不情願地離開了公園。"
+          ]
+        }
+      ],
+      "date": "2026-10-26"
+    },
+    {
+      "word": "distinctly",
+      "wordNote": "dis-（分開） + stinct-刺 / 標記=用針刺一個記號把兩樣東西劃分開來=clearly",
+      "meanings": [
+        {
+          "pos": "adv.",
+          "concept": "清楚地；顯著地",
+          "sentences": [
+            "I distinctly remember leaving the keys on the office desk. | 我非常清楚地記得把鑰匙留在辦公桌上",
+            "I distinctly remember locking the front door before I left the house. | 我清楚地記得在離開家門前有把正門鎖上。",
+            "Her new approach to solving the problem is distinctly different from the old one. | 她解決這個問題的新方法與舊方法有顯著的不同。",
+            "Even from the back of the auditorium, we could hear the speaker distinctly. | 即使坐在禮堂後方，我們也能清楚地聽到講者說話。"
+          ]
+        }
+      ],
+      "date": "2026-10-26"
     }
   ]
 }
