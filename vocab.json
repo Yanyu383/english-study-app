@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exportDate": "2026-11-03T11:47:20.510Z",
+  "exportDate": "2026-11-03T16:43:52.994Z",
   "myDiaries": [
     {
       "date": "2026-10-07",
@@ -2652,6 +2652,146 @@
         }
       ],
       "date": "2026-11-03"
+    },
+    {
+      "word": "accurate",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "adj.",
+          "concept": "準確的、精確無誤的",
+          "sentences": [
+            "Please make sure the financial data in the report is accurate. | 請確保報告中的財務數據是準確無誤的"
+          ]
+        }
+      ],
+      "date": "2026-11-04"
+    },
+    {
+      "word": "vibrant",
+      "wordNote": "vibr-（拉丁文，意為「震動、擺動」）+ -ant（形容詞字尾，……的）像琴弦快速震動散發出的能量，引申為色彩或氣氛「非常明亮、充滿生命力」",
+      "meanings": [
+        {
+          "pos": "adj.",
+          "concept": "充滿活力的、色彩鮮明的",
+          "sentences": [
+            "The marketing campaign used vibrant colors to attract younger consumers. | 該行銷活動運用了鮮豔奪目的色彩來吸引年輕消費者",
+            "The street market is always vibrant and full of life on weekends. | 這個街頭市場在週末總是充滿活力且生機勃勃。",
+            "She loves wearing vibrant colors like red and yellow in the summer. | 她喜歡在夏天穿著像紅色和黃色這樣色彩鮮明的衣服。"
+          ]
+        }
+      ],
+      "date": "2026-11-04"
+    },
+    {
+      "word": "settle for",
+      "wordNote": "本來想要更好的，但因為某些現實限制，腳步停在（settle）了這個比較差的選項上",
+      "meanings": [
+        {
+          "pos": "phr.",
+          "concept": "勉強接受、將就",
+          "sentences": [
+            "We shouldn’t settle for inferior quality just to save a few dollars. | 我們不應該為了省那幾塊錢而勉強接受劣質品",
+            "They were hoping to sell their car for £2,000, but settled for £1,500. | 他們本來希望他們的汽車能賣2000英鎊，但後來只得以1500英鎊賣掉了",
+            "He wants a full refund and he won't settle for anything less. | 他想全額退款，少一分也不行",
+            "She never settles for second best. | 她從不甘心於退而求其次"
+          ]
+        }
+      ],
+      "date": "2026-11-04"
+    },
+    {
+      "word": "dull",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "adj.",
+          "concept": "枯燥的、乏味的、黯淡的",
+          "sentences": [
+            "He's pleasant enough, but deadly dull. | 他很和善，但太乏味",
+            "The presentation was so dull and lifeless that half the audience fell asleep | 簡報內容實在是枯燥乏味又死氣沉沉，導致半數觀眾都睡著了"
+          ]
+        }
+      ],
+      "date": "2026-11-04"
+    },
+    {
+      "word": "at one's disposal",
+      "wordNote": "disposal=處理",
+      "meanings": [
+        {
+          "pos": "phr.",
+          "concept": "可由某人自由支配",
+          "sentences": [
+            "As a manager, you have a team of skilled experts at your disposal. | 身為經理，你手邊隨時有整支技術精湛的專家團隊可供調度指揮",
+            "If you need anything while you're here, our staff is at your disposal. | 如果您在入住期間有任何需要，我們的工作人員將隨時為您服務"
+          ]
+        }
+      ],
+      "date": "2026-11-04"
+    },
+    {
+      "word": "precision",
+      "wordNote": "pre-（預先、向前）+ cis-（切割、切斷，源自 caedere）+ -ion（名詞字尾）",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "精確度、精準",
+          "sentences": [
+            "The machine cuts steel sheets with incredible precision. | 這台機器以不可思議的精準度切割鋼板",
+            "This high-tech manufacturing process requires a high level of precision. | 這項高科技製造流程需要極高的精確度。",
+            "Scientists used advanced instruments to measure the data with great precision. | 科學家們使用先進的儀器以極高的精確度測量數據。"
+          ]
+        }
+      ],
+      "date": "2026-11-04"
+    },
+    {
+      "word": "faded",
+      "wordNote": "fade（動詞：褪色、枯萎）",
+      "meanings": [
+        {
+          "pos": "adj.",
+          "concept": "褪色的、黯淡的",
+          "sentences": [
+            "The photographs in the old album had faded over the decades. | 老相本裡的照片經過幾十年已經褪色了",
+            "He wore a pair of faded blue jeans and a comfortable cotton shirt. | 他穿著一條褪色的藍色牛仔褲和一件舒適的棉質襯衫。",
+            "The old photograph was faded, but you could still see the happiness on their faces. | 這張老照片已經褪色了，但你依然能看到他們臉上的幸福。",
+            "After years of exposure to sunlight, the curtains became faded and dull. | 經過多年的陽光曝曬，窗簾變得褪色且黯淡。"
+          ]
+        }
+      ],
+      "date": "2026-11-04"
+    },
+    {
+      "word": "vivid",
+      "wordNote": "viv-（生命、活著，例如 survive 存活）",
+      "meanings": [
+        {
+          "pos": "adj.",
+          "concept": "生動的、鮮明的",
+          "sentences": [
+            "She gave a vivid description of her trip to Europe during the meeting. | 她在會議中對自己的歐洲之旅做了生動逼真的描述"
+          ]
+        }
+      ],
+      "date": "2026-11-04"
+    },
+    {
+      "word": "sleek",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "adj.",
+          "concept": "流線型的",
+          "sentences": [
+            "The new smartphone model stands out with its sleek design. | 這款新智慧型手機以其流線時尚的設計脫穎而出",
+            "The new sports car features a sleek body that reduces wind resistance. | 這款新跑車擁有流線型的車身，能夠降低風阻。",
+            "The high-speed train's sleek design helps it cut through the air with ease. | 這輛高鐵的流線型設計有助於它輕鬆穿透空氣阻力。"
+          ]
+        }
+      ],
+      "date": "2026-11-04"
     }
   ]
 }
