@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exportDate": "2026-10-26T08:06:47.680Z",
+  "exportDate": "2026-11-03T11:47:20.510Z",
   "myDiaries": [
     {
       "date": "2026-10-07",
@@ -1788,7 +1788,7 @@
     },
     {
       "word": "postpone",
-      "wordNote": "",
+      "wordNote": "post-延後(postwar戰後)，pon-放置",
       "meanings": [
         {
           "pos": "v.",
@@ -2255,6 +2255,403 @@
         }
       ],
       "date": "2026-10-26"
+    },
+    {
+      "word": "recite",
+      "wordNote": "re-再次，cite喚出→重複把記在腦海裡的話「呼喚/說出來」=背誦",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "背誦",
+          "sentences": [
+            "The teacher asked the students to recite a poem in front of the class. | 老師要求學生們在全班面前背誦一首詩。",
+            "He practiced for hours until he could recite all his lines perfectly. | 他練習了好幾個小時，直到能完美地背誦出他的所有台詞。",
+            "My little sister can recite the alphabet backwards without any mistakes. | 我妹妹能夠毫無錯誤地倒著背誦英文字母。"
+          ]
+        }
+      ],
+      "date": "2026-10-29"
+    },
+    {
+      "word": "automotive",
+      "wordNote": "來自 auto-「自動」 + motive「移動的」",
+      "meanings": [
+        {
+          "pos": "adj.",
+          "concept": "汽車的",
+          "sentences": [
+            "the automotive industry | 汽車工業",
+            "The automotive industry is rapidly shifting towards electric vehicles to reduce carbon emissions. | 汽車工業正迅速轉向電動車，以減少碳排放。",
+            "The annual automotive exhibition showcases the latest car designs and smart driving technologies. | 年度的汽車展覽展示了最新的汽車設計與智慧駕駛技術。"
+          ]
+        }
+      ],
+      "date": "2026-10-29"
+    },
+    {
+      "word": "sluggish",
+      "wordNote": "slug（蛞蝓） + -ish（有……特性的）",
+      "meanings": [
+        {
+          "pos": "adj.",
+          "concept": "蕭條的；低迷的",
+          "sentences": [
+            "sluggish economy / market / sales / growth | 低迷的經濟/市場/銷售/成長",
+            "The country's economic growth remained sluggish throughout the third quarter. | 該國的經濟成長在整個第三季度依然保持低迷。",
+            "High interest rates have led to sluggish sales in the housing market. | 高利率導致房地產市場的銷售狀況蕭條。",
+            "Many retail stores are offering deep discounts to stimulate sluggish consumer demand. | 許多零售商店正提供大幅折扣，以刺激低迷的消費者需求。"
+          ]
+        },
+        {
+          "pos": "adj.",
+          "concept": "無精打采的",
+          "sentences": [
+            "A heavy lunch makes me sluggish in the afternoon. | 豐盛的午餐使我一下午都懶得動彈",
+            "I always feel sluggish in the morning if I don't get at least seven hours of sleep. | 如果我沒有睡滿至少七個小時，早上總是會覺得無精打采的。",
+            "Eating a heavy lunch makes me feel sluggish and unmotivated for the rest of the afternoon. | 午餐吃得太飽讓我整個下午都感到無精打采且毫無動力。",
+            "The hot weather made everyone feel sluggish and lazy today. | 炎熱的天氣讓大家今天都感到無精打采又懶洋洋的。"
+          ]
+        }
+      ],
+      "date": "2026-10-29"
+    },
+    {
+      "word": "initial",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "adj.",
+          "concept": "最初的；開始的",
+          "sentences": [
+            "Our initial estimate of the project cost was too low | 我們對該專案成本的初步估計太低了",
+            "The initial cost of the project was much higher than we expected. | 這個專案的初始成本比我們預期的要高出許多。",
+            "After the initial shock, she managed to calm down and make a decision. | 在最初的震驚過後，她設法冷靜下來並做出決定。",
+            "My initial impression of the new employee was very positive. | 我對這位新員工的最初印象非常良好。"
+          ]
+        }
+      ],
+      "date": "2026-10-29"
+    },
+    {
+      "word": "initiate",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "開始",
+          "sentences": [
+            "The team will initiate the investigation into the cause of the accident tomorrow. | 團隊明天將開始調查事故原因。",
+            "She decided to initiate legal action to protect her rights. | 她決定採取法律行動以維護自己的權益。",
+            "It takes courage to initiate a conversation with someone you don't know. | 主動與不認識的人展開對話需要勇氣。"
+          ]
+        },
+        {
+          "pos": "v.",
+          "concept": "向（某人）傳授專門知識;",
+          "sentences": [
+            "At the age of eleven, Harry was initiated into the art of golf by his father. | 哈裡11歲時，他的父親教他高爾夫球基本技巧",
+            "Each culture had a special ritual to initiate boys into manhood. | 每種文化都有特殊的男孩成人禮",
+            "The senior chef initiated his apprentice into the secrets of traditional pastry making. | 這位資深大廚向他的學徒傳授了傳統糕點製作的獨門技巧。",
+            "My mentor initiated me into the complex strategies of high-finance investing. | 我的導師向我傳授了高階金融投資的專門知識與策略。",
+            "She was initiated into the ancient techniques of traditional pottery by her master. | 她由師父向她傳授了傳統陶藝的古老專門技術。"
+          ]
+        },
+        {
+          "pos": "v.",
+          "concept": "發起；倡導",
+          "sentences": [
+            "The marketing team plans to initiate a new campaign next month to attract younger consumers. | 行銷團隊計劃下個月發起一項新活動，以吸引年輕消費者。",
+            "Several non-profit organizations initiated a global movement to raise awareness about climate change. | 幾個非營利組織發起了一項全球運動，以提高大眾對氣候變遷的關注。",
+            "She initiated a reform within the department to streamline the daily workflow. | 她在部門內倡導並發起了一項改革，以簡化日常工作流程。"
+          ]
+        }
+      ],
+      "date": "2026-10-29"
+    },
+    {
+      "word": "clueless",
+      "wordNote": "clue（線索 / 頭緒） + -less（沒有）",
+      "meanings": [
+        {
+          "pos": "adj.",
+          "concept": "毫無頭緒的；一無所知的",
+          "sentences": [
+            "The new intern was completely clueless about how to use the software. | 新來的實習生對如何使用這套軟體完全毫無頭緒/一無所知",
+            "He was totally clueless about how to use the new software. | 他對如何使用這個新軟體完全毫無頭緒。",
+            "She was completely clueless about the surprise party her friends had planned for her. | 她對朋友們為她籌劃的驚喜派對完全一無所知。",
+            "To be honest, I am clueless about what we should do next. | 坦白說，我對於我們下一步該怎麼做毫無頭緒。"
+          ]
+        }
+      ],
+      "date": "2026-10-29"
+    },
+    {
+      "word": "versatile",
+      "wordNote": "vers- ：轉動、轉向（如 convert 轉換)，-ile：容易……的（形容詞字尾）",
+      "meanings": [
+        {
+          "pos": "adj.",
+          "concept": "多用途的；萬能的；多才多藝的",
+          "sentences": [
+            "This Software is a versatile tool for data analysis. | 這款軟體是個用於數據分析的多功能工具",
+            "She is a versatile actress who can perform well in both comedy and drama. | 她是一位多才多藝的女演員，無論喜劇還是戲劇都能完美駕馭。",
+            "Olive oil is a versatile ingredient that can be used for cooking, baking, and even skincare. | 橄欖油是一種多用途的食材，可用於烹飪、烘焙甚至肌膚保養。",
+            "Smartphones have become versatile tools for work, entertainment, and communication. | 智慧型手機已成為集工作、娛樂與通訊於一身的多功能工具。",
+            "A Swiss Army knife is a versatile tool that can be used as scissors or a nail clipper. | 瑞士刀是個多用的工具，可以當作剪刀也可以當作指甲刀"
+          ]
+        }
+      ],
+      "date": "2026-10-30"
+    },
+    {
+      "word": "prestigious",
+      "wordNote": "在拉丁文中本身就代表讓眾人側目、發出驚嘆的「尊貴名聲」",
+      "meanings": [
+        {
+          "pos": "adj.",
+          "concept": "有威望的，有聲望的，受尊敬的",
+          "sentences": [
+            "He received an award from a prestigious university. | 他獲得了一所知名/有聲望的大學頒發的獎項",
+            "She was accepted into a prestigious university in England. | 她被英國一所聲望卓著的大學錄取了。",
+            "Winning the Nobel Prize is one of the most prestigious honors in the world. | 獲得諾貝爾獎是世界上最具威望的榮譽之一。",
+            "After years of hard work, he landed a job at a prestigious law firm. | 經過多年的努力，他在一家極具聲望的律師事務所找到了工作。"
+          ]
+        }
+      ],
+      "date": "2026-10-30"
+    },
+    {
+      "word": "widespread",
+      "wordNote": "wide：寬廣的 + spread：散播、鋪開",
+      "meanings": [
+        {
+          "pos": "adj.",
+          "concept": "廣泛的；普遍的；遍佈的",
+          "sentences": [
+            "The new policy received widespread support from the staff. | 這項新政策獲得了員工廣泛的支持",
+            "There is widespread concern about the impact of artificial intelligence on jobs. | 人們對於人工智慧對就業的影響存在廣泛的擔憂。",
+            "Heavy rain caused widespread flooding across the entire region. | 強降雨導致整個地區發生了大範圍的水災。",
+            "The new policy has received widespread support from the public. | 這項新政策獲得了民眾的普遍支持。"
+          ]
+        }
+      ],
+      "date": "2026-10-30"
+    },
+    {
+      "word": "breach",
+      "wordNote": "源自 break（打破 / 破裂）",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "破壞，違犯；違反",
+          "sentences": [
+            "He was sued for breach of contract. | 他因為違約而被起訴",
+            "There have been serious security breaches | 保安系統出了大問題",
+            "Failing to deliver the goods on time is a clear breach of contract. | 未能按時交貨顯然是違反合約。",
+            "Stealing company secrets is a serious breach of trust. | 竊取公司機密是嚴重破壞信任的行為。",
+            "Anyone who breaches the safety regulations will face severe penalties. | 任何違反安全規定的人都會面臨嚴厲的懲罰。"
+          ]
+        }
+      ],
+      "date": "2026-10-30"
+    },
+    {
+      "word": "mix-up",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "混淆；錯誤；弄錯",
+          "sentences": [
+            "e-mail mix-up | 電子郵件發錯",
+            "scheduling mix-up | 行程安排搞混",
+            "mix-up in delivery | 運送/出貨上的錯誤"
+          ]
+        },
+        {
+          "pos": "v.",
+          "concept": "mix up=「搞混、弄錯」",
+          "sentences": [
+            "Sorry, I mixed up the dates | 抱歉，我把日期搞混了",
+            "I often mix up the twins because they look so much alike. | 我經常把這對雙胞胎搞混，因為他們長得太像了。",
+            "Sorry I'm late; I mixed up the time of our meeting. | 抱歉我遲到了，我搞錯了我們開會的時間。",
+            "Be careful not to mix up these two documents, or we will be in big trouble. | 小心別把這兩份文件弄錯了，否則我們會有大麻煩。"
+          ]
+        }
+      ],
+      "date": "2026-11-02"
+    },
+    {
+      "word": "appear",
+      "wordNote": "ap- (ad-)：朝向 + pear (pareo)：顯現、出現",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "出現",
+          "sentences": [
+            "He suddenly appeared in the doorway. | 他突然出現在門口",
+            "An error message keeps appearing. | 故障訊息一職出現",
+            "A rainbow appeared in the sky after the heavy rain. | 大雨過後，天空出現了一道彩虹。",
+            "He suddenly appeared at the party, which surprised all of us. | 他突然出現在派對上，讓所有人感到驚訝。",
+            "A new notification appeared on my phone screen. | 我的手機螢幕上出現了一則新通知。"
+          ]
+        },
+        {
+          "pos": "v.",
+          "concept": "看來好像；似乎",
+          "sentences": [
+            "She appears to actually like the man, which I find incredible. | 她好像真的很喜歡那個男的，這讓我覺得難以置信",
+            "It appears as if I was wrong. | 好像我錯了似的",
+            "She appears to be very tired after the long journey. | 經過長途旅程後，她看來似乎非常疲惫。",
+            "It appears that there has been a misunderstanding between us. | 我們之間似乎存在一些誤會。",
+            "The problem appears to be more complicated than we thought. | 這個問題看起來似乎比我們想像的還要複雜。",
+            "The order appeared to be complete | 這筆訂單看起來似乎已經完成了"
+          ]
+        }
+      ],
+      "date": "2026-11-02"
+    },
+    {
+      "word": "state",
+      "wordNote": "拉丁字根 sta-（站立、立下）把事實或聲明「堅固地立在那裡」，引申為正式陳述、說明",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "陳述、說明、聲明",
+          "sentences": [
+            "State what happened the night that man tried to steal your bag | 請陳述那個人想偷你包包的晚上發生了什麼事情",
+            "Please clearly state your full name and address for the official record. | 請明確說明您的全名與地址以供官方記錄。",
+            "The contract clearly states that all payments must be completed within 30 days. | 合約明確聲明所有款項必須在 30 天內付清。",
+            "The spokesman stated that the new policy will take effect next month. | 發言人聲明新政策將於下個月生效。"
+          ]
+        }
+      ],
+      "date": "2026-11-02"
+    },
+    {
+      "word": "patronage",
+      "wordNote": "patr- (pater)：父親，古羅馬時代「守護者/資助者」對店家的支持與照顧，演變為現代商業中顧客持續上門消費支持（惠顧）",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "惠顧，光顧",
+          "sentences": [
+            "We would like to thank all of our customers for their patronage in the past. | 我們衷心感謝所有顧客過去的惠顧",
+            "Thank you for your continued patronage over the years. | 感謝您多年來的持續光顧與支持",
+            "We would like to thank all of our customers for their continued patronage over the past decade. | 我們要感謝所有顧客在過去十年來的持續惠顧。",
+            "The new restaurant offers a ten percent discount to attract more patronage from local residents. | 這間新餐廳提供九折優惠，以吸引更多當地居民光顧。",
+            "The hotel relies heavily on the patronage of regular guests during the off-peak season. | 這家飯店在淡季期間非常依賴常客的光顧。"
+          ]
+        }
+      ],
+      "date": "2026-11-02"
+    },
+    {
+      "word": "extensively",
+      "wordNote": "ex-：向外 + tend- / tens-：伸展、延伸（如 extend 延伸、tension 張力）",
+      "meanings": [
+        {
+          "pos": "adv.",
+          "concept": "廣泛地",
+          "sentences": [
+            "The product was extensively tested before it was launched on the market. | 該產品在上市前經過了廣泛的測試。",
+            "Solar energy is now extensively used in many countries to generate electricity. | 太陽能現在在許多國家被廣泛地用於發電。",
+            "She has traveled extensively throughout Asia for both business and leisure. | 她因公務與休閒而在亞洲各地廣泛地旅行。"
+          ]
+        }
+      ],
+      "date": "2026-11-02"
+    },
+    {
+      "word": "subsequently",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "隨後；接著",
+          "sentences": [
+            "The contract was signed, and subsequently approved. | 合約簽署完成，隨後獲得批准",
+            "The company launched the new product in May and subsequently expanded its market to Europe. | 這間公司在五月推出了新產品，隨後將市場擴展至歐洲。",
+            "He was injured in the accident and subsequently taken to the hospital. | 他在事故中受傷，隨後被送往醫院。",
+            "She failed her first exam, but subsequently passed the retake with high marks. | 她第一次考試沒過，但隨後在重考中取得了高分。"
+          ]
+        }
+      ],
+      "date": "2026-11-02"
+    },
+    {
+      "word": "thoroughly",
+      "wordNote": "through（穿越、穿透）一路「穿透到底」，沒有留下任何盲點或死角",
+      "meanings": [
+        {
+          "pos": "adv.",
+          "concept": "徹底地；非常仔細地",
+          "sentences": [
+            "Please inspect the products thoroughly before shipping. | 出貨前請徹底地檢查產品",
+            "I thoroughly enjoyed the performance. | 我非常喜歡這個演出",
+            "The legal team thoroughly reviewed the contract before signing it. | 法律團隊在簽署合約前非常仔細地審查了內容。",
+            "You should wash your hands thoroughly with soap and water to prevent the spread of germs. | 你應該用肥皂和水徹底清洗雙手，以防止細菌傳播。",
+            "She thoroughly checked the report for any errors before submitting it to her manager. | 她在將報告提交給經理之前，非常仔細地檢查是否有任何錯誤。"
+          ]
+        }
+      ],
+      "date": "2026-11-02"
+    },
+    {
+      "word": "stage",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "舞台",
+          "sentences": [
+            "I've never danced on stage before | 我從未在舞台上跳過舞"
+          ]
+        },
+        {
+          "pos": "n.",
+          "concept": "階段",
+          "sentences": [
+            "The project is still in its early stages. | 這個項目仍處於初階階段",
+            "The project is currently in its final stage of development. | 這個專案目前正處於開發的最後階段。",
+            "She is at a critical stage in her career right now. | 她目前正處於職業生涯的關鍵階段。",
+            "We are still in the early stages of planning the event. | 我們仍處於活動規劃的早期階段。"
+          ]
+        }
+      ],
+      "date": "2026-11-03"
+    },
+    {
+      "word": "retrieve",
+      "wordNote": "re-再次，trieve尋找=獵犬把東西找回來=喚起記憶、取出資訊",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "找回、取回",
+          "sentences": [
+            "We taught our dog to retrieve a ball. | 我們教狗撿球",
+            "Computers are used to store and retrieve information efficiently. | 電腦用於快速高效地存儲和檢索資訊",
+            "Passengers can retrieve their luggage at the baggage claim area. | 乘客可以在行李提領區取回他們的行李。",
+            "I went back to the office to retrieve the keys I had left on my desk. | 我回到辦公室取回我留在桌上的鑰匙。",
+            "The technician managed to retrieve all the lost data from the damaged hard drive. | 技術人員成功從損壞的硬碟中找回了所有遺失的資料。"
+          ]
+        }
+      ],
+      "date": "2026-11-03"
+    },
+    {
+      "word": "shipment",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "運輸的貨物",
+          "sentences": [
+            "The new shipment of laptops is expected to arrive on Monday. | 這批新的筆電貨物預計週一到達"
+          ]
+        }
+      ],
+      "date": "2026-11-03"
     }
   ]
 }
