@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exportDate": "2026-11-03T23:47:04.811Z",
+  "exportDate": "2026-11-05T02:17:03.477Z",
   "myDiaries": [
     {
       "date": "2026-10-07",
@@ -2792,6 +2792,88 @@
         }
       ],
       "date": "2026-11-04"
+    },
+    {
+      "word": "optional",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "adj.",
+          "concept": "可選擇的;非強制的",
+          "sentences": [
+            "English is mandatory for all students, but art and music are optional. | 英語是所有學生的必修課，而藝術和音樂則是選修的",
+            "Attendance at tomorrow's meeting is completely optional. | 明天會議的出席完全是非強制的。",
+            "Providing your email address on this form is optional. | 在這張表格上提供你的電子郵件地址是自由選填的。",
+            "The tour includes an optional trip to the local night market. | 這趟行程包含自由選擇參加的當地夜市之旅。"
+          ]
+        }
+      ],
+      "date": "2026-11-05"
+    },
+    {
+      "word": "fortune",
+      "wordNote": "fort-（命運、運氣，源自 fortuna）+ -une（名詞字尾）",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "一大筆錢、巨額財富",
+          "sentences": [
+            "She inherited a fortune from her grandmother. | 她從祖母那裡繼承了一大筆財産",
+            "He made a fortune by investing in the technology sector early on. | 他因早期投資科技產業而賺進了一大筆財富。",
+            "That new sports car must have cost him a small fortune. | 那輛新跑車一定花了他一大筆錢。",
+            "She inherited a large fortune from her family and decided to start her own business. | 她從家族繼承了一大筆巨額財富，並決定創辦自己的事業。"
+          ]
+        },
+        {
+          "pos": "n.",
+          "concept": "機會，運氣",
+          "sentences": [
+            "He had the (good) fortune to train with some of the world's top athletes. | 他有幸與一些世界頂級的運動員一起訓練",
+            "The family's fortunes changed overnight. | 那個家庭的命運一夜之間改變了",
+            "I had the good fortune to meet my favorite author at the event. | 我很有幸能在活動中遇見我最喜歡的作家。",
+            "By a stroke of fortune, we managed to catch the last train home. | 靠著一股好運氣，我們成功趕上了回家的末班列車。",
+            "She decided to move to the big city to try her fortune. | 她決定搬到大城市去碰碰運氣。",
+            "I had the great fortune of meeting you in college. | 我很幸運能在大學的時候遇見你"
+          ]
+        }
+      ],
+      "date": "2026-11-05"
+    },
+    {
+      "word": "hefty",
+      "wordNote": "heft（重量、重量感）+ -y（形容詞字尾）",
+      "meanings": [
+        {
+          "pos": "adj.",
+          "concept": "數量/金額龐大的、可觀的",
+          "sentences": [
+            "Her salary will go up by a hefty 13 percent. | 她的薪水將會猛增13%",
+            "Companies that fail to comply with strict safety regulations face hefty fines. | 未能遵守嚴格安全法規的公司將面臨數額龐大的巨額罰款",
+            "They had to pay a hefty fine for violating environmental regulations. | 他們因違反環保法規而不得不支付一筆鉅額罰款。",
+            "The company offered a hefty bonus to employees who met their annual sales targets. | 這間公司向達成年度銷售目標的員工提供了一筆豐厚的獎金。",
+            "Buying a brand-new electric car usually comes with a hefty price tag. | 購買一輛全新的電動車通常需要一筆龐大的費用。"
+          ]
+        }
+      ],
+      "date": "2026-11-05"
+    },
+    {
+      "word": "fraction",
+      "wordNote": "fract-（打破、折斷，如 fracture 骨折、fragment 碎片）+ -ion（名詞字尾）",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "極小的部分",
+          "sentences": [
+            "a fraction of the cost / price | 只要原本費用的一小部分/極低價格",
+            "This affordable generic tool does the exact same job at a fraction of the price. | 這款實惠的通用工具能以極低的一小部分價格完成完全一樣的工作",
+            "She bought the designer dress at a fraction of its original price. | 她以原價極小一部分的價格買下了這件設計師洋裝。",
+            "The computer processed the complex data in a fraction of a second. | 這台電腦在極短的一瞬間就處理完了複雜的資料。",
+            "Only a fraction of the applicants managed to pass the extremely difficult exam. | 只有極少部分的申請者成功通過了這場極難的考試。"
+          ]
+        }
+      ],
+      "date": "2026-11-05"
     }
   ]
 }
