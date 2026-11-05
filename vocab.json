@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exportDate": "2026-11-05T02:17:03.477Z",
+  "exportDate": "2026-11-05T23:26:33.227Z",
   "myDiaries": [
     {
       "date": "2026-10-07",
@@ -2874,6 +2874,54 @@
         }
       ],
       "date": "2026-11-05"
+    },
+    {
+      "word": "chain",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "連鎖店",
+          "sentences": [
+            "What is your favorite fast food chain? | 你最喜歡哪家速食連鎖店?",
+            "McDonald's is one of the most famous fast-food chains in the world. | 麥當勞是世界上最著名的速食連鎖店之一。",
+            "I prefer eating at local family-owned restaurants rather than big chains. | 比起大型連鎖店，我更喜歡在當地的家族小餐廳用餐。",
+            "The company plans to open ten new branches for its coffee chain next year. | 這間公司計劃明年為其咖啡連鎖店開設十家新分店。"
+          ]
+        }
+      ],
+      "date": "2026-11-05"
+    },
+    {
+      "word": "conference",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "大型會議、研討會",
+          "sentences": [
+            "Our marketing team will give a presentation at the annual conference. | 我們的行銷團隊將在年度研討會上進行簡報",
+            "Should I book the conference room for the meeting? | 我應該為會談預訂會議室嗎？"
+          ]
+        }
+      ],
+      "date": "2026-11-06"
+    },
+    {
+      "word": "occasionally",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "adv.",
+          "concept": "偶爾、有時",
+          "sentences": [
+            "I see him occasionally in town. | 我偶爾在城裡見到他",
+            "Occasionally I'll have a piece of chocolate, but it's very rare. | 有時我會吃塊巧克力，不過這種時候極少",
+            "Although he works remotely, he occasionally comes to the main office. | 雖然他遠距工作，但他偶爾還是會來總公司"
+          ]
+        }
+      ],
+      "date": "2026-11-06"
     }
   ]
 }
