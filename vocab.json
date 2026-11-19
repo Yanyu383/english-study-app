@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exportDate": "2026-11-05T23:26:33.227Z",
+  "exportDate": "2026-11-19T22:10:34.395Z",
   "myDiaries": [
     {
       "date": "2026-10-07",
@@ -2922,6 +2922,405 @@
         }
       ],
       "date": "2026-11-06"
+    },
+    {
+      "word": "patronage",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "贊助，資助",
+          "sentences": [
+            "Without the generous patronage of local businesses, the annual arts festival would not have been possible. | 如果沒有當地企業的大力贊助，一年一度的藝術節就不可能舉辦。",
+            "The museum relies heavily on private patronage to acquire new artworks and maintain its facilities. | 這座博物館高度仰賴私人資助來購買新藝術品及維護其設施。",
+            "The young painter was able to study in Paris thanks to the patronage of a wealthy benefactor. | 這位年輕畫家多虧了一位富有資助者的贊助，才得以前往巴黎深造。"
+          ]
+        },
+        {
+          "pos": "n.",
+          "concept": "光顧、惠顧",
+          "sentences": [
+            "We would like to express our sincere gratitude for your continued patronage over the years. | 我們謹對您多年來的持續惠顧表達誠摯的感謝。",
+            "The small neighborhood coffee shop relies heavily on the patronage of local residents. | 這家社區小咖啡館非常依賴當地居民的光顧。",
+            "To show appreciation for their patronage, the hotel offers exclusive discounts to returning guests. | 為感謝顧客的光顧，這家飯店為再次光臨的客人提供專屬折扣。"
+          ]
+        }
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "word": "frank",
+      "wordNote": "源自中古英語，原本有「自由、無拘無束」的意思。當一個人內心沒有隱瞞、自由表達時，就是「坦承的」",
+      "meanings": [
+        {
+          "pos": "adj.",
+          "concept": "坦白的、直言不諱的",
+          "sentences": [
+            "to be frank, | 坦白說",
+            "To be perfectly frank with you, I don't think she's the person for the job. | 十分坦誠地告訴你，我認為她不適合做那份工作",
+            "To be frank with you, I don't think this project will succeed. | 跟你坦白說，我不認為這個專案會成功。",
+            "She gave me some frank feedback on my presentation. | 她對我的簡報給予了一些直言不諱的反饋。",
+            "We had a frank conversation about the future of our company. | 我們針對公司的未來進行了一次坦誠的對話。"
+          ]
+        }
+      ],
+      "date": "2026-11-10"
+    },
+    {
+      "word": "adventure",
+      "wordNote": "ad-（朝向、去）+ vent（前進、來到，如 event 事件、venue 場地）+ -ure（名詞字尾）",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "冒險、探險活動",
+          "sentences": [
+            "Traveling alone in a new country can be an exciting adventure. | 在一個新的國家獨自旅行可以是一場令人興奮的冒險",
+            "They decided to go on a jungle adventure in Costa Rica this summer. | 他們決定今年夏天去哥斯大黎加展開一趟叢林探險活動。",
+            "Sailing across the Pacific Ocean was the greatest adventure of her life. | 橫渡太平洋是她一生中最偉大的探險活動。",
+            "Our hiking trip turned into a real adventure when we got lost in the forest. | 當我們在森林裡迷路時，我們的徒步之旅變成了一場真正的冒險。"
+          ]
+        }
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "word": "adventure",
+      "wordNote": "ad-（朝向、去）+ vent（前進、來到，如 event 事件、venue 場地）+ -ure（名詞字尾）",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "冒險、探險活動",
+          "sentences": [
+            "Traveling alone in a new country can be an exciting adventure. | 在一個新的國家獨自旅行可以是一場令人興奮的冒險",
+            "They embarked on a thrilling adventure through the Amazon rainforest. | 他們踏上了穿越亞馬遜雨林的刺激探險活動。",
+            "Outdoor adventures, such as rock climbing and kayaking, are very popular among young adults. | 像攀岩與獨木舟這類的戶外冒險活動在年輕人之間非常受歡迎。",
+            "Our trip to Iceland was an unforgettable adventure filled with stunning natural landscapes. | 我們的冰島之旅是一場充滿絕美自然景觀且令人難忘的探險活動。"
+          ]
+        }
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "word": "agent",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "代理人；代理商",
+          "sentences": [
+            "Travel Agent | 旅行社專員",
+            "Real Estate Agent | 房地產仲介",
+            "You can speak to a customer service agent if you need further assistance. | 如果您需要進一步協助，可以與客服專員對話",
+            "We are looking for a local agent to distribute our products in Asia. | 我們正在尋找本地代理商來在亞洲分銷我們的產品。",
+            "The company signed an agreement with an exclusive sales agent in Europe. | 該公司與歐洲的一家獨家銷售代理商簽訂了合約。"
+          ]
+        }
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "word": "inspect",
+      "wordNote": "in-（向內）+ -spect（看，如 spectator 觀眾、respect 尊敬）→ 往裡面仔細看",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "檢查、檢驗",
+          "sentences": [
+            "She held the bank note up to the light and inspected it carefully. | 她舉起鈔票，對著光仔細檢查",
+            "The customs officer inspected the luggage for any illegal items. | 海關人員檢查了行李是否有任何違禁品。",
+            "The engineer inspected the machinery to make sure it was working properly. | 工程師檢查了機械設備，以確保其運作正常。",
+            "An expert will inspect the building to ensure it meets safety standards. | 專家將會檢驗這棟建築，以確保其符合安全標準。"
+          ]
+        }
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "word": "respective",
+      "wordNote": "原意為「回頭看、回顧特定對象」，逐步演變為針對個別事物「各自的、分別的」",
+      "meanings": [
+        {
+          "pos": "adj.",
+          "concept": "各自的、分別的",
+          "sentences": [
+            "After the meeting, everyone returned to their respective offices. | 會議結束後，大家各自回到了各自的辦公室",
+            "The two friends went their respective ways after graduation. | 這兩位朋友在畢業後便各奔東西",
+            "They brought their respective partners to the dinner party. | 他們各自帶著自己的伴侶出席了晚宴"
+          ]
+        }
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "word": "administration",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "行政人員;管理部門",
+          "sentences": [
+            "The decision to cancel the trip was made by the school administration. | 取消行程的決定是學校管理部門做出的",
+            "If you have any questions about course registration, please contact the school administration. | 如果你有任何關於選課的問題，請聯繫學校行政人員。",
+            "The administration has decided to implement a new hybrid work policy next month. | 管理部門已決定下個月開始實施新的混合辦公政策。",
+            "Please submit your budget proposal to the administration for approval. | 請將您的預算提案提交給行政部門審批。"
+          ]
+        }
+      ],
+      "date": "2026-11-12"
+    },
+    {
+      "word": "Inaugural",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "adj.",
+          "concept": "首次的",
+          "sentences": [
+            "Inaugural Meeting | 首次大會",
+            "The airline successfully launched its inaugural flight to London yesterday. | 該航空公司昨天成功啟航了飛往倫敦的首航航班。",
+            "The company will host its inaugural developer conference next month. | 這間公司將於下個月舉辦其首屆開發者大會。",
+            "The city hosted its inaugural marathon, attracting thousands of runners from around the world. | 這座城市舉辦了首屆馬拉松賽事，吸引了來自世界各地的數千名跑者。"
+          ]
+        }
+      ],
+      "date": "2026-11-12"
+    },
+    {
+      "word": "refreshments",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "茶點、點心飲料(會議中提供的)",
+          "sentences": [
+            "Light refreshments | 簡易茶點",
+            "refreshment break | 茶時間/休息時間"
+          ]
+        }
+      ],
+      "date": "2026-11-12"
+    },
+    {
+      "word": "enormous",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "adj.",
+          "concept": "龐大的、巨大的",
+          "sentences": [
+            "enormous car/house | 大轎車／大房子",
+            "enormous volumes of domestic and foreign trade | 極大數量的國內外貿易"
+          ]
+        }
+      ],
+      "date": "2026-11-12"
+    },
+    {
+      "word": "notice",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "告示，佈告",
+          "sentences": [
+            "short notice | 臨時通知",
+            "The manager posted a notice on the bulletin board about the new office rules. | 經理在公告欄上貼了一張關於新辦公室守則的佈告。",
+            "There is a notice on the front door saying that the shop is closed today. | 大門上貼有一張告示，說明店家今天公休。",
+            "Did you see the notice on the wall regarding the change in business hours? | 你有看到牆上關於營業時間變更的告示嗎？"
+          ]
+        }
+      ],
+      "date": "2026-11-12"
+    },
+    {
+      "word": "arrangement",
+      "wordNote": "ar-（為 ad- 的變體，意為「朝向、去、使……」)-range-（排列、行列、順序，與英文的 rank「等級、排列」同源）",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "安排、籌備",
+          "sentences": [
+            "They'd made all the arrangements for the party. | 他們為聚會作好了一切準備",
+            "We need to make all the necessary arrangements for the upcoming conference. | 我們需要為即將到來的會議做好所有必要的安排。",
+            "She is in charge of travel arrangements for the entire team. | 她負責處理整個團隊的出差行程安排。",
+            "The hotel staff will assist us with the wedding arrangements. | 飯店工作人員將會協助我們進行婚禮的籌備工作。"
+          ]
+        }
+      ],
+      "date": "2026-11-12"
+    },
+    {
+      "word": "disruption",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "中斷、混亂、干擾",
+          "sentences": [
+            "We hope this arrangement won't cause too much disruption. | 但我們希望這樣的安排不會造成太大的混亂",
+            "The heavy snow caused severe disruption to the local train services. | 強降雪造成當地火車服務嚴重中斷。",
+            "The constant noise from the construction site created a major disruption to our work. | 施工現場持續不斷的噪音對我們的工作造成了很大的干擾。",
+            "The sudden power outage caused a temporary disruption in the production process. | 突如其來的停電導致生產流程暫時中斷。"
+          ]
+        }
+      ],
+      "date": "2026-11-12"
+    },
+    {
+      "word": "advertise",
+      "wordNote": "ad-（朝向）+ vert（轉向）→把大眾的目光「轉向」你的商品或活動 → 登廣告、宣傳",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "登廣告、宣傳、推廣",
+          "sentences": [
+            "We advertised our car in the local newspaper. | 我們在當地報紙上登了廣告出售我們的轎車",
+            "He advertises his services on the company notice board. | 他在公司的佈告版上張貼廣告來宣傳其業務",
+            "I'm going to advertise for someone to clean my house. | 我打算登廣告僱個人來做家庭清潔"
+          ]
+        }
+      ],
+      "date": "2026-11-12"
+    },
+    {
+      "word": "condition",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "狀況、狀態 / 條件",
+          "sentences": [
+            "in good / excellent condition | 狀況良好",
+            "mint condition | 全新狀態"
+          ]
+        }
+      ],
+      "date": "2026-11-12"
+    },
+    {
+      "word": "arena",
+      "wordNote": "源自拉丁文 harena（或 arena），本義就是「沙子」或「鋪滿沙子的空地」",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "場地",
+          "sentences": [
+            "a sports arena | 運動會比賽場地",
+            "Thousands of fans gathered at the arena to watch the final match. | 成千上萬的球迷聚集在該場地觀看決賽。",
+            "The concert was held in an indoor arena to avoid any weather disruptions. | 演唱會在室內場地舉行，以避免受到任何天氣影響。",
+            "The city plans to build a multi-purpose arena for sports and cultural events. | 這座城市計劃建造一個用於體育與文化活動的多功能場地。"
+          ]
+        }
+      ],
+      "date": "2026-11-14"
+    },
+    {
+      "word": "reserve",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "留作",
+          "sentences": [
+            "The arena has been reserved. | 場地已經保留了",
+            "Please reserve the main conference room for Friday's client presentation. | 請為週五的客戶簡報預訂主會議室"
+          ]
+        }
+      ],
+      "date": "2026-11-14"
+    },
+    {
+      "word": "venue",
+      "wordNote": "源自拉丁文 venire，意思是「來（to come）」，字面意涵就是「人們前來聚集的地方」",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "舉辦地點、會場",
+          "sentences": [
+            "The event planning committee is currently searching for a suitable venue for the annual awards banquet. | 活動籌備委員會目前正在為年度頒獎晚宴尋找合適的舉辦場地",
+            "Due to high registration numbers, we had to move the seminar to a larger venue downtown. | 由於報名人數眾多，我們不得不將研討會移至市中心一個更大的場地"
+          ]
+        }
+      ],
+      "date": "2026-11-14"
+    },
+    {
+      "word": "scattered",
+      "wordNote": "分散的;散佈的",
+      "meanings": [
+        {
+          "pos": "adj.",
+          "concept": "分散的;散佈的",
+          "sentences": [
+            "Toys and books were scattered about/around the room. | 房間裡到處都是玩具和書籍",
+            "My family is scattered all over the world. | 我的家人遍佈世界各地"
+          ]
+        }
+      ],
+      "date": "2026-11-17"
+    },
+    {
+      "word": "possess",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "擁有；具有",
+          "sentences": [
+            "She possesses a rare talent for painting realistic portraits. | 她具有繪製寫實肖像的罕見天賦。",
+            "Candidates for this job must possess excellent communication skills. | 這份工作的應徵者必須具備出色的溝通技巧。",
+            "It is illegal to possess firearms without a valid license in this country. | 在這個國家，未持有有效執照而擁有槍枝是違法的。"
+          ]
+        }
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "word": "fraud",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "詐騙（罪）",
+          "sentences": [
+            "credit card fraud | 信用卡詐騙",
+            "He was arrested by the police for committing credit card fraud. | 他因涉嫌犯下信用卡詐騙罪而被警方逮捕。"
+          ]
+        }
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "word": "fraudulent",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "adj.",
+          "concept": "欺騙的，欺詐的",
+          "sentences": [
+            "She immediately contacted her bank after noticing a fraudulent transaction on her credit card statement. | 在發現信用卡帳單上有一筆欺詐交易後，她立即聯繫了銀行。",
+            "The company was fined millions of dollars for making fraudulent claims about its medical products. | 該公司因對其醫療產品做出欺騙性的聲明而被處以數百萬美元的罰款。",
+            "Police warned the public to be vigilant against fraudulent emails designed to steal personal information. | 警方警告大眾要提防旨在竊取個人資料的欺騙性郵件。"
+          ]
+        }
+      ],
+      "date": "2026-11-20"
+    },
+    {
+      "word": "reimburse",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "償還;付還;補償",
+          "sentences": [
+            "The company will reimburse you for your travel expenses after you submit the receipts. | 公司會在您提交收據後，補償您的差旅費用。",
+            "Please keep all your receipts so that we can reimburse you for any out-of-pocket expenses. | 請妥善保存所有收據，以便我們向您償還代墊的費用。",
+            "I paid for the team dinner upfront, but my colleagues promised to reimburse me tomorrow. | 我先代墊了團隊晚餐的費用，但同事們承諾明天會把錢付還給我。"
+          ]
+        }
+      ],
+      "date": "2026-11-20"
     }
   ]
 }
