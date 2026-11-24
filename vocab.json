@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "exportDate": "2026-11-19T22:10:34.395Z",
+  "exportDate": "2026-11-24T08:15:32.640Z",
   "myDiaries": [
     {
       "date": "2026-10-07",
@@ -3261,7 +3261,7 @@
     },
     {
       "word": "possess",
-      "wordNote": "",
+      "wordNote": "pot / pos（字根）＝ power, able（力量、能力）sed / sess（字根）＝ to sit（坐、停留）",
       "meanings": [
         {
           "pos": "v.",
@@ -3308,7 +3308,7 @@
     },
     {
       "word": "reimburse",
-      "wordNote": "",
+      "wordNote": "re-（字首）＝ back（回、歸還）im-（＝ in- 字首）＝ into（進入）burse（字根）＝ purse, bag（錢包、皮囊）",
       "meanings": [
         {
           "pos": "v.",
@@ -3321,6 +3321,290 @@
         }
       ],
       "date": "2026-11-20"
+    },
+    {
+      "word": "duty",
+      "wordNote": "源自古法語 deu（應該給的、應盡的，同英文 due 到期、應付的）",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "責任；義務",
+          "sentences": [
+            "It is our duty to inform you about new parking regulations | 向您通知新的停車規定是我們的職責"
+          ]
+        }
+      ],
+      "date": "2026-11-21"
+    },
+    {
+      "word": "observe",
+      "wordNote": "ob-（= toward / over，朝向、在……上方）+ 字根 serv（= watch / keep，看守、保持、留意）",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "注意到，覺察到;看到",
+          "sentences": [
+            "Jack observed a look of anxiety on his brother's face. | 傑克注意到了他哥哥臉上焦急的神情"
+          ]
+        }
+      ],
+      "date": "2026-11-21"
+    },
+    {
+      "word": "accommodate",
+      "wordNote": "ac-（= ad-，朝向）+ 字首 com-（= completely，完全地）+ 字根 mod（= measure / fit，尺度、合適）+ 動詞字尾 -ate",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "容納；提供住宿、滿足需求",
+          "sentences": [
+            "New students may be accommodated in halls of residence. | 新生可以住在學校宿舍裡",
+            "There wasn't enough space to accommodate the files. | 沒有足夠的空間存放這些檔案"
+          ]
+        }
+      ],
+      "date": "2026-11-21"
+    },
+    {
+      "word": "convey",
+      "wordNote": "con-（= together / completely，一起、完全地）+ 字根 vey / via（= way / road，道路、路徑）",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "傳達、表達；運送、輸送",
+          "sentences": [
+            "Please convey my apologies to the client | 請向客戶轉達我的歉意"
+          ]
+        }
+      ],
+      "date": "2026-11-21"
+    },
+    {
+      "word": "constituent",
+      "wordNote": "con-（= together，一起）+ 字根 stitu / stat（= stand / set up，站立、設立）+ 名詞/形容詞字尾 -ent→「共同站在一起設立體制的人（選民）」",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "成分;構成部分;要素",
+          "sentences": [
+            "What are the basic constituents of the mixture? | 這種混合物的基本成分是甚麽"
+          ]
+        },
+        {
+          "pos": "n.",
+          "concept": "選民",
+          "sentences": [
+            "The MP worked hard, always talking to his constituents and listening to their problems. | 這位參議員工作努力，總是跟本區選民交談，聽取他們的難處"
+          ]
+        }
+      ],
+      "date": "2026-11-21"
+    },
+    {
+      "word": "defective",
+      "wordNote": "字首 de-（= away / down，離開、向下、變壞）+ 字根 fect（= make / do，製造、做）+ 形容詞字尾 -ive",
+      "meanings": [
+        {
+          "pos": "adj.",
+          "concept": "有缺陷的、有缺陷的、有問題的",
+          "sentences": [
+            "I think that theory is defective. | 我認為那種理論有缺陷",
+            "The company recalled thousands of cars due to a defective braking system. | 該公司因煞車系統有瑕疵而召回了數千輛汽車。",
+            "The customer returned the defective phone and asked for a full refund. | 顧客退回了有缺陷的手機，並要求全額退款。",
+            "If you receive a defective item, please contact our customer service team immediately. | 如果您收到有問題的商品，請立即聯繫我們的客服團隊。"
+          ]
+        }
+      ],
+      "date": "2026-11-21"
+    },
+    {
+      "word": "proceeds",
+      "wordNote": "字首 pro-（向前）+ 字根 ceed（走）+ 複數名詞字尾 -s→「活動進行下去所產生的財務成果」",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "收益、收入",
+          "sentences": [
+            "the proceeds from the event/sale | 活動／拍賣所得款項(charity或 donate（捐贈），後面 90% 搭配的名詞就是 proceeds)",
+            "The proceeds of today's festival will go to several local charities. | 今天活動的收入將捐給當地的幾家慈善機構"
+          ]
+        }
+      ],
+      "date": "2026-11-21"
+    },
+    {
+      "word": "frankly",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "adv.",
+          "concept": "坦白說、老實講",
+          "sentences": [
+            "Frankly, I don't think this plan will work without a proper budget. | 坦白說，如果沒有足夠的預算，我不認為這個計畫可行。",
+            "Frankly, I was very disappointed with the service at that hotel. | 老實講，我對那家飯店的服務感到非常失望。",
+            "Frankly, she is the most qualified candidate for this job. | 坦白說，她是這份工作最合適的人選。"
+          ]
+        }
+      ],
+      "date": "2026-11-24"
+    },
+    {
+      "word": "blade",
+      "wordNote": "源自古英語 blæd（葉子、扁平的片狀物），引申為扁平鋒利的「刀片」或風扇「葉片」",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "刀片、刮鬍刀片；葉片",
+          "sentences": [
+            "a packet of razor blades | 一包剃鬚刀片",
+            "a propeller blade | 螺旋槳"
+          ]
+        }
+      ],
+      "date": "2026-11-24"
+    },
+    {
+      "word": "properly",
+      "wordNote": "proper 源自拉丁文 proprius，本義是「屬於某人自己的、特有的（one's own, particular）」，後來引申為「符合該事物本身應有特質的」，也就是「適當的、正統的」",
+      "meanings": [
+        {
+          "pos": "adv.",
+          "concept": "正確地；合適地",
+          "sentences": [
+            "It's still not working properly. | 它還是不能正常運轉"
+          ]
+        }
+      ],
+      "date": "2026-11-24"
+    },
+    {
+      "word": "property",
+      "wordNote": "property 同樣源自拉丁文 proprius（屬於某人自己的）：propr / propri（字根）＝ one's own（屬於自己的、特有的）-ty（名詞字尾）＝ 事物、狀態、性質",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "財產、房地產",
+          "sentences": [
+            "The club does not accept responsibility for loss of or damage to club members' personal property. | 該俱樂部不承擔會員個人財產遺失或損壞的責任"
+          ]
+        },
+        {
+          "pos": "n.",
+          "concept": "房產，地產",
+          "sentences": [
+            "He owns a number of properties on the south coast. | 他在南部海濱擁有幾處房產"
+          ]
+        }
+      ],
+      "date": "2026-11-24"
+    },
+    {
+      "word": "trim",
+      "wordNote": "trim 源自古英語 trymman，本義是「使穩固、準備好、整理妥當",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "修剪，修整",
+          "sentences": [
+            "My hair needs trimming. | 我的頭髮需要剪一剪",
+            "to trim the hedge | 修剪樹籬"
+          ]
+        },
+        {
+          "pos": "v.",
+          "concept": "消減，減少",
+          "sentences": [
+            "They're trying to trim their costs, so staff who leave are not being replaced. | 他們正試圖降低成本，所以沒有安排填補離職員工的空缺"
+          ]
+        }
+      ],
+      "date": "2026-11-24"
+    },
+    {
+      "word": "dull",
+      "wordNote": "dull 源自古英語 dol，本義是「愚笨的、遲鈍的（foolish, slow-witted）」，與德文的 toll（瘋狂的）同源",
+      "meanings": [
+        {
+          "pos": "adj.",
+          "concept": "鈍的、不鋒利的",
+          "sentences": [
+            "This knife is too dull to cut the meat properly. | 這把刀太鈍了，無法好好地切肉。",
+            "Using dull scissors will tear the paper instead of cutting it cleanly. | 使用鈍的剪刀會把紙扯破，而不是平整地剪開。",
+            "The chef spent ten minutes sharpening his dull blades before cooking. | 廚師在做菜前花了十分鐘把鈍掉的刀刃磨利。"
+          ]
+        }
+      ],
+      "date": "2026-11-24"
+    },
+    {
+      "word": "compensate",
+      "wordNote": "compensate 源自拉丁文 compensare，本義是「把兩樣東西放在天平上一起稱重，使兩邊達到平衡com-（字首）＝ together（一起、共同）pens（字根）＝ to weigh, to pay（稱重、支付）-ate（動詞字尾）＝ 使……",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "補償、賠償；彌補",
+          "sentences": [
+            "Victims of the crash will be compensated for their injuries. | 車禍的受害者會得到傷害賠償"
+          ]
+        }
+      ],
+      "date": "2026-11-24"
+    },
+    {
+      "word": "infuriating",
+      "wordNote": "字首 in-（= into / make，使進入……狀態）+ 字根 furi（= rage / anger，狂怒）+ -ating",
+      "meanings": [
+        {
+          "pos": "adj.",
+          "concept": "令人暴怒的、極度惱火的",
+          "sentences": [
+            "His sexist attitude infuriates me. | 他歧視女性的態度讓我很生氣"
+          ]
+        }
+      ],
+      "date": "2026-11-24"
+    },
+    {
+      "word": "deposit",
+      "wordNote": "字首 de-（向下／放下來）+ 字根 posit（= put / place，放置）→交出去放著作為保障的款項，就是「訂金」或「押金」",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "訂金；押金",
+          "sentences": [
+            "They asked us to put down a deposit. | 他們讓我們支付一筆定金"
+          ]
+        }
+      ],
+      "date": "2026-11-24"
+    },
+    {
+      "word": "amenity",
+      "wordNote": "源自拉丁語 amoenus（令人愉悅的、舒適的），延伸為飯店、旅館、社區或辦公大樓提供給住客或使用者的貼心設施（如 Wi-Fi、健身房、泳池、盥洗備品等）",
+      "meanings": [
+        {
+          "pos": "n.",
+          "concept": "便利設施",
+          "sentences": [
+            "The council has some spare cash, which it proposes to spend on public amenities. | 政務委員會有一些餘款，計劃用來增添一些公共便利設施"
+          ]
+        }
+      ],
+      "date": "2026-11-24"
+    },
+    {
+      "word": "stain",
+      "wordNote": "",
+      "meanings": [
+        {
+          "pos": "v.",
+          "concept": "沾汙，染汙;留下汙跡",
+          "sentences": [
+            "Tomato sauce stains terribly - it's really difficult to get it out of clothes. | 蕃茄醬一沾上就很麻煩——很難把它從衣服上洗掉"
+          ]
+        }
+      ],
+      "date": "2026-11-24"
     }
   ]
 }
